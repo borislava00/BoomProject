@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useState } from 'react'
 import PropTypes from 'prop-types';
 import Head from 'next/head';
 import { ThemeProvider } from '@mui/material/styles';
@@ -13,6 +14,7 @@ const clientSideEmotionCache = createEmotionCache();
 
 export default function MyApp(props) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
+  const [text,setText] = useState('');
 
   return (
     <CacheProvider value={emotionCache}>
@@ -20,6 +22,7 @@ export default function MyApp(props) {
         <title>My page</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
+      <Logo />
       
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
