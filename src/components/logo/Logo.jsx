@@ -1,7 +1,12 @@
 import React from 'react';
 
-function Logo({ type }) {
-    return ( type ? <img src="/images/logo-muted.svg" /> : <img src="/images/logo.svg" /> );
+function Logo() {
+    return ( 
+        <div className="logo">
+            <img src="/images/logo-muted.svg" />
+            <img src="/images/logo.svg" />
+        </div>
+    );
 }
 
 export default Logo;
