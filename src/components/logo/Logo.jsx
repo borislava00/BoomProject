@@ -1,9 +1,7 @@
 import React from 'react';
-import {ReactComponent as  DefaultLogo } from '../../../public/images/logo.svg';
-import {ReactComponent as MutedLogo } from  '../../../public/images/logo-muted.svg'
 
 function Logo({ type }) {
-    return ( type ? <img src={ MutedLogo } /> : <img src={ DefaultLogo } /> );
+    return ( type ? <img src="/images/logo.svg" /> : <img src="/images/logo-muted.svg" /> );
 }
 
 export default Logo;
