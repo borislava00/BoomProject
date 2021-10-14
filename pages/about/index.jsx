@@ -9,9 +9,7 @@ export default function About() {
     <Container maxWidth="sm">
       <Grid container justifyContent="center">
         <Grid item>
-          <Button variant="contained" component={Link} noLinkStyle href="/">
-            🏠 Home
-          </Button>
+          {/* here was the home button */}
         </Grid>
       </Grid>
     </Container>
