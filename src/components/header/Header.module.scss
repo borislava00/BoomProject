@@ -1,0 +1,11 @@
+@use "../../styles/colors";
+
+.wrapper {
+  padding: 10px;
+}
+
+.container {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+}
