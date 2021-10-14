@@ -14,9 +14,11 @@ function Header() {
     return (
     <div className={classNames(styles.wrapper)}>
       <Container className={classNames(styles.container)} maxWidth="xl">
+          <Grid item sx={{justifycontent: 'flex-center' , display: 'contents'}}>
             <Logo />
             <SearchBar />
-            <Grid item spacing={3} sx={{ justifycontent: 'flex-end' , display: 'contents'}}>
+          </Grid>
+            <Grid item sx={{ justifycontent: 'flex-end' , display: 'contents'}}>
                 <Button component={Link} sx={{ borderRadius: 10 , color: 'white' }} noLinkStyle href="/">Home</Button>
                 <Button sx={{ color: 'white' , borderRadius: 10 }}>Activity</Button>
                 <Button variant="contained" sx={{ borderRadius: 10 , bgcolor: '#4e24f2'}} >Explore</Button>
