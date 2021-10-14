@@ -7,6 +7,8 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import styles from "./Header.module.scss";
 import classNames from "classnames";
+import Link from "../link/Link.jsx";
+import Button from "@mui/material/Button";
 
 const Item = styled(Paper)(({ theme }) => ({
     ...theme.typography.body2,
@@ -23,14 +25,16 @@ function Header() {
             <SearchBar />
             <Box sx={{ flexGrow: 1 }}>
                 <Grid container spacing={3}>
-                    <Grid item xs>
-                    <Item>xs</Item>
+                    <Grid item xs={4}>
+                    <Button component={Link} sx={{ color: 'white' }} noLinkStyle href="/">
+                        Home
+                    </Button>
                     </Grid>
-                    <Grid item xs={6}>
-                    <Item>xs=6</Item>
+                    <Grid item xs={4}>
+                        <Button sx={{ color: 'white' }}>Activity</Button>
                     </Grid>
-                    <Grid item xs>
-                    <Item>xs</Item>
+                    <Grid item xs={4}>
+                        <Button variant="contained" sx={{ borderRadius: 10 , bgcolor: '#4e24f2'}} >Explore</Button>
                     </Grid>
                 </Grid>
             </Box>
