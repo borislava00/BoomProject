@@ -13,7 +13,6 @@ function Header() {
       <Container className={classNames(styles.container)} maxWidth="xl">
             <Logo />
             <SearchBar />
-            <Grid container sx={{ justifycontent: 'flex-end' , display: 'contents'}}>
                 <Grid item>
                     <Button component={Link} sx={{ borderRadius: 10 , color: 'white' }} noLinkStyle href="/">Home</Button>
                 </Grid>
@@ -23,7 +22,6 @@ function Header() {
                 <Grid>
                     <Button variant="contained" sx={{ borderRadius: 10 , bgcolor: '#4e24f2'}} >Explore</Button>
                 </Grid>
-            </Grid>
       </Container>
     </div>
     );
