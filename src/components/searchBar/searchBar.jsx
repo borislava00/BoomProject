@@ -9,7 +9,7 @@ function SearchBar() {
   return (
     <Box
       component="form"
-      sx={{ display: 'flex', alignItems: 'center', width: 400 , height: '35px' , bgcolor: 'black' , borderRadius: 10 }}
+      sx={{ display: 'flex', alignItems: 'center', width: 500 , height: '35px' , bgcolor: 'black' , borderRadius: 10 }}
     >
       <IconButton type="submit" sx={{ p: '10px' , color: 'white' }} aria-label="search">
         <SearchIcon/>

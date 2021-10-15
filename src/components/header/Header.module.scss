@@ -6,6 +6,11 @@
 
 .container {
   display: flex !important;
-  align-items: center;
-  justify-content: space-between;
+  align-items: center-end;
+  justify-content: space-evenly;
+}
+
+.searchBar {
+    padding-top: 20px;
+    padding-right: 50px;
 }
