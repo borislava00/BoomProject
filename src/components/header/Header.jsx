@@ -11,15 +11,18 @@ function Header() {
     return (
     <div className={classNames(styles.wrapper)}>
       <Container className={classNames(styles.container)} maxWidth="xl">
-            <Logo />
-            <SearchBar />
             <Grid container sx={{ justifycontent: 'flex-end' , display: 'contents'}}>
                 <Grid item>
-                    <Button component={Link} sx={{ borderRadius: 10 , color: 'white' }} noLinkStyle href="/">Home</Button>
+                    <Logo />
                 </Grid>
-                <Grid item /> 
-                <Button sx={{ color: 'white' , borderRadius: 10 }}>Activity</Button>
-                <Button variant="contained" sx={{ borderRadius: 10 , bgcolor: '#4e24f2'}} >Explore</Button>
+                <Grid item>
+                    <SearchBar />
+                </Grid>
+                <Grid item sx={{ flexdirection: 'row' }}>
+                    <Button component={Link} sx={{ borderRadius: 10 , color: 'white' }} noLinkStyle href="/">Home</Button>
+                    <Button sx={{ color: 'white' , borderRadius: 10 }}>Activity</Button>
+                    <Button variant="contained" sx={{ borderRadius: 10 , bgcolor: '#4e24f2'}} >Explore</Button>
+                </Grid>
             </Grid>
       </Container>
     </div>
