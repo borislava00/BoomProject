@@ -11,7 +11,7 @@ export default function About() {
       <Grid container justifyContent="center">
         <Grid item>
           <Header />
-          <AvatarComponent size={'90px'} url={'/images/avatar.png'} />
+          <AvatarComponent url={'/images/avatar.png'} />
         </Grid>
       </Grid>
     </Container>
