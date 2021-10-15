@@ -17,9 +17,7 @@ function Header() {
                 <Grid item>
                     <Button component={Link} sx={{ borderRadius: 10 , color: 'white' }} noLinkStyle href="/">Home</Button>
                 </Grid>
-                <Grid item>
                     <Button sx={{ color: 'white' , borderRadius: 10 }}>Activity</Button>
-                </Grid>
                     <Button variant="contained" sx={{ borderRadius: 10 , bgcolor: '#4e24f2'}} >Explore</Button>
             </Grid>
       </Container>
