@@ -8,5 +8,12 @@
   }
 
 .image {
+    position:relative;
     border-radius: 50%;
+}
+
+.badge {
+    position: absolute;
+    padding-left: 275px;
+    padding-top: 300px;
 }
