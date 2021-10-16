@@ -2,7 +2,7 @@ import { Badge , Container } from '@mui/material';
 import classNames from "classnames";
 import styles from "./Avatar.module.scss";   
 
-function AvatarComponent({ size = 300 , url , verified = false }) {
+function AvatarComponent({ size = 90 , url , verified = false }) {
     return (
         <div className={classNames(styles.wrapper)}>
             <Container className={classNames(styles.container)} sx={{ width: size , height : size}}>
