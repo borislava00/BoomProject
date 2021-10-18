@@ -8,7 +8,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import Box from "@mui/material/Box"
 import classNames from "classnames";
 import styles from "./Card.module.scss"; 
-import Avatar from '../avatar/Avatar';
+import User from "../user/User"
 import millify from "millify";
 import { useState, useEffect } from "react";
 
@@ -36,7 +36,7 @@ function CardComponent( props ) {
         <Card className={classNames(styles.card)}>
             <CardHeader
                  avatar={
-                    <Avatar url={props.user.avatarUrl}  />
+                    <User name='terika77' info='134 items' avatar={props.user.avatarUrl} verified={true} />
                 }
             />    
              <CardMedia className={classNames(styles.media)}
