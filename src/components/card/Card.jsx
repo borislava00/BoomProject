@@ -12,7 +12,7 @@ import User from "../user/User"
 import millify from "millify";
 import { useState, useEffect } from "react";
 
-function CardComponent( props ) {
+function CardComponent({ name=[] , likes=Number , mediaUrl='' , price='' , currency='' }) {
 
     const [color, setColor] = useState('outlined');
     
@@ -36,22 +36,22 @@ function CardComponent( props ) {
         <Card className={classNames(styles.card)}>
             <CardHeader
                  avatar={
-                    <User name='terika77' info='134 items' avatar={props.user.avatarUrl} verified={true} />
+                    <User name='terika77' info='134 items' avatar={mediaUrl} verified={true} />
                 }
             />    
              <CardMedia className={classNames(styles.media)}
                 component="img"
-                image={props.mediaUrl}
+                image={mediaUrl}
             />
             <CardContent className={classNames(styles.content)}>
                 <Box>
-                    <div className={classNames(styles.title)}>{ props.name }</div>
-                    <div className={classNames(styles.price)}>{ props.price + ' ' + props.currency }</div>
+                    <div className={classNames(styles.title)}>{ name }</div>
+                    <div className={classNames(styles.price)}>{ price + ' ' + currency }</div>
                 </Box>
                 <Stack className={classNames(styles.likes)} direction="row" spacing={1}>
                     <Chip 
                         icon={<FavoriteIcon />}
-                        label={ millify(props.likes) }
+                        label={ millify(likes) }
                         onClick={handleLikeButton}
                         variant={color}
                         color='success'

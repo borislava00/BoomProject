@@ -23,7 +23,8 @@ export default function About() {
       <Grid container justifyContent="center">
         <Grid item>
           <Header/>
-          <CardComponent {...cardProps} />
+          {/*<CardComponent {...cardProps} />*/}
+          <CardComponent name='Clock' likes={1100} mediaUrl='images/nft.jpg' price='~12.2' currency='ETH' />
         </Grid>
       </Grid>
     </Container>
