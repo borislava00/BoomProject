@@ -11,8 +11,9 @@ import styles from "./Card.module.scss";
 import User from "../user/User"
 import millify from "millify";
 import { useState, useEffect } from "react";
+import Avatar from "../avatar/Avatar"
 
-function CardComponent( props ) {
+function CardComponent({ name=[] , likes=0 , mediaUrl='' , price='' , currency='' }) {
 
     const [color, setColor] = useState('outlined');
     
@@ -34,24 +35,20 @@ function CardComponent( props ) {
 
     return (
         <Card className={classNames(styles.card)}>
-            <CardHeader
-                 avatar={
-                    <User name='terika77' info='134 items' avatar={props.user.avatarUrl} verified={props.user.verified} />
-                }
-            />    
+             <Avatar url={mediaUrl} />   
              <CardMedia className={classNames(styles.media)}
                 component="img"
-                image={props.mediaUrl}
+                image={mediaUrl}
             />
             <CardContent className={classNames(styles.content)}>
                 <Box>
-                    <div className={classNames(styles.title)}>{ props.name }</div>
-                    <div className={classNames(styles.price)}>{ props.price + ' ' + props.currency }</div>
+                    <div className={classNames(styles.title)}>{ name }</div>
+                    <div className={classNames(styles.price)}>{ price + ' ' + currency }</div>
                 </Box>
                 <Stack className={classNames(styles.likes)} direction="row" spacing={1}>
                     <Chip 
                         icon={<FavoriteIcon />}
-                        label={ millify(props.likes) }
+                        label={ millify(likes) }
                         onClick={handleLikeButton}
                         variant={color}
                         color='success'
