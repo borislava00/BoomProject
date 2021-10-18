@@ -9,10 +9,11 @@ import Box from "@mui/material/Box"
 import classNames from "classnames";
 import styles from "./Card.module.scss"; 
 import User from "../user/User"
+import Avatar from "../avatar/Avatar"
 import millify from "millify";
 import { useState, useEffect } from "react";
 
-function CardComponent({ name=[] , likes=Number , mediaUrl='' , price='' , currency='' }) {
+function CardComponent({ name=[] , likes=0 , mediaUrl='' , price='' , currency='' }) {
 
     const [color, setColor] = useState('outlined');
     
@@ -36,7 +37,8 @@ function CardComponent({ name=[] , likes=Number , mediaUrl='' , price='' , curre
         <Card className={classNames(styles.card)}>
             <CardHeader
                  avatar={
-                    <User name='terika77' info='134 items' avatar={mediaUrl} verified={true} />
+                     <Avatar url={mediaUrl} />
+                    //<User name='terika77' info='134 items' avatar={mediaUrl} verified={true} />
                 }
             />    
              <CardMedia className={classNames(styles.media)}
