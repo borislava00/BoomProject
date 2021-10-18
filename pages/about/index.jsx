@@ -23,7 +23,7 @@ export default function About() {
       <Grid container justifyContent="center">
         <Grid item>
           <Header/>
-          <User name='terika77' info='134 items' avatar='images/avatar.png' verified={true} />
+          <User name='terika77' info='134 items' avatar='images/avatar.png' verified={false} />
           {/*<CardComponent {...cardProps} />*/}
         </Grid>
       </Grid>
