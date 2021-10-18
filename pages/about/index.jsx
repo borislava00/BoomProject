@@ -3,6 +3,7 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Header from "../../src/components/header/Header";
 import CardComponent from "../../src/components/card/Card"
+import User from "../../src/components/user/User";
 
 const cardProps = {
   name : 'Clock',
@@ -22,7 +23,8 @@ export default function About() {
       <Grid container justifyContent="center">
         <Grid item>
           <Header/>
-          <CardComponent {...cardProps} />
+          <User name='terika77' info='134 items' avatar='images/avatar.png' verified={true} />
+          {/*<CardComponent {...cardProps} />*/}
         </Grid>
       </Grid>
     </Container>
