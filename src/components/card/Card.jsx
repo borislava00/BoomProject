@@ -9,11 +9,10 @@ import Box from "@mui/material/Box"
 import classNames from "classnames";
 import styles from "./Card.module.scss"; 
 import User from "../user/User"
-import Avatar from "../avatar/Avatar"
 import millify from "millify";
 import { useState, useEffect } from "react";
 
-function CardComponent({ name=[] , likes=0 , mediaUrl='' , price='' , currency='' }) {
+function CardComponent( props ) {
 
     const [color, setColor] = useState('outlined');
     
@@ -37,23 +36,22 @@ function CardComponent({ name=[] , likes=0 , mediaUrl='' , price='' , currency='
         <Card className={classNames(styles.card)}>
             <CardHeader
                  avatar={
-                     <Avatar url={mediaUrl} />
-                    //<User name='terika77' info='134 items' avatar={mediaUrl} verified={true} />
+                    <User name='terika77' info='134 items' avatar={props.user.avatarUrl} verified={props.user.verified} />
                 }
             />    
              <CardMedia className={classNames(styles.media)}
                 component="img"
-                image={mediaUrl}
+                image={props.mediaUrl}
             />
             <CardContent className={classNames(styles.content)}>
                 <Box>
-                    <div className={classNames(styles.title)}>{ name }</div>
-                    <div className={classNames(styles.price)}>{ price + ' ' + currency }</div>
+                    <div className={classNames(styles.title)}>{ props.name }</div>
+                    <div className={classNames(styles.price)}>{ props.price + ' ' + props.currency }</div>
                 </Box>
                 <Stack className={classNames(styles.likes)} direction="row" spacing={1}>
                     <Chip 
                         icon={<FavoriteIcon />}
-                        label={ millify(likes) }
+                        label={ millify(props.likes) }
                         onClick={handleLikeButton}
                         variant={color}
                         color='success'

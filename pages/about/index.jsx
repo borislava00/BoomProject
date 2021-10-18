@@ -3,7 +3,7 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Header from "../../src/components/header/Header";
 import CardComponent from "../../src/components/card/Card"
-import User from "../../src/components/user/User";
+import { cards } from "../../src/dataBase/cards"
 
 const cardProps = {
   name : 'Clock',
@@ -23,8 +23,9 @@ export default function About() {
       <Grid container justifyContent="center">
         <Grid item>
           <Header/>
-          {/*<CardComponent {...cardProps} />*/}
-          <CardComponent name='Clock' likes={1100} mediaUrl='images/nft.jpg' price='~12.2' currency='ETH' />
+          <Container sx={{ display: 'flex' , flexdirection : 'row'}} xs={6} maxWidth="xxl">
+            {cards.map((card) => <CardComponent {...card} /> )}
+          </Container>
         </Grid>
       </Grid>
     </Container>
