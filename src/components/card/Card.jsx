@@ -35,16 +35,11 @@ function CardComponent({ name=[] , likes=0 , mediaUrl='' , price='' , currency='
 
     return (
         <Card className={classNames(styles.card)}>
-             <Avatar url={mediaUrl} />   
-             <CardMedia className={classNames(styles.media)}
-                component="img"
-                image={mediaUrl}
-            />
-            <CardContent className={classNames(styles.content)}>
-                <Box>
-                    <div className={classNames(styles.title)}>{ name }</div>
-                    <div className={classNames(styles.price)}>{ price + ' ' + currency }</div>
-                </Box>
+            <CardContent>
+                <Avatar url={mediaUrl} />
+                <div className={classNames(styles.media)}>{mediaUrl}</div>
+                <div className={classNames(styles.title)}>{ name }</div>
+                <div className={classNames(styles.price)}>{ price + ' ' + currency }</div>
                 <Stack className={classNames(styles.likes)} direction="row" spacing={1}>
                     <Chip 
                         icon={<FavoriteIcon />}
