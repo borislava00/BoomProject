@@ -2,20 +2,7 @@ import * as React from "react";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Header from "../../src/components/header/Header";
-import CardComponent from "../../src/components/card/Card"
-import { cards } from "../../src/dataBase/cards"
-
-const cardProps = {
-  name : 'Clock',
-  likes : 1100,
-  mediaUrl : 'images/nft.jpg',
-  user : {
-    avatarUrl : 'images/avatar.png',
-    verified : true,
-  },
-  price : '~12.2',
-  currency : 'ETH',
-};
+import Trending from "../../src/components/trending/Trending";
 
 export default function About() {
   return (
@@ -23,9 +10,7 @@ export default function About() {
       <Grid container justifyContent="center">
         <Grid item>
           <Header/>
-          <Container sx={{ display: 'flex' , flexdirection : 'row'}} xs={6} maxWidth="xxl">
-            {cards.map((card) => <CardComponent {...card} /> )}
-          </Container>
+          <Trending />
         </Grid>
       </Grid>
     </Container>

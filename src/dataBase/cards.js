@@ -7,7 +7,7 @@ export const cards = [
           avatarUrl : 'images/avatar.png',
           verified : true,
         },
-        price : '1',
+        price : '~1',
         currency : 'ETH',
     },
     {
@@ -18,7 +18,7 @@ export const cards = [
             avatarUrl : 'images/avatar.png',
             verified : true,
         },
-        price : '2.3',
+        price : '~2.3',
         currency : 'ETH',
     },
     {
