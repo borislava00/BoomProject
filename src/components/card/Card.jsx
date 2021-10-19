@@ -100,9 +100,10 @@ function CardComponent({ name=[] , likes=0 , mediaUrl='' , price='' , currency='
     }
 
     return (
-        <Card className={classNames(styles.card)}>
-            <Avatar url={mediaUrl} /> 
-            <img className={classNames(styles.media)} src={mediaUrl}/>
+        <div className={classNames(styles.wrapper)}>
+            <Card className={classNames(styles.card)}>
+                <Avatar url={mediaUrl} /> 
+                <img className={classNames(styles.media)} src={mediaUrl}/>
                 <div className={classNames(styles.title)}>{ name }</div>
                 <div className={classNames(styles.price)}>{ price + ' ' + currency }</div>
                 <Stack className={classNames(styles.likes)} direction="row" spacing={1}>
@@ -114,7 +115,8 @@ function CardComponent({ name=[] , likes=0 , mediaUrl='' , price='' , currency='
                         color='success'
                         />
                 </Stack>
-        </Card>
+            </Card>
+        </div>
     );
 }
 
