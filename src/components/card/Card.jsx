@@ -1,4 +1,4 @@
-{/*import Card from '@mui/material/Card';
+import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
@@ -8,7 +8,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import Box from "@mui/material/Box"
 import classNames from "classnames";
 import styles from "./Card.module.scss"; 
-import User from "../user/User"
+import Avatar from "../avatar/Avatar"
 import millify from "millify";
 import { useState, useEffect } from "react";
 
@@ -36,7 +36,7 @@ function CardComponent( props ) {
         <Card className={classNames(styles.card)}>
             <CardHeader
                 avatar={
-                    <User name='terika77' info='134 items' avatar={props.user.avatarUrl} verified={props.user.verified} />
+                    <Avatar url={props.user.avatarUrl} verified={props.user.verified} />
                 }
             />    
             <CardMedia className={classNames(styles.media)}
@@ -59,64 +59,6 @@ function CardComponent( props ) {
                     </Stack>
                 </CardContent>
         </Card>
-    );
-}
-
-export default CardComponent;*/}
-
-
-import Card from '@mui/material/Card';
-import CardHeader from '@mui/material/CardHeader';
-import CardMedia from '@mui/material/CardMedia';
-import CardContent from '@mui/material/CardContent';
-import Chip from "@mui/material/Chip";
-import Stack from '@mui/material/Stack';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import Box from "@mui/material/Box"
-import classNames from "classnames";
-import styles from "./Card.module.scss"; 
-import Avatar from "../avatar/Avatar"
-import millify from "millify";
-import { useState, useEffect } from "react";
-
-function CardComponent({ name=[] , likes=0 , mediaUrl='' , price='' , currency='' }) {
-
-    const [color, setColor] = useState('outlined');
-    
-    useEffect(() => {
-        if(localStorage.getItem('liked') === 'true' ) {
-            setColor('filled');
-        }
-    }, []);
-   
-    const handleLikeButton = () => {
-        if(color == 'filled') {
-            setColor('outlined');
-            localStorage.setItem('liked', false);
-        } else {
-            setColor('filled');
-            localStorage.setItem('liked', true);
-        }
-    }
-
-    return (
-        <div className={classNames(styles.wrapper)}>
-            <Card className={classNames(styles.card)}>
-                <Avatar url={mediaUrl} /> 
-                <img className={classNames(styles.media)} src={mediaUrl}/>
-                <div className={classNames(styles.title)}>{ name }</div>
-                <div className={classNames(styles.price)}>{ price + ' ' + currency }</div>
-                <Stack className={classNames(styles.likes)} direction="row" spacing={1}>
-                    <Chip 
-                        icon={<FavoriteIcon />}
-                        label={ millify(likes) }
-                        onClick={handleLikeButton}
-                        variant={color}
-                        color='success'
-                        />
-                </Stack>
-            </Card>
-        </div>
     );
 }
 
