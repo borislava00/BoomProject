@@ -1,4 +1,4 @@
-import Card from '@mui/material/Card';
+import MuiCard from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
@@ -12,7 +12,7 @@ import Avatar from "../avatar/Avatar"
 import millify from "millify";
 import { useState, useEffect } from "react";
 
-function CardComponent( props ) {
+function Card( { name=[] , likes=0 , mediaUrl='' , price='' , currency='' } ) {
 
     const [color, setColor] = useState('outlined');
     
@@ -33,33 +33,33 @@ function CardComponent( props ) {
     }
 
     return (
-        <Card className={classNames(styles.card)}>
+        <MuiCard className={classNames(styles.card)}>
             <CardHeader
                 avatar={
-                    <Avatar url={props.user.avatarUrl} verified={props.user.verified} />
+                    <Avatar url={mediaUrl} verified={true} />
                 }
             />    
             <CardMedia className={classNames(styles.media)}
                 component="img"
-                image={props.mediaUrl}
+                image={mediaUrl}
             />
             <CardContent className={classNames(styles.content)}>
                 <Box>
-                    <div className={classNames(styles.title)}>{ props.name }</div>
-                    <div className={classNames(styles.price)}>{ props.price + ' ' + props.currency }</div>
+                    <div className={classNames(styles.title)}>{ name }</div>
+                    <div className={classNames(styles.price)}>{ price + ' ' + currency }</div>
                 </Box>
                 <Stack className={classNames(styles.likes)} direction="row" spacing={1}>
                     <Chip 
                         icon={<FavoriteIcon />}
-                        label={ millify(props.likes) }
+                        label={ millify(likes) }
                         onClick={handleLikeButton}
                         variant={color}
                         color='success'
                         />
                     </Stack>
                 </CardContent>
-        </Card>
+        </MuiCard>
     );
 }
 
-export default CardComponent;
+export default Card;
