@@ -12,7 +12,7 @@ import Avatar from "../avatar/Avatar"
 import millify from "millify";
 import { useState, useEffect } from "react";
 
-function Card( { name=[] , likes=0 , mediaUrl='' , price='' , currency='' , verified , avatarUrl='' } ) {
+function Card( { name = "" , likes = 0 , user = {} , mediaUrl = "" , price = 0 , currency = "" } ) {
 
     const [color, setColor] = useState('outlined');
     
@@ -36,7 +36,7 @@ function Card( { name=[] , likes=0 , mediaUrl='' , price='' , currency='' , veri
         <MuiCard className={classNames(styles.card)}>
             <CardHeader
                 avatar={
-                    <Avatar url={avatarUrl} verified={verified} />
+                    <Avatar url={user.avatarUrl} verified={user.verified} />
                 }
             />    
             <CardMedia className={classNames(styles.media)}
@@ -46,10 +46,10 @@ function Card( { name=[] , likes=0 , mediaUrl='' , price='' , currency='' , veri
             <CardContent className={classNames(styles.content)}>
                 <Box>
                     <div className={classNames(styles.title)}>{ name }</div>
-                    <div className={classNames(styles.price)}>{ price + ' ' + currency }</div>
+                    <div className={classNames(styles.price)}>{price + " " + currency}</div>
                 </Box>
-                <Stack className={classNames(styles.likes)} direction="row" spacing={1}>
-                    <Chip 
+                <Stack direction="row" spacing={1}>
+                    <Chip className={classNames(styles.likes)}
                         icon={<FavoriteIcon />}
                         label={ millify(likes) }
                         onClick={handleLikeButton}
