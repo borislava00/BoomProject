@@ -6,6 +6,7 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import { cards } from "../../dataBase/cards";
 import { useState } from "react";
+import './Trending.module.scss';
 
 function Trending({ cards = [] }) {
     const [time, setTime] = useState('');
@@ -15,11 +16,11 @@ function Trending({ cards = [] }) {
     }
 
     return (
-        <Box className="wrapper" >
+        <Container className="container" >
             <Box className="heading" >
                 <div className="title">Trending</div>
                 <FormControl sx={{ m: 1, minWidth: 200 }}>
-                    <Select
+                    <Select className="select"
                     value={time}
                     onChange={handleChange}
                     displayEmpty
@@ -37,7 +38,7 @@ function Trending({ cards = [] }) {
             <Container sx={{ display: 'flex' , flexDirection : 'row' , justifyContent: 'space-between'}} xs={6} maxWidth="xxl">
             {cards.map((card,index) => <Card key={index} {...card} /> )}
             </Container>
-        </Box>
+        </Container>
     );
 }
 
