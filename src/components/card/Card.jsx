@@ -12,7 +12,7 @@ import Avatar from "../avatar/Avatar"
 import millify from "millify";
 import { useState, useEffect } from "react";
 
-function Card( { name=[] , likes=0 , mediaUrl='' , price='' , currency='' } ) {
+function Card( { name=[] , likes=0 , mediaUrl='' , price='' , currency='' , verified , avatarUrl='' } ) {
 
     const [color, setColor] = useState('outlined');
     
@@ -36,7 +36,7 @@ function Card( { name=[] , likes=0 , mediaUrl='' , price='' , currency='' } ) {
         <MuiCard className={classNames(styles.card)}>
             <CardHeader
                 avatar={
-                    <Avatar url={mediaUrl} verified={true} />
+                    <Avatar url={avatarUrl} verified={verified} />
                 }
             />    
             <CardMedia className={classNames(styles.media)}

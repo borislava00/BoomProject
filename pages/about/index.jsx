@@ -11,9 +11,10 @@ export default function About() {
       <Grid container justifyContent="center">
         <Grid item>
           <Header/>
-          <Card name='Clock' likes={1100} mediaUrl='images/avatar.png' price='~12.2' currency='ETH' />
+          <Card name='Clock' likes={1100} mediaUrl='images/nft.jpg' price='~12.2' currency='ETH' verified={true} avatarUrl='images/avatar.png'/>
         </Grid>
       </Grid>
     </Container>
   );
 }
+ 
