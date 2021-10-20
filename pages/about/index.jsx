@@ -3,6 +3,7 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Header from "../../src/components/header/Header";
 import Trending from "../../src/components/trending/Trending";
+import Card from "../../src/components/card/Card"
 
 export default function About() {
   return (
@@ -10,7 +11,7 @@ export default function About() {
       <Grid container justifyContent="center">
         <Grid item>
           <Header/>
-          <Trending />
+          <Card name='Clock' likes={1100} mediaUrl='images/avatar.png' price='~12.2' currency='ETH' />
         </Grid>
       </Grid>
     </Container>

@@ -1,4 +1,4 @@
-import CardComponent from "../card/Card";
+import Card from "../card/Card";
 import Box from "@mui/material/Box"
 import classNames from "classnames";
 import styles from "./Trending.module.scss"; 
@@ -36,7 +36,7 @@ function Trending() {
                 </FormControl>
             </Box>
             <Container sx={{ display: 'flex' , flexDirection : 'row' , justifyContent: 'space-between'}} xs={6} maxWidth="xxl">
-            {cards.map((card) => <CardComponent {...card} /> )}
+            {cards.map((card) => <Card {...card} /> )}
             </Container>
         </Box>
     );
