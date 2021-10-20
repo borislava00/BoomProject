@@ -1,7 +1,5 @@
 import Card from "../card/Card";
 import Box from "@mui/material/Box"
-import classNames from "classnames";
-import styles from "./Trending.module.scss"; 
 import Container from "@mui/material/Container";
 import Select from "@mui/material/Select"
 import MenuItem from '@mui/material/MenuItem';
@@ -9,17 +7,17 @@ import FormControl from '@mui/material/FormControl';
 import { cards } from "../../dataBase/cards";
 import { useState } from "react";
 
-function Trending() {
+function Trending({ cards = [] }) {
     const [time, setTime] = useState('');
 
     const handleChange = (event) => {
         setTime(event.target.value);
     }
-    
+
     return (
-        <Box className={classNames(styles.wrapper)}>
-            <Box className={classNames(styles.heading)}>
-                <div className={classNames(styles.title)}>Trending</div>
+        <Box className="wrapper" >
+            <Box className="heading" >
+                <div className="title">Trending</div>
                 <FormControl sx={{ m: 1, minWidth: 200 }}>
                     <Select
                     value={time}
@@ -37,7 +35,7 @@ function Trending() {
                 </FormControl>
             </Box>
             <Container sx={{ display: 'flex' , flexDirection : 'row' , justifyContent: 'space-between'}} xs={6} maxWidth="xxl">
-            {cards.map((card) => <Card {...card} /> )}
+            {cards.map((card,index) => <Card key={index} {...card} /> )}
             </Container>
         </Box>
     );
