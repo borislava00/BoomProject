@@ -12,7 +12,7 @@ import Avatar from "../avatar/Avatar"
 import millify from "millify";
 import { useState, useEffect } from "react";
 
-function Card( { name = "" , likes = 0 , user = {} , mediaUrl = "" , price = 0 , currency = "" } ) {
+function Card({ name = "" , likes = 0 , user = {} , mediaUrl = "" , price = 0 , currency = "" }) {
 
     const [color, setColor] = useState('outlined');
     

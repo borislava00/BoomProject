@@ -14,7 +14,8 @@ function Trending() {
 
     const handleChange = (event) => {
         setTime(event.target.value);
-  };
+    }
+    
     return (
         <Box className={classNames(styles.wrapper)}>
             <Box className={classNames(styles.heading)}>
