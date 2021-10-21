@@ -1,10 +1,5 @@
+import { Box , Container , Grid , Select , MenuItem , FormControl } from "@mui/material"
 import Card from "../card/Card";
-import Box from "@mui/material/Box"
-import Container from "@mui/material/Container";
-import Select from "@mui/material/Select"
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import { cards } from "../../dataBase/cards";
 import { useState } from "react";
 import './Trending.module.scss';
 
@@ -16,29 +11,35 @@ function Trending({ cards = [] }) {
     }
 
     return (
-        <Container className="container" >
-            <Box className="heading" >
-                <div className="title">Trending</div>
-                <FormControl sx={{ m: 1, minWidth: 200 }}>
-                    <Select className="select"
-                    value={time}
-                    onChange={handleChange}
-                    displayEmpty
-                    inputProps={{ 'aria-label': 'Without label' }}
-                    >
-                    <MenuItem value="">
-                        <em>This week</em>
-                    </MenuItem>
-                    <MenuItem value={10}>Today</MenuItem>
-                    <MenuItem value={20}>This month</MenuItem>
-                    <MenuItem value={30}>This year</MenuItem>
-                    </Select>
-                </FormControl>
-            </Box>
-            <Container sx={{ display: 'flex' , flexDirection : 'row' , justifyContent: 'space-between'}} xs={6} maxWidth="xxl">
-            {cards.map((card,index) => <Card key={index} {...card} /> )}
+        <div className='wrapper'>
+            <Container className='container' maxWidth="xl">
+                <Box className="heading" >
+                    <div className="title">Trending</div>
+                    <FormControl sx={{ m: 1, minWidth: 200 }}>
+                        <Select className="select"
+                        value={time}
+                        onChange={handleChange}
+                        displayEmpty
+                        inputProps={{ 'aria-label': 'Without label' }}
+                        >
+                        <MenuItem value="">
+                            <em>This week</em>
+                        </MenuItem>
+                        <MenuItem value={10}>Today</MenuItem>
+                        <MenuItem value={20}>This month</MenuItem>
+                        <MenuItem value={30}>This year</MenuItem>
+                        </Select>
+                    </FormControl>
+                </Box>
+                <Grid container sx={{ display: 'flex' , flexDirection : 'row' , justifyContent: 'space-between'}}>
+                    {cards.map((card,index) =>
+                        <Grid item key={index}>
+                            <Card key={index} {...card} />
+                        </Grid>
+                    )}
+                </Grid>
             </Container>
-        </Container>
+        </div>
     );
 }
 

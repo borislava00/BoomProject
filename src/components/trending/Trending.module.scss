@@ -1,12 +1,11 @@
-.wrapper {
-    display: contents;
-}
-
 .heading {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
-
+.title {
+    font-weight: bold;
+    font-size: 4rem;
+}
 .title {
     font-weight: bold;
     font-size: 4rem;
