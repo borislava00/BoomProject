@@ -6,7 +6,6 @@ import Chip from "@mui/material/Chip";
 import Stack from '@mui/material/Stack';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import Box from "@mui/material/Box"
-import classNames from "classnames";
 import styles from "./Card.module.scss"; 
 import Avatar from "../avatar/Avatar"
 import millify from "millify";
@@ -33,23 +32,23 @@ function Card({ name = "" , likes = 0 , user = {} , mediaUrl = "" , price = 0 , 
     }
 
     return (
-        <MuiCard className={classNames(styles.card)}>
+        <MuiCard className={styles.card}>
             <CardHeader
                 avatar={
                     <Avatar url={user.avatarUrl} verified={user.verified} />
                 }
             />    
-            <CardMedia className={classNames(styles.media)}
+            <CardMedia className={styles.media}
                 component="img"
                 image={mediaUrl}
             />
-            <CardContent className={classNames(styles.content)}>
+            <CardContent className={styles.content}>
                 <Box>
-                    <div className={classNames(styles.title)}>{ name }</div>
-                    <div className={classNames(styles.price)}>{price + " " + currency}</div>
+                    <div className={styles.title}>{ name }</div>
+                    <div className={styles.price}>{price + " " + currency}</div>
                 </Box>
                 <Stack direction="row" spacing={1}>
-                    <Chip className={classNames(styles.likes)}
+                    <Chip className={styles.likes}
                         icon={<FavoriteIcon />}
                         label={ millify(likes) }
                         onClick={handleLikeButton}

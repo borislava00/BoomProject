@@ -1,7 +1,7 @@
 import { Box , Container , Grid , Select , MenuItem , FormControl } from "@mui/material"
 import Card from "../card/Card";
 import { useState } from "react";
-import './Trending.module.scss';
+import styles from './Trending.module.scss';
 
 function Trending({ cards = [] }) {
     const [time, setTime] = useState('');
@@ -11,23 +11,23 @@ function Trending({ cards = [] }) {
     }
 
     return (
-        <div className='wrapper'>
-            <Container className='container' maxWidth="xl">
-                <Box className="heading" >
-                    <div className="title">Trending</div>
+        <div className={styles.wrapper}>
+            <Container className={styles.container} maxWidth="xl">
+                <Box className={styles.heading} >
+                    <div className={styles.title} >Trending</div>
                     <FormControl sx={{ m: 1, minWidth: 200 }}>
-                        <Select className="select"
+                        <Select className={styles.select}
                         value={time}
                         onChange={handleChange}
                         displayEmpty
                         inputProps={{ 'aria-label': 'Without label' }}
                         >
-                        <MenuItem value="">
-                            <em>This week</em>
-                        </MenuItem>
-                        <MenuItem value={10}>Today</MenuItem>
-                        <MenuItem value={20}>This month</MenuItem>
-                        <MenuItem value={30}>This year</MenuItem>
+                            <MenuItem value="">
+                                <em>This week</em>
+                            </MenuItem>
+                            <MenuItem value={10}>Today</MenuItem>
+                            <MenuItem value={20}>This month</MenuItem>
+                            <MenuItem value={30}>This year</MenuItem>
                         </Select>
                     </FormControl>
                 </Box>

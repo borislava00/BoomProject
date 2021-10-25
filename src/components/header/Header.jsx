@@ -3,19 +3,18 @@ import Logo from "../logo/Logo";
 import SearchBar from "../searchBar/searchBar";
 import Grid from '@mui/material/Grid';
 import styles from "./Header.module.scss";
-import classNames from "classnames";
 import Link from "../link/Link.jsx";
 import Button from "@mui/material/Button";
 
 function Header() {
     return (
-    <div className={classNames(styles.wrapper)}>
-      <Container className={classNames(styles.container)} maxWidth="xl">
+    <div className={styles.wrapper}>
+      <Container className={styles.container} maxWidth="xl">
             <Grid container direction='row' columnSpacing={20} sx={{ justifycontent: 'center' , display: 'contents' }}>
                 <Grid item sx={{  display: 'contents' , justifyContent: 'flex-start'}}>
                     <Logo />
                 </Grid>
-                <Grid item className={classNames(styles.searchBar)}>
+                <Grid item className={styles.searchBar}>
                     <SearchBar />
                 </Grid>
                 <Grid item xs sx={{ display: 'flex', justifyContent: 'flex-end' }}>
