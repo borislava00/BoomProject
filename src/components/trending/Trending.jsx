@@ -29,12 +29,20 @@ function Trending({ cards = [] }) {
                         </Select>
                     </FormControl>
                 </Box>
-                <Grid container sx={{ display: 'flex' , flexDirection : 'row' , justifyContent: 'space-between'}}>
-                    {cards.map((card,index) =>
-                        <Grid item key={index}>
-                            <Card key={index} {...card} />
-                        </Grid>
-                    )}
+                <Grid container spacing={1} sx={{ display: 'flex' , flexDirection : 'row' , justifyContent: 'space-between'}}>
+                    <Grid item xs={2}>
+                        <Card key={0} {...cards[0]} />
+                    </Grid>
+                    <Grid item xs={2}>
+                        <Card key={1} {...cards[1]} />
+                    </Grid>
+                    <Grid item xs={2}>
+                        <Card key={2} {...cards[2]} />
+                    </Grid>
+                    <Grid item xs={2}>
+                        <Card key={3} {...cards[3]} />
+                    </Grid>
+                    
                 </Grid>
             </Container>
         </div>
