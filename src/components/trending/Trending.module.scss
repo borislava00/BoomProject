@@ -1,9 +1,13 @@
-.heading {
+.gridContainer {
     display: flex;
-    align-items: baseline;
     justify-content: space-between;
+    align-items: center;
 }
 .title {
     font-weight: bold;
     font-size: 4rem;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
 }
