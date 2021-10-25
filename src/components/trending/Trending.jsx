@@ -22,9 +22,7 @@ function Trending({ cards = [] }) {
                         displayEmpty
                         inputProps={{ 'aria-label': 'Without label' }}
                         >
-                            <MenuItem value="">
-                                <em>This week</em>
-                            </MenuItem>
+                            <MenuItem value="">This week</MenuItem>
                             <MenuItem value={10}>Today</MenuItem>
                             <MenuItem value={20}>This month</MenuItem>
                             <MenuItem value={30}>This year</MenuItem>
