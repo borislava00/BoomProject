@@ -13,36 +13,29 @@ function Trending({ cards = [] }) {
     return (
         <div className={styles.wrapper}>
             <Container className={styles.container} maxWidth="xl">
-                <Box className={styles.heading} >
-                    <div className={styles.title} >Trending</div>
-                    <FormControl sx={{ m: 1, minWidth: 200 }}>
-                        <Select className={styles.select}
-                        value={time}
-                        onChange={handleChange}
-                        displayEmpty
-                        inputProps={{ 'aria-label': 'Without label' }}
-                        >
-                            <MenuItem value="">This week</MenuItem>
-                            <MenuItem value={10}>Today</MenuItem>
-                            <MenuItem value={20}>This month</MenuItem>
-                            <MenuItem value={30}>This year</MenuItem>
-                        </Select>
-                    </FormControl>
-                </Box>
-                <Grid container spacing={1} sx={{ display: 'flex' , flexDirection : 'row' , justifyContent: 'space-between'}}>
-                    <Grid item xs={2}>
+                <Grid container>
+                    <Grid item className={styles.heading}  sx={{ display: 'flex' , justifycontent: 'space-between' }}>
+                        <div className={styles.title} >Trending</div>
+                        <FormControl sx={{ m: 1, minWidth: 200 }}>
+                            <Select className={styles.select}
+                            value={time}
+                            onChange={handleChange}
+                            displayEmpty
+                            inputProps={{ 'aria-label': 'Without label' }}
+                            >
+                                <MenuItem value="">This week</MenuItem>
+                                <MenuItem value={10}>Today</MenuItem>
+                                <MenuItem value={20}>This month</MenuItem>
+                                <MenuItem value={30}>This year</MenuItem>
+                            </Select>
+                        </FormControl>
+                    </Grid>
+                    <Grid item xl sx={{ display: 'flex' , justifyContent: 'space-between'}}>
                         <Card key={0} {...cards[0]} />
-                    </Grid>
-                    <Grid item xs={2}>
                         <Card key={1} {...cards[1]} />
-                    </Grid>
-                    <Grid item xs={2}>
                         <Card key={2} {...cards[2]} />
-                    </Grid>
-                    <Grid item xs={2}>
                         <Card key={3} {...cards[3]} />
                     </Grid>
-                    
                 </Grid>
             </Container>
         </div>
