@@ -1,29 +1,43 @@
+@use "../../styles/colors";
+
 .card {
     height: 600px;
     width: 350px;
     display: flex;
     flex-direction: column;
 }
-
 .media {
     border-radius: 5% ;
     margin-left: 12px;
     width : 325px !important;
     height : 400px;  
 }
-
 .content {
     display: flex;
     justify-content: space-between;
 }
-
 .title {
     font-size: 20px;
     font-weight: 1000;
 }
-
 .price {
     font-size: 20px;
     font-weight: 900;
     color: #388e3c;
+}
+.badge {
+    display: flex;
+    align-items: self-end;
+    justify-content: center;
+    border-radius: 12px;
+    background-color: colors.$success_main;
+    width: 100px !important;
+}
+.liveIcon {
+    color:black;
+}
+.live {
+    color: black;
+    font-weight: bold;
+    font-size: x-large;
 }
