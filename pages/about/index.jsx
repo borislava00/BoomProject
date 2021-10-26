@@ -4,6 +4,7 @@ import Grid from "@mui/material/Grid";
 import Header from "../../src/components/header/Header";
 import Trending from "../../src/components/trending/Trending";
 import Auctions from "../../src/components/auctions/Auctions"
+import Footer from "../../src/components/footer/Footer";
 
 export default function About() {
 
@@ -109,9 +110,10 @@ const liveCards = [
     <Container maxWidth="sm">
       <Grid container justifyContent="center">
         <Grid item>
-          <Header/>
+          <Header />
           <Trending cards={cards} />
           <Auctions cards={liveCards} />
+          <Footer />
         </Grid>
       </Grid>
     </Container>
