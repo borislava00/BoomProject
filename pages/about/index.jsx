@@ -17,6 +17,7 @@ export default function About() {
         },
         price : '~1',
         currency : 'ETH',
+        timeLeft : 50,
     },
     {
         name : 'Judie',

@@ -9,9 +9,10 @@ import Box from "@mui/material/Box"
 import styles from "./Card.module.scss"; 
 import Avatar from "../avatar/Avatar"
 import millify from "millify";
+import Countdown from 'react-countdown';
 import { useState, useEffect } from "react";
 
-function Card({ name = "" , likes = 0 , user = {} , mediaUrl = "" , price = 0 , currency = "" }) {
+function Card({ name = "" , likes = 0 , user = {} , mediaUrl = "" , price = 0 , currency = "" , timeLeft = 0 }) {
 
     const [color, setColor] = useState('outlined');
     
@@ -31,6 +32,19 @@ function Card({ name = "" , likes = 0 , user = {} , mediaUrl = "" , price = 0 , 
         }
     }
 
+    const Completionist = () => <span>You are good to go!</span>;
+
+    // Renderer callback with condition
+    const renderer = ({ hours, minutes, seconds, completed }) => {
+        if (completed) {
+            // Render a completed state
+            return <Completionist />;
+        } else {
+            // Render a countdown
+            return <span>{hours}:{minutes}:{seconds}</span>;
+        }
+    };
+
     return (
         <MuiCard className={styles.card}>
             <CardHeader
@@ -42,6 +56,9 @@ function Card({ name = "" , likes = 0 , user = {} , mediaUrl = "" , price = 0 , 
                 component="img"
                 image={mediaUrl}
             />
+            <Countdown 
+                date={timeLeft + 1000000}
+                renderer={renderer} />,
             <CardContent className={styles.content}>
                 <Box>
                     <div className={styles.title}>{ name }</div>

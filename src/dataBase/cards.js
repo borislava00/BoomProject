@@ -9,6 +9,7 @@ export const cards = [
         },
         price : '~1',
         currency : 'ETH',
+        timeLeft : 50,
     },
     {
         name : 'Judie',
