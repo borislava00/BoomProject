@@ -41,18 +41,11 @@ function Card({ name = "" , likes = 0 , user = {} , mediaUrl = "" , price = 0 , 
                     <Avatar url={user.avatarUrl} verified={user.verified} />
                 }
             />    
+            {timeLeft ? <LiveCard timeLeft={timeLeft} /> : null}
             <CardMedia className={styles.media}
                 component="img"
                 image={mediaUrl}
             />
-             <Grid container className={styles.badge}>
-                <Grid item className={styles.liveIcon}>
-                    <FiberManualRecordIcon/>
-                </Grid>
-                <Grid item className={styles.wrapperLive}>
-                    <div className={styles.live}>LIVE</div>
-                </Grid>
-            </Grid>
             <CardContent className={styles.content}>
                 <Box>
                     <div className={styles.title}>{ name }</div>
@@ -69,6 +62,22 @@ function Card({ name = "" , likes = 0 , user = {} , mediaUrl = "" , price = 0 , 
                     </Stack>
                 </CardContent>
         </MuiCard>
+    );
+}
+
+function LiveCard({ timeLeft = 0 }) {
+    return (
+        <div className={styles.liveCardWrapper}>
+            <Grid container className={styles.grid}>
+                <Grid item className={styles.badge}>
+                    <FiberManualRecordIcon style={{color: 'black'}}/>
+                    <div className={styles.live}>LIVE</div>
+                </Grid>
+                <Grid item className={styles.counter}>
+                    <Countdown className={styles.counterContent} date={Date.now() + timeLeft * 100000} />,
+                </Grid>
+            </Grid>
+        </div>
     );
 }
 

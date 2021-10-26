@@ -1,8 +1,0 @@
-@use "../../styles/colors";
-
-.badge {
-    display: flex;
-    border-radius: 50px;
-    background-color: colors.$success_main;
-    width: fit-content;
-}

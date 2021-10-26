@@ -25,19 +25,47 @@
     font-weight: 900;
     color: #388e3c;
 }
+.grid {
+    width: fit-content !important;
+}
+.liveCardWrapper {
+    display: flex;
+    width: 10%;
+    height: 10%;
+    position: absolute;
+}
+
 .badge {
     display: flex;
-    align-items: self-end;
     justify-content: center;
+    align-items: center;
+    height: max-content;
     border-radius: 12px;
     background-color: colors.$success_main;
     width: 100px !important;
-}
-.liveIcon {
-    color:black;
+    margin-top: 150px !important;
+    margin-left: 35px !important;
 }
 .live {
     color: black;
     font-weight: bold;
     font-size: x-large;
+}
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: colors.$success_main;
+    height: 50px;
+    margin-top: 250px !important;
+    width: 320px;
+    margin-left: 15px !important;
+}
+.counterContent {
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
 }
