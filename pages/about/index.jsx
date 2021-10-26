@@ -5,6 +5,7 @@ import Header from "../../src/components/header/Header";
 import Trending from "../../src/components/trending/Trending";
 import Auctions from "../../src/components/auctions/Auctions"
 import Footer from "../../src/components/footer/Footer";
+import How from "../../src/components/how/How";
 
 export default function About() {
 
@@ -106,6 +107,37 @@ const liveCards = [
   }
 ]
 
+const steps = [
+  {
+    number : 1,
+    title : 'DIGITAL CURRENCY',
+    description: 'You can get ETH, the digital currency' + 
+    ' that fuels transactions on the Ethereum ' + 
+    'blockchain, from a digital currency exchange.'
+  },
+  {
+    number : 2,
+    title : 'CRYPTO WALLET',
+    description: 'A crypto wallet, such as MetaMask, ' + 
+    'stores your ETH and processes transactions ' + 
+    'on the Ethereum blockchain.'
+  },
+  {
+    number : 3,
+    title : 'BUM.',
+    description: 'Let\'s connect yout wallet to BUM, edit ' + 
+    'your profile, and begin interacting in ' + 
+    'tha space.'
+  },
+]
+
+const how = {
+  title : 'HOW IT WORKS',
+  description : 'blablabla',
+  items : steps,
+  link: 'href',
+}
+
   return (
     <Container maxWidth="sm">
       <Grid container justifyContent="center">
@@ -113,6 +145,7 @@ const liveCards = [
           <Header />
           <Trending cards={cards} />
           <Auctions cards={liveCards} />
+          <How title={how.title} description={how.description} items={how.items} link={how.items} />
           <Footer />
         </Grid>
       </Grid>

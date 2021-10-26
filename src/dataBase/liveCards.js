@@ -1,4 +1,4 @@
-export const cards = [
+export const liveCards = [
     {
         name : 'Ivy',
         likes : 1100,
@@ -9,6 +9,7 @@ export const cards = [
         },
         price : '~1',
         currency : 'ETH',
+        timeLeft : 50,
     },
     {
         name : 'Judie',
@@ -20,6 +21,7 @@ export const cards = [
         },
         price : '~2.3',
         currency : 'ETH',
+        timeLeft : 30,
     },
     {
         name : 'Juniper',
@@ -31,6 +33,7 @@ export const cards = [
         },
         price : '5',
         currency : 'ETH',
+        timeLeft : 60,
     },
     {
         name : 'Maple',
@@ -42,5 +45,6 @@ export const cards = [
         },
         price : '10',
         currency : 'ETH',
+        timeLeft : 20,
     }
 ]

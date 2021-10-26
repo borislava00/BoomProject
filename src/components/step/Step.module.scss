@@ -1,0 +1,36 @@
+@use "../../styles/colors.scss";
+
+.container {
+    border-radius: 25px;
+}
+.numberWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    font-size: 7rem;
+    font-weight: bolder;
+    background-color: colors.$background_paper;    
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    opacity: 90%;
+}
+.content {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    padding-left: 30px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: colors.$background_default;
+}
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.description {
+    font-size: 1.2rem;
+}

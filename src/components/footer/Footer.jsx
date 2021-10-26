@@ -7,7 +7,7 @@ import Button from "@mui/material/Button";
 function Footer() {
     return(
         <div className={styles.wrapper}>
-            <Container className={styles.container} maxWidth="xl">
+            <Container className={styles.container} >
                 <Grid container className={styles.logoWrapper} direction='row' columnSpacing={20}>
                     <Grid item sx={{  display: 'contents' , justifyContent: 'flex-start'}}>
                         <Logo type='muted'/>

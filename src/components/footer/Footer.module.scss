@@ -1,7 +1,12 @@
 @use "../../styles/colors";
 
 .wrapper {
-    padding: 30px;
+    padding: 10px;
+}
+.container {
+    display: flex;
+    align-items: center-end;
+    justify-content: space-evenly;
 }
 .logoWrapper {
     justify-content: 'center';
