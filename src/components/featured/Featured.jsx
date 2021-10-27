@@ -13,13 +13,12 @@ function Featured({ items = [] }) {
                     cols={4}
                     rowHeight={121}
                     >
-                    {items.map((item) => (
-                        <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
+                    {items.map((item , index ) => (
+                        <ImageListItem key={index} cols={item.cols || 1} rows={item.rows || 1}>
                             <img
                                 {...srcset(item.img, 121, item.rows, item.cols)}
                                 alt={item.title}
-                                loading="lazy"
-                                src={item.href}
+                                src={item.img}
                                 onClick={() => router.push(item.href)}
                             />
                         </ImageListItem>
