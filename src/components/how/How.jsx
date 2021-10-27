@@ -12,13 +12,19 @@ function How({ description = "" , title = "" , items = [] , link = "" }) {
                     <div className={styles.description}>{description}</div>
                     <Button className={styles.button} href={link}>LEARN MORE</Button>
                 </Grid>
-                <Grid item className={styles.items}>
-                    {items.map(( item , index ) =>
-                        <Step key={index} number={item.number} title={item.title} description={item.description} />
-                    )}
-                </Grid>
+                <HowStep items={items} />
             </Grid>
         </div>
+    );
+}
+
+function HowStep({ items = [] }) {
+    return(
+        <Grid item className={styles.items}>
+            {items.map(( item , index ) =>
+                <Step key={index} number={item.number} title={item.title} description={item.description} />
+            )}
+        </Grid> 
     );
 }
 
