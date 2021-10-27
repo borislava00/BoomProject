@@ -147,7 +147,7 @@ const itemData = [
     title: 'Breakfast',
     rows: 2,
     cols: 3,
-    href: "/about"
+    href: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e'
   },
   {
     img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
