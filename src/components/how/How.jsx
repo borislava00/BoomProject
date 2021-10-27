@@ -12,18 +12,18 @@ function How({ description = "" , title = "" , items = [] , link = "" }) {
                     <div className={styles.description}>{description}</div>
                     <Button className={styles.button} href={link}>LEARN MORE</Button>
                 </Grid>
-                <HowStep items={items} />
+                <Grid item className={styles.items}>
+                    {items.map( (item , index ) => <HowStep key={index} item={item} />)}
+                </Grid>
             </Grid>
         </div>
     );
 }
 
-function HowStep({ items = [] }) {
+function HowStep({ item = [] }) {
     return(
-        <Grid item className={styles.items}>
-            {items.map(( item , index ) =>
-                <Step key={index} number={item.number} title={item.title} description={item.description} />
-            )}
+        <Grid item className={styles.item}>
+            <Step number={item.number} title={item.title} description={item.description} />
         </Grid> 
     );
 }
