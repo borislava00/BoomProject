@@ -18,11 +18,14 @@ function Featured({ items = [] }) {
                             <img
                                 {...srcset(item.img, 121, item.rows, item.cols)}
                                 alt={item.title}
-                                src={item.img}
+                                src={item.href}
                                 onClick={() => router.push(item.href)}
                             />
                         </ImageListItem>
                     ))} 
+                        <ImageListItem >
+                            <img src='https://images.unsplash.com/photo-1551963831-b3b1ca40c98e'></img>
+                        </ImageListItem>
                 </ImageList>
             </Container>
         </div>
