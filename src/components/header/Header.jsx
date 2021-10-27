@@ -6,7 +6,7 @@ import styles from "./Header.module.scss";
 import Link from "../link/Link.jsx";
 import Button from "@mui/material/Button";
 
-function Header() {
+export default function Header() {
     return (
     <div className={styles.wrapper}>
       <Container className={styles.container} maxWidth="xl">
@@ -27,5 +27,3 @@ function Header() {
     </div>
     );
 }
-
-export default Header;

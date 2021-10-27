@@ -3,7 +3,7 @@ import Card from "../card/Card";
 import { useState } from "react";
 import styles from './Trending.module.scss';
 
-function Trending({ cards = [] }) {
+export default function Trending({ cards = [] }) {
     const [time, setTime] = useState('');
 
     const handleChange = (event) => {
@@ -41,5 +41,3 @@ function Trending({ cards = [] }) {
         </div>
     );
 }
-
-export default Trending;

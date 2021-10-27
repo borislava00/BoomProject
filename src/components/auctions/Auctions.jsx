@@ -3,7 +3,7 @@ import Card from "../card/Card";
 import { useState } from "react";
 import styles from './Auctions.module.scss';
 
-function Auctions({ cards = [] }) {
+export default function Auctions({ cards = [] }) {
     const [time, setTime] = useState('');
 
     const handleChange = (event) => {
@@ -41,5 +41,3 @@ function Auctions({ cards = [] }) {
         </div>
     );
 }
-
-export default Auctions;

@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid';
 import styles from "./Footer.module.scss";
 import Button from "@mui/material/Button";
 
-function Footer() {
+export default function Footer() {
     return(
         <div className={styles.wrapper}>
             <Container className={styles.container} >
@@ -24,5 +24,3 @@ function Footer() {
         </div>
     );
 }
-
-export default Footer;

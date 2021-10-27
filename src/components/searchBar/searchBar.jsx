@@ -4,7 +4,7 @@ import InputBase from '@mui/material/InputBase';
 import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 
-function SearchBar() {
+export default function SearchBar() {
 
   return (
     <Box
@@ -22,5 +22,3 @@ function SearchBar() {
     </Box>
   );
 }
-
-export default SearchBar;

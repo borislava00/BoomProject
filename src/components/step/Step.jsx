@@ -2,7 +2,7 @@ import { Grid } from "@mui/material";
 import styles from './Step.module.scss';
 
 
-function Step({ number = 0 , title = "" , description = "" }) {
+export default function Step({ number = 0 , title = "" , description = "" }) {
     return (
         <div className={styles.wrapper}>
             <Grid container direction='row' className={styles.container}>
@@ -17,5 +17,3 @@ function Step({ number = 0 , title = "" , description = "" }) {
         </div>
     );
 }
-
-export default Step;

@@ -14,7 +14,7 @@ import Countdown from 'react-countdown';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 import { useState, useEffect } from "react";
 
-function Card({ name = "" , likes = 0 , user = {} , mediaUrl = "" , price = 0 , currency = "" , timeLeft = 0 }) {
+export default function Card({ name = "" , likes = 0 , user = {} , mediaUrl = "" , price = 0 , currency = "" , timeLeft = 0 }) {
 
     const [color, setColor] = useState('outlined');
     
@@ -80,5 +80,3 @@ function LiveCard({ timeLeft = 0 }) {
         </div>
     );
 }
-
-export default Card;

@@ -2,7 +2,7 @@ import Avatar from '../avatar/Avatar';
 import Box from "@mui/material/Box"
 import styles from "./User.module.scss"
 
-function User({ name = '' , info = '' , avatar = '' , size = 55 , verified = false }) {
+export default function User({ name = '' , info = '' , avatar = '' , size = 55 , verified = false }) {
     return (
         <div className={styles.user}>
             <Avatar url={avatar} verified={verified} />
@@ -13,5 +13,3 @@ function User({ name = '' , info = '' , avatar = '' , size = 55 , verified = fal
         </div>
     );
 }
-
-export default User;

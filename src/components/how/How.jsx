@@ -3,7 +3,7 @@ import Step from "../step/Step";
 import styles from './How.module.scss';
 
 
-function How({ description = "" , title = "" , items = [] , link = "" }) {
+export default function How({ description = "" , title = "" , items = [] , link = "" }) {
     return (
         <div className={styles.wrapper}>
             <Grid container className={styles.container}>
@@ -27,5 +27,3 @@ function HowStep({ item = [] }) {
         </Grid> 
     );
 }
-
-export default How;
