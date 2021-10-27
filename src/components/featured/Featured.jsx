@@ -7,16 +7,14 @@ function Featured({ items = [] }) {
     return(
         <div className={styles.wrapper}>
             <Container className={styles.container}>
-                <ImageList
-                    sx={{ width: 500, height: 450 }}
-                    variant="quilted"
-                    cols={4}
-                    rowHeight={121}
+                <ImageList className={styles.list}
+                    sx={{ width: 800, height: 300 }}
+                    cols={6}
+                    rowHeight={120}
                     >
                     {items.map((item , index ) => (
-                        <ImageListItem key={index} cols={item.cols || 1} rows={item.rows || 1}>
-                            <img
-                                {...srcset(item.img, 121, item.rows, item.cols)}
+                        <ImageListItem className={styles.item} key={index} cols={item.cols || 1} rows={item.rows || 1}>
+                            <img className={styles.img}
                                 alt={item.title}
                                 src={item.href}
                                 onClick={() => router.push(item.href)}
@@ -28,15 +26,5 @@ function Featured({ items = [] }) {
         </div>
     );
 }
-
-function srcset(image, size, rows = 1, cols = 1) {
-    return {
-      src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
-      srcSet: `${image}?w=${size * cols}&h=${
-        size * rows
-      }&fit=crop&auto=format&dpr=2 2x`,
-    };
-  }
-  
 
 export default Featured;
