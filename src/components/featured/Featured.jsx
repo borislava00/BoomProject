@@ -23,10 +23,12 @@ function Featured({ items = [] }) {
                             />
                         </ImageListItem>
                     ))} */}
-                    <ImageListItem>
+                    {items ?
+                        <ImageListItem>
                         <img src='https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?w=500&h=500'
                             onClick={() => router.push('https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?w=500&h=500')} />
-                    </ImageListItem>
+                    </ImageListItem>  : null }
+            
                 </ImageList>
             </Container>
         </div>
