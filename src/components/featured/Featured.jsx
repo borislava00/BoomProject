@@ -17,9 +17,9 @@ function Featured({ items = [] }) {
                         <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
                             <img
                                 {...srcset(item.img, 121, item.rows, item.cols)}
-                                alt={item.title}
+                                alt={item.img}
                                 loading="lazy"
-                                src={item.href}
+                                src={item.img}
                                 onClick={() => router.push(item.href)}
                             />
                         </ImageListItem>
