@@ -133,7 +133,9 @@ const steps = [
 
 const how = {
   title : 'HOW IT WORKS',
-  description : 'blablabla',
+  description : 'Discover, collect, and sell extraordinary NFT\'s on the world\'s first & ' +
+  'largest NFT marketplace. There are three things you\'ll need in place ' +
+  'to open your account and start bying or selling NFT\'s on BUM.',
   items : steps,
   link: 'href',
 }
