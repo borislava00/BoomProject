@@ -1,7 +1,9 @@
 import { Container , ImageList , ImageListItem } from "@mui/material";
 import styles from "./Featured.module.scss"; 
+import { useRouter } from 'next/router'
 
 function Featured({ items = [] }) {
+    const router = useRouter();
     return(
         <div className={styles.wrapper}>
             <Container className={styles.container}>
@@ -18,6 +20,7 @@ function Featured({ items = [] }) {
                                 {...srcset(item.img, 121, item.rows, item.cols)}
                                 alt={item.title}
                                 loading="lazy"
+                                onClick={() => router.push(item.href)}
                             />
                         </a>
                         </ImageListItem>
