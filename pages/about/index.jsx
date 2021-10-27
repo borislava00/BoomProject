@@ -6,6 +6,7 @@ import Trending from "../../src/components/trending/Trending";
 import Auctions from "../../src/components/auctions/Auctions"
 import Footer from "../../src/components/footer/Footer";
 import How from "../../src/components/how/How";
+import Featured from "../../src/components/featured/Featured";
 
 export default function About() {
 
@@ -140,6 +141,48 @@ const how = {
   link: 'href',
 }
 
+const itemData = [
+  {
+    img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
+    title: 'Breakfast',
+    rows: 2,
+    cols: 3,
+    href: "/about"
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
+    title: 'Burger',
+    href: "/about"
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
+    title: 'Camera',
+    href: "/about"
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
+    title: 'Coffee',
+    href: "/about"
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
+    title: 'Hats',
+    href: "/about"
+
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
+    title: 'Honey',
+    href: "/about"
+
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
+    title: 'Basketball',
+    href: "/about"
+  }
+]
+
   return (
     <Container maxWidth="sm">
       <Grid container justifyContent="center">
@@ -148,6 +191,7 @@ const how = {
           <Trending cards={cards} />
           <Auctions cards={liveCards} />
           <How title={how.title} description={how.description} items={how.items} link={how.items} />
+          <Featured items={itemData} />
           <Footer />
         </Grid>
       </Grid>
