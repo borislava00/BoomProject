@@ -184,7 +184,7 @@ const itemData = [
   }
 ]
 
-const type = [
+const props = [
   {
     name: 'terika77',
     nftCounts: 134,
@@ -218,7 +218,7 @@ const type = [
           <Auctions cards={liveCards} />
           <How title={how.title} description={how.description} items={how.items} link={how.items} />
           <Featured items={itemData} />
-          <Collectors type={type} />
+          <Collectors props={props} />
           <Footer />
         </Grid>
       </Grid>
