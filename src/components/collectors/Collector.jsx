@@ -11,9 +11,9 @@ export default function Collector({ items = [] , type = "" }) {
     }
 
     return(
-        <div className={styles.wrapper} style={{ filter: setBrightness() }} >
+        <div className={styles.conainer} style={{ filter: setBrightness() }} >
             <Grid container className={styles.column} direction="row">
-                <Grid item className={styles.id}>
+                <Grid item className={styles.id} styles={{ }}>
                     <div className={styles.number}>{items.id}</div>
                 </Grid>
                 <Grid item className={styles.user}>

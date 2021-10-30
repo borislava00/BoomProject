@@ -1,12 +1,12 @@
 @use '../../styles/colors.scss';
 
-.wrapper{
+.container {
     background-color: colors.$primary_main;
     width: 400px;
     height: 100px;
 }
 .id {
-    background-color: rgba(colors.$background_paper, 80%);
+    background-color: rgba(colors.$background_paper, 100%);
     width: 100px;
     height: 100px;
     display: flex;
@@ -19,7 +19,7 @@
     font-weight: bold;
 }
 .user {
-    background-color: rgba(colors.$background_paper, 90%);
+    background-color: rgba(colors.$background_paper, 60%);
     width: 300px;
     display: flex;
     padding-left: 15px;

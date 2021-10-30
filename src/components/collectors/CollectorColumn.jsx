@@ -3,15 +3,9 @@ import Collector from "./Collector";
 
 export default function CollectorColumn({ items = [] }) {
 
-    const isLight = (index) => {
-        if (index % 2 != 0) {
-            return 'light';
-        }
-    }
-
     return(
         <div className={styles.container}>
-            {items.map( (item , index ) => <Collector key={index} items={item} type={isLight(index)}/> )}
+            {items.map( (item , index ) => <Collector key={index} items={item} type={ index % 2 != 0 ? "light" : "" }/> )}
         </div>
     );
 }
