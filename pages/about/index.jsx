@@ -7,7 +7,7 @@ import Auctions from "../../src/components/auctions/Auctions"
 import Footer from "../../src/components/footer/Footer";
 import How from "../../src/components/how/How";
 import Featured from "../../src/components/featured/Featured";
-import Collector from "../../src/components/collectors/Collector";
+import CollectorColumn from "../../src/components/collectors/CollectorColumn";
 
 export default function About() {
 
@@ -221,7 +221,7 @@ const props = [
           <Auctions cards={liveCards} />
           <How title={how.title} description={how.description} items={how.items} link={how.items} />
           <Featured items={itemData} />
-          <Collector props={props} />
+          <CollectorColumn props={props} />
           <Footer />
         </Grid>
       </Grid>
