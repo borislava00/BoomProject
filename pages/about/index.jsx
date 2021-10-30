@@ -191,6 +191,7 @@ const props = [
     avatar: 'images/avatar.png',
     verified: true,
     id: 1,
+    type: false
   },
   {
     name: 'brendan_1',
@@ -198,6 +199,7 @@ const props = [
     avatar: 'images/avatar.png',
     verified: false,
     id: 2,
+    type: true
   },
   {
     name: 'damiann',
@@ -205,6 +207,7 @@ const props = [
     avatar: 'images/avatar.png',
     verified: false,
     id: 3,
+    type: false
   },
 
 ]
