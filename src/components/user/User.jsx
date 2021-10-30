@@ -8,7 +8,7 @@ export default function User({ name = '' , info = '' , avatar = '' , size = 55 ,
             <Avatar url={avatar} verified={verified} />
             <Box className={styles.wrapper}>
                 <div className={styles.name}>{name}</div>
-                <div className={styles.info}>{info}</div>
+                <div className={styles.info}>{info} items</div>
             </Box>
         </div>
     );

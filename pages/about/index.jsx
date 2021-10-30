@@ -7,6 +7,7 @@ import Auctions from "../../src/components/auctions/Auctions"
 import Footer from "../../src/components/footer/Footer";
 import How from "../../src/components/how/How";
 import Featured from "../../src/components/featured/Featured";
+import Collectors from "../../src/components/collectors/Collectors";
 
 export default function About() {
 
@@ -183,6 +184,31 @@ const itemData = [
   }
 ]
 
+const type = [
+  {
+    name: 'terika77',
+    nftCounts: 134,
+    avatar: 'images/avatar.png',
+    verified: true,
+    id: 1,
+  },
+  {
+    name: 'brendan_1',
+    nftCounts: 98,
+    avatar: 'images/avatar.png',
+    verified: false,
+    id: 2,
+  },
+  {
+    name: 'damiann',
+    nftCounts: 97,
+    avatar: 'images/avatar.png',
+    verified: false,
+    id: 3,
+  },
+
+]
+
   return (
     <Container maxWidth="sm">
       <Grid container justifyContent="center">
@@ -192,6 +218,7 @@ const itemData = [
           <Auctions cards={liveCards} />
           <How title={how.title} description={how.description} items={how.items} link={how.items} />
           <Featured items={itemData} />
+          <Collectors type={type} />
           <Footer />
         </Grid>
       </Grid>

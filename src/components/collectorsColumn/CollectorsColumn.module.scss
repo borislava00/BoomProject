@@ -1,0 +1,28 @@
+@use '../../styles/colors.scss';
+
+.wrapper{
+    background-color: colors.$primary_main;
+    width: 400px;
+    height: 100px;
+}
+.id {
+    background-color: colors.$background_paper;
+    opacity: 90%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.number {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.user {
+    background-color: colors.$background_paper;
+    width: 300px;
+    display: flex;
+    padding-left: 15px;
+    align-items: center;
+}
