@@ -2,9 +2,16 @@ import styles from "./Collector.module.scss"
 import User from "../user/User";
 import { Grid } from "@mui/material";
 
-export default function Collector({ items = [] , type }) {
+export default function Collector({ items = [] , type = "" }) {
+    const setBrightness = () => {
+        if(type == 'light')
+        {
+            return 'brightness(130%)';
+        }
+    }
+
     return(
-        <div className={styles.wrapper} >
+        <div className={styles.wrapper} style={{ filter: setBrightness() }} >
             <Grid container className={styles.column} direction="row">
                 <Grid item className={styles.id}>
                     <div className={styles.number}>{items.id}</div>

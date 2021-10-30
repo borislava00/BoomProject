@@ -184,7 +184,7 @@ const itemData = [
   }
 ]
 
-const props = [
+const items = [
   {
     name: 'terika77',
     nftCounts: 134,
@@ -221,7 +221,7 @@ const props = [
           <Auctions cards={liveCards} />
           <How title={how.title} description={how.description} items={how.items} link={how.items} />
           <Featured items={itemData} />
-          <CollectorColumn props={props} />
+          <CollectorColumn items={items} />
           <Footer />
         </Grid>
       </Grid>
