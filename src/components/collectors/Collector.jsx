@@ -1,5 +1,5 @@
 import styles from "./Collectors.module.scss"
-import CollectorsColumn from "./CollectorsColumn";
+import CollectorsColumn from "./CollectorColumn";
 
 export default function Collectors({ type = [] }) {
     return(

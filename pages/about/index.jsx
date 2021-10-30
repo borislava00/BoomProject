@@ -7,7 +7,7 @@ import Auctions from "../../src/components/auctions/Auctions"
 import Footer from "../../src/components/footer/Footer";
 import How from "../../src/components/how/How";
 import Featured from "../../src/components/featured/Featured";
-import Collectors from "../../src/components/collectors/Collectors";
+import Collectors from "../../src/components/collectors/Collector";
 
 export default function About() {
 

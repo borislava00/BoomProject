@@ -1,4 +1,4 @@
-import styles from "./CollectorsColumn.module.scss"
+import styles from "./CollectorColumn.module.scss"
 import User from "../user/User";
 import { Grid } from "@mui/material";
 
