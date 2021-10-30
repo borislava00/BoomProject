@@ -1,4 +1,4 @@
-import styles from "./Collectors.module.scss"
+import styles from "./Collector.module.scss"
 import CollectorsColumn from "./CollectorColumn";
 
 export default function Collectors({ type = [] }) {
