@@ -2,7 +2,7 @@ import styles from "./TopCollectors.module.scss"
 import { useState } from "react";
 import CollectorColumn from "./CollectorColumn";
 import { Container , Grid , Select , MenuItem } from "@mui/material";
-import { chunk } from "lodash";
+import _ from "lodash";
 
 export default function TopCollectors({ collectors = [] }) {
     const [time, setTime] = useState('');
@@ -14,11 +14,9 @@ export default function TopCollectors({ collectors = [] }) {
     return (
         <div className={styles.wrapper}>
             <Container className={styles.container} maxWidth="xl">
-                <Grid container className={styles.gridContainer}>
-                    <Grid item className={styles.titleWrapper}>
+                <Grid container direction="row" className={styles.gridContainer}>
+                    <Grid item className={styles.header}>
                         <div className={styles.title}>Top Collectors</div>
-                    </Grid>
-                    <Grid item className={styles.selectWrapper}>
                         <Select className={styles.select}
                         value={time}
                         onChange={handleChange}
@@ -32,8 +30,8 @@ export default function TopCollectors({ collectors = [] }) {
                         </Select>
                     </Grid>
                     <Grid item className={styles.collectors} xl>
-                    {chunk(collectors,3).map( ( collector, index ) => 
-                    <CollectorColumn items={collector}  />
+                    {_.chunk(collectors,3).map( ( collector, index ) => 
+                    <CollectorColumn key={index} items={collector}  />
                     )}
 
                     </Grid>
