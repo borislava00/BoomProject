@@ -1,8 +1,8 @@
 import styles from "./TopCollectors.module.scss"
 import { useState } from "react";
 import CollectorColumn from "./CollectorColumn";
-import { Container , Grid , Select , MenuItem } from "@mui/material"
-let chunk = require('lodash.chunk');
+import { Container , Grid , Select , MenuItem } from "@mui/material";
+import { chunk } from "lodash";
 
 export default function TopCollectors({ collectors = [] }) {
     const [time, setTime] = useState('');
@@ -33,7 +33,7 @@ export default function TopCollectors({ collectors = [] }) {
                     </Grid>
                     <Grid item className={styles.collectors} xl>
                     {chunk(collectors,3).map( ( collector, index ) => 
-                    <CollectorColumn items={collector} index={index} />
+                    <CollectorColumn items={collector}  />
                     )}
 
                     </Grid>
