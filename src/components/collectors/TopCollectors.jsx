@@ -1,9 +1,10 @@
-import { Container , Grid , Select , MenuItem } from "@mui/material"
-import Card from "../card/Card";
+import styles from "./TopCollectors.module.scss"
 import { useState } from "react";
-import styles from './Trending.module.scss';
+import CollectorColumn from "./CollectorColumn";
+import { Container , Grid , Select , MenuItem } from "@mui/material"
+let chunk = require('lodash.chunk');
 
-export default function Trending({ cards = [] }) {
+export default function TopCollectors({ collectors = [] }) {
     const [time, setTime] = useState('');
 
     const handleChange = (event) => {
@@ -15,7 +16,7 @@ export default function Trending({ cards = [] }) {
             <Container className={styles.container} maxWidth="xl">
                 <Grid container className={styles.gridContainer}>
                     <Grid item className={styles.titleWrapper}>
-                        <div className={styles.title} >Trending</div>
+                        <div className={styles.title}>Top Collectors</div>
                     </Grid>
                     <Grid item className={styles.selectWrapper}>
                         <Select className={styles.select}
@@ -30,11 +31,11 @@ export default function Trending({ cards = [] }) {
                             <MenuItem value={30}>This year</MenuItem>
                         </Select>
                     </Grid>
-                    <Grid item className={styles.cards} xl>
-                        <Card key={0} {...cards[0]} />
-                        <Card key={1} {...cards[1]} />
-                        <Card key={2} {...cards[2]} />
-                        <Card key={3} {...cards[3]} />
+                    <Grid item className={styles.collectors} xl>
+                    {chunk(collectors,3).map( ( collector, index ) => 
+                    <CollectorColumn items={collector} index={index} />
+                    )}
+
                     </Grid>
                 </Grid>
             </Container>

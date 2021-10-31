@@ -4,8 +4,7 @@ import { Grid } from "@mui/material";
 
 export default function Collector({ items = [] , type = "" }) {
     const setBrightness = () => {
-        if(type == 'light')
-        {
+        if(type == 'light') {
             return 'brightness(130%)';
         }
     }

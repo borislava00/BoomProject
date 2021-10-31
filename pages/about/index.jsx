@@ -8,6 +8,7 @@ import Footer from "../../src/components/footer/Footer";
 import How from "../../src/components/how/How";
 import Featured from "../../src/components/featured/Featured";
 import CollectorColumn from "../../src/components/collectors/CollectorColumn";
+import TopCollectors from "../../src/components/collectors/TopCollectors";
 
 export default function About() {
 
@@ -184,30 +185,60 @@ const itemData = [
   }
 ]
 
-const items = [
+const collectors = [
   {
     name: 'terika77',
     nftCounts: 134,
     avatar: 'images/avatar.png',
     verified: true,
-    id: 1,
-    type: false
   },
   {
     name: 'brendan_1',
     nftCounts: 98,
     avatar: 'images/avatar.png',
     verified: false,
-    id: 2,
-    type: true
   },
   {
     name: 'damiann',
     nftCounts: 97,
     avatar: 'images/avatar.png',
     verified: false,
-    id: 3,
-    type: false
+  },
+  {
+    name: 'terika77',
+    nftCounts: 134,
+    avatar: 'images/avatar.png',
+    verified: true,
+  },
+  {
+    name: 'brendan_1',
+    nftCounts: 98,
+    avatar: 'images/avatar.png',
+    verified: false,
+  },
+  {
+    name: 'damiann',
+    nftCounts: 97,
+    avatar: 'images/avatar.png',
+    verified: false,
+  },
+  {
+    name: 'terika77',
+    nftCounts: 134,
+    avatar: 'images/avatar.png',
+    verified: true,
+  },
+  {
+    name: 'brendan_1',
+    nftCounts: 98,
+    avatar: 'images/avatar.png',
+    verified: false,
+  },
+  {
+    name: 'damiann',
+    nftCounts: 97,
+    avatar: 'images/avatar.png',
+    verified: false,
   },
 
 ]
@@ -221,7 +252,7 @@ const items = [
           <Auctions cards={liveCards} />
           <How title={how.title} description={how.description} items={how.items} link={how.items} />
           <Featured items={itemData} />
-          <CollectorColumn items={items} />
+          <TopCollectors collectors={collectors} />
           <Footer />
         </Grid>
       </Grid>
