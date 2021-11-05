@@ -15,10 +15,11 @@ export default function Auctions({ cards = [] }) {
             <Container className={styles.container} maxWidth="xl">
                 <Grid container className={styles.gridContainer}>
                     <Grid item className={styles.titleWrapper}>
-                        <div className={styles.title} >Live Auctions</div>
+                        <div className={styles.title} >🔥 Live Auctions</div>
                     </Grid>
                     <Grid item className={styles.selectWrapper}>
                         <Select className={styles.select}
+                        style={{ width : '250px' }}
                         value={time}
                         onChange={handleChange}
                         displayEmpty

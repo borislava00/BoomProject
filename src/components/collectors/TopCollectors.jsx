@@ -18,6 +18,7 @@ export default function TopCollectors({ collectors = [] }) {
                     <Grid item className={styles.header}>
                         <div className={styles.title}>Top Collectors</div>
                         <Select className={styles.select}
+                        style={{ width : '250px' }}
                         value={time}
                         onChange={handleChange}
                         displayEmpty
@@ -33,7 +34,6 @@ export default function TopCollectors({ collectors = [] }) {
                     {_.chunk(collectors,3).map( ( collector, index ) => 
                     <CollectorColumn key={index} items={collector}  />
                     )}
-
                     </Grid>
                 </Grid>
             </Container>

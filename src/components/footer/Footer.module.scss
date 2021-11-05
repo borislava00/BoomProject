@@ -1,14 +1,22 @@
 @use "../../styles/colors";
 
 .wrapper {
-    padding: 10px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: colors.$background_paper;
+    margin-top: 150px;
 }
 .container {
-    display: flex;
-    align-items: center-end;
-    justify-content: space-evenly;
+    display: contents;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
 }
 .logoWrapper {
-    justify-content: 'center';
     display: contents;
+    justify-content: 'center';
+}
+.text {
+    padding-left : 575px !important;
 }

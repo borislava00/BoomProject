@@ -15,7 +15,7 @@ export default function SearchBar() {
         <SearchIcon/>
       </IconButton>
       <InputBase
-        sx={{ ml: 1, flex: 1 , color: 'white'}}
+        sx={{ ml: 1, flex: 1 , color: 'white' , fontWeight : 400 }}
         placeholder="Find elements, users and activities"
         inputProps={{ 'aria-label': 'Find elements, users and activities' }}
       />

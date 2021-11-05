@@ -1,7 +1,7 @@
 @use "../../styles/colors";
 
 .card {
-    height: 600px;
+    height: 500px;
     width: 350px;
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@
     border-radius: 5% ;
     margin-left: 12px;
     width : 325px !important;
-    height : 400px;  
+    height : 310px;  
 }
 .content {
     display: flex;
@@ -43,7 +43,7 @@
     border-radius: 12px;
     background-color: colors.$success_main;
     width: 100px !important;
-    margin-top: 150px !important;
+    margin-top: 100px !important;
     margin-left: 35px !important;
 }
 .live {
@@ -60,7 +60,7 @@
     border-bottom-right-radius: 12px;
     background-color: colors.$success_main;
     height: 50px;
-    margin-top: 250px !important;
+    margin-top: 200px !important;
     width: 320px;
     margin-left: 15px !important;
 }

@@ -34,11 +34,15 @@ export default function Card({ name = "" , likes = 0 , user = {} , mediaUrl = ""
         }
     }
 
+    const setOpacity = () => {
+        return timeLeft ? 'rgba(36, 242, 94, 0.1)' : null;
+    }
+
     return (
-        <MuiCard className={styles.card}>
+        <MuiCard className={styles.card} style={{ backgroundColor : setOpacity() }}>
             <CardHeader
                 avatar={
-                    <Avatar url={user.avatarUrl} verified={user.verified} />
+                    <Avatar size={50} url={user.avatarUrl} verified={user.verified} />
                 }
             />    
             {timeLeft ? <LiveCard timeLeft={timeLeft} /> : null}

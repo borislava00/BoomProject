@@ -1,7 +1,12 @@
 @use "../../styles/colors.scss";
-
-.container {
+.wrapper {
+    display: flex;
+    align-items: center;
     background-color: colors.$primary_main;
+    margin: 75px;
+    
+}
+.container {
     border-radius: 25px;
     width: max-content;
     margin-left: 50px;
@@ -9,6 +14,7 @@
     display: flex;
     justify-content: space-around;
     padding-block: 15px;
+    padding: 10px
 }
 .content {
     display: flex;
@@ -18,7 +24,7 @@
 }
 .title {
     font-size: 3rem;
-    font-weight: bolder;
+    font-weight: 900;
 }
 .description {
     font-size: 1.5rem;

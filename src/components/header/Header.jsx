@@ -3,7 +3,7 @@ import Logo from "../logo/Logo";
 import SearchBar from "../searchBar/searchBar";
 import Grid from '@mui/material/Grid';
 import styles from "./Header.module.scss";
-import Link from "../link/Link.jsx";
+import Link from "../link/Link";
 import Button from "@mui/material/Button";
 
 export default function Header() {

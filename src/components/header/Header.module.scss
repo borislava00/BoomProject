@@ -1,7 +1,10 @@
 @use "../../styles/colors";
 
-.wrapper {
-  padding: 10px;
+.wrapper {  
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background-color: colors.$background_paper;
 }
 .container {
   display: flex !important;
@@ -9,6 +12,7 @@
   justify-content: space-evenly;
 }
 .searchBar {
-  padding-top: 20px;
+  display: flex;
+  align-items: center;
   padding-right: 50px;
 }

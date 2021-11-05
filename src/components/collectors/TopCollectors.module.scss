@@ -1,3 +1,9 @@
+.wrapper {
+    padding-top: 100px;
+}
+.container {
+    padding : 0px !important;
+}
 .gridContainer {
     display: flex;
     justify-content: space-between;
@@ -13,6 +19,6 @@
     font-size: 4rem;
 }   
 .collectors {
-    display: contents;
-
+    display: -webkit-inline-box;
+    padding-top :15px;
 }

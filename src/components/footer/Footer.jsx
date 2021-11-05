@@ -9,7 +9,7 @@ export default function Footer() {
         <div className={styles.wrapper}>
             <Container className={styles.container} >
                 <Grid container className={styles.logoWrapper} direction='row' columnSpacing={20}>
-                    <Grid item sx={{  display: 'contents' , justifyContent: 'flex-start'}}>
+                    <Grid item sx={{  display: 'contents' , justifyContent: 'flex-start' }}>
                         <Logo type='muted'/>
                     </Grid>
                     <Grid item className={styles.text}>

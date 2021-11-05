@@ -1,0 +1,100 @@
+{
+    "cards" : [
+        {
+            "name" : "Ivy",
+            "likes" : 1100,
+            "mediaUrl" : "../images/nft.jpg",
+            "user" : {
+              "avatarUrl" : "images/avatar.png",
+              "verified" : true
+            },
+            "price" : "~1",
+            "currency" : "ETH"
+        },
+        {
+            "name" : "Judie",
+            "likes" : 1100,
+            "mediaUrl" : "https://s3-alpha-sig.figma.com/img/6817/8d37/721b5492917d289fca2f06570c78e174?Expires=1636934400&Signature=KNObSlOCzGgwozmw4~l9xC-cT~dRRPNOkbSLkskag6qyYBSSruJhmSkBbFJJETOe3XI-sOP6bquQGGhqLg~CfU7yLDy9Y296VUNdhfJllrN1W-NFlqKw65SuvAcJVkEQwsv9BfWniF4LZ2LMSS0J0hRmfyXEIJviokZq4ESuNb1Jo8zrlHVJrk5PdM60-ESHotqtEVsSMZuCOopxRL~tmXzMgEJivTrK90u5e~y1f~0FdEiJe4zxnemFThUEv4R5zl5oMO6drIcKRZnZfsdq2rT~rEVJ4x8yWoAOMfFp~e-NE-I7uZhipoD0UoAWXjlDvRoR0TFaCDCyrCTwPEXRMQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+            "user" : {
+                "avatarUrl" : "https://s3-alpha-sig.figma.com/img/a68a/8b79/c88b82e620966052627e375539ee8786?Expires=1636934400&Signature=ZRXQeptcjnRW1i4h0qqllQid2r2d9YVjcyFOTnMqd0kuqaafNkHjOBn6qZFRHTw-hgGFVtxlzTI8qAp4Ax3TjNrnfrDxb2I8FaggX-AbaQIsMbqHbpIrpKKp5-ceBAVW3In2xcvkeKyY-O~ouDgGLFy2YqkOFNtJHPct~k1fN20iyTLGTFZNGf71oiNXmwLe98XUxr6pndwAcoB8CDfr2jGNPM7c3lVAm5RS3RqIZ0d9S9l-cD7CVANRp1PPCDASkiv8TCZim04w8sHyF8PKzdEXM9sQ2fNm2e0-~662GHXoQgXwxpJvt7XGAhqVPexAhIQdLieclAu~IK6NOlwK3g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+                "verified" : true
+            },
+            "price" : "~2.3",
+            "currency" : "ETH"
+        },
+        {
+            "name" : "Juniper",
+            "likes" : 1100,
+            "mediaUrl" : "https://s3-alpha-sig.figma.com/img/09f9/5a9a/00eca57f58a1a97d522c8bfe5673a0a7?Expires=1636934400&Signature=R-wfO2zD95yhEcKglEH8mLH7RbwHQ0FCIupbftjf37tmdwzxyIBWPvGAcbbxzBWHe1Vmof-hihT9tJOEdqUq-46TZVo8QrnKi0IzIvhhM6kwqu972Uv0UpwuzDVuQg0lVUmqr244-yS1gLFgMiCMaV1MVqKjZMoT6kUXscayZSzrgBEBD7gPfXIMaIXE4cgVybOURbA86SsXpgPrsDktgvfESrCQefJ-~WAdoB4Y~gig6eeHLLR2zCU~zunJpuFQBlL3ITAzBuNmqLQNXAAxOQXTx6kmZJpy7espw9oRuMo4vgOilLIJUpaqzkfHc72osafhcq3LTtMU6lal44bU~A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+            "user" : {
+                "avatarUrl" : "https://s3-alpha-sig.figma.com/img/f5c2/1084/88205e72fcb26147eea3b2d53beaf332?Expires=1636934400&Signature=hyyQNWwLMNkLCZuTdfxUJALrYWuuXo5aDKhtsfATHBjDrBph~zC6N9BwwhiYKLdTKG~N5g1tysaCM~kRgHCIDmzLhD7MPTUVsphPTqodinr51BO3gx8zV~CeaeZ4RVhY5vfjU7L2TAjyHr7~pZltM3i7xxs-30wNgnLgNMkbQbNZ2E6VAB-QrhVNLH2x3Dq70s4IKR-PiXxev6WrECqf9UYAQ~90~iXZwoiesT9f2VcubzZOXdUjXQ0cuNdvopPdGXKgefwF6j7bTiY6ZKLHeaZb4bdyeiia92PN8puNamrDBq~-HFK~ceFbvfcp5P0GNFv1IiS-573CdAVmjJ2TBg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+                "verified" : true
+            },
+            "price" : "5",
+            "currency" : "ETH"
+        },
+        {
+            "name" : "Maple",
+            "likes" : 1100,
+            "mediaUrl" : "https://s3-alpha-sig.figma.com/img/8199/acf3/84420520fd2b71e1cc49ac230f2089da?Expires=1636934400&Signature=P5vavNPVkZYhkc664Ij-QzYFicDkiCzD78DfjRGyjcb6V9u8u3LUBwideAiSFGYmuMSrlIMWn~f-zl04fECt2szn3B1G6BPa8yZkaFs3QS1lAwxcwi7y4D6UcdViNp4CEXWGdIRc~PGjYPx4uM9uUTatpGIKdy7pVEuqGYtddw9RWUMrSrNP9-blclIv53Sus9rJgYRxB1CP-N12xiiolYR2DJs2pGx41YClHnFebwQh5dqsMuC~NEcNpDVNVVWr734~XhkKLhxZmIs4sG-bU1VIE1QDDFWYUfvel3euvUsgbB9fC85mlY3VgoNiAaZVt91gim6sWTSbSxxL6zsdbw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+            "user" : {
+                "avatarUrl" : "https://s3-alpha-sig.figma.com/img/f42e/792c/d46a337e4eea7d6520febeacf2a62cb6?Expires=1636934400&Signature=hbIcMp5s6DUhozYWSXfMPpOpMux5rgbx0gXhn8kcZyNIE6fSGaTEuaQ2-cEpSQNogluzoSGMMUSn2fm-CFPALy0uFqIJnDqbuwCCPJfs9kPBo0i1METAYgYlTkuPbhKheA9QSJHajrh8MKoZFcPnve4cExgS9~C5XS8s32gyL7l9UE7LwkdpfHo~nWh8IlRLs4j4vdA572yvB5gPrbrZ6tTfYDvBStTu6YjrXRCMgihoa79~nLTqoFwSBdD1AmgyguwBYz~eg6bzK3J9FBIzu23ay8~VdjV9EtljqqCWQbQXEUvplPovd4oSaXHCRpq0lajrr2PoBaGefUupsKrdcA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+                "verified" : true
+            },
+            "price" : "10",
+            "currency" : "ETH"
+        }
+    ],
+
+    "liveCards" : [
+        {
+            "name" : "Ivy",
+            "likes" : 1100,
+            "mediaUrl" : "images/nft.jpg",
+            "user" : {
+              "avatarUrl" : "images/avatar.png",
+              "verified" : true
+            },
+            "price" : "~1",
+            "currency" : "ETH",
+            "timeLeft" : 50
+        },
+        {
+            "name" : "Judie",
+            "likes" : 1100,
+            "mediaUrl" : "images/nft.jpg",
+            "user" : {
+               "avatarUrl" : "images/avatar.png",
+                "verified" : true
+            },
+            "price" : "~2.3",
+            "currency": "ETH",
+            "timeLeft" : 30
+        },
+        {
+            "name" : "Juniper",
+            "likes" : 1100,
+            "mediaUrl" : "images/nft.jpg",
+            "user" : {
+                "avatarUrl" : "images/avatar.png",
+                "verified" : true
+            },
+            "price" : "5",
+            "currency" : "ETH",
+            "timeLeft" : 60
+        },
+        {
+            "name" : "Maple",
+            "likes" : 1100,
+            "mediaUrl" : "images/nft.jpg",
+            "user" : {
+                "avatarUrl" : "images/avatar.png",
+                "verified" : true
+            },
+            "price" : "10",
+            "currency" : "ETH",
+            "timeLeft" : 20
+        }
+    ]
+        
+}

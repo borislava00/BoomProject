@@ -4,6 +4,7 @@ import styles from './How.module.scss';
 
 
 export default function How({ description = "" , title = "" , items = [] , link = "" }) {
+    console.log(description);
     return (
         <div className={styles.wrapper}>
             <Grid container className={styles.container}>

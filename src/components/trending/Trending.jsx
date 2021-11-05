@@ -19,6 +19,7 @@ export default function Trending({ cards = [] }) {
                     </Grid>
                     <Grid item className={styles.selectWrapper}>
                         <Select className={styles.select}
+                        style={{ width : '250px' }}
                         value={time}
                         onChange={handleChange}
                         displayEmpty
