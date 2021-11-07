@@ -4,7 +4,6 @@ import styles from './How.module.scss';
 
 
 export default function How({ description = "" , title = "" , items = [] , link = "" }) {
-    console.log(description);
     return (
         <div className={styles.wrapper}>
             <Grid container className={styles.container}>
@@ -14,7 +13,7 @@ export default function How({ description = "" , title = "" , items = [] , link 
                     <Button className={styles.button} href={link}>LEARN MORE</Button>
                 </Grid>
                 <Grid item className={styles.items}>
-                    {items.map( (item , index ) => <HowStep key={index} item={item} />)}
+                    {items.map( (item , index ) => <HowStep key={index} item={item} className={styles.item} />)}
                 </Grid>
             </Grid>
         </div>

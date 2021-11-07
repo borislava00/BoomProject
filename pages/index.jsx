@@ -41,7 +41,9 @@ export default function Index() {
           <Featured items={featuredCrads.cards} />
           <Trending cards={nfts.cards} />
           <TopCollectors collectors={topCollectors.collectors} />
-          <How {...howSteps.how} />
+        </Grid>
+        <How {...howSteps.how} />
+        <Grid item>
           <Auctions cards={nfts.liveCards} />
         </Grid>
       <Footer />

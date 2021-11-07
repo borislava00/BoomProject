@@ -19,10 +19,11 @@
 .content {
     display: flex;
     flex-direction: column !important;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     width: 500px;
-    padding-left: 30px;
+    height: 200px;
+    padding-left: 15px;
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px;
     background-color: colors.$background_default;
