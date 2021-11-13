@@ -3,7 +3,6 @@ import dataNfts from "../data/nfts.json";
 import dataFeatured from "../data/featured.json";
 import dataHowStep from "../data/how.json";
 import dataCollectors from "../data/collectors.json";
-import Grid from "@mui/material/Grid";
 import Header from "../src/components/header/Header";
 import Trending from "../src/components/trending/Trending";
 import Auctions from "../src/components/auctions/Auctions"
@@ -11,7 +10,6 @@ import Footer from "../src/components/footer/Footer";
 import How from "../src/components/how/How";
 import Featured from "../src/components/featured/Featured";
 import TopCollectors from "../src/components/collectors/TopCollectors";
-import ProductImage from '../src/components/product/ProductImage.jsx';
 
 export default function Index() {
   const [ featuredCrads , setFeaturedCards ] = useState([]);
@@ -42,7 +40,6 @@ export default function Index() {
       <TopCollectors collectors={topCollectors.collectors} />
       <How {...howSteps.how} />
       <Auctions cards={nfts.liveCards} />
-      <ProductImage url={"/images/nft.jpg"} />
       <Footer />
     </div>
   );
