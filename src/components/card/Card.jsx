@@ -78,7 +78,7 @@ function LiveCard({ timeLeft = 0 }) {
                     <div className={styles.live}>LIVE</div>
                 </Grid>
                 <Grid item className={styles.counter}>
-                    <Countdown className={styles.counterContent} date={Date.now() + timeLeft * 100000} />,
+                    <Countdown className={styles.counterContent} date={Date.now() + timeLeft * 100000} />
                 </Grid>
             </Grid>
         </div>
