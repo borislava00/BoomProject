@@ -37,19 +37,13 @@ export default function Index() {
   return (
     <div className='wrapper'>
       <Header />
-      <Grid container justifyContent="center">
-        <Grid item>
-          <Featured items={featuredCrads.cards} />
-          <Trending cards={nfts.cards} />
-          <TopCollectors collectors={topCollectors.collectors} />
-        </Grid>
-        <How {...howSteps.how} />
-        <Grid item>
-          <Auctions cards={nfts.liveCards} />
-          <ProductImage url={"/images/nft.jpg"} />
-        </Grid>
+      <Featured items={featuredCrads.cards} />
+      <Trending cards={nfts.cards} />
+      <TopCollectors collectors={topCollectors.collectors} />
+      <How {...howSteps.how} />
+      <Auctions cards={nfts.liveCards} />
+      <ProductImage url={"/images/nft.jpg"} />
       <Footer />
-      </Grid>
     </div>
   );
 }
