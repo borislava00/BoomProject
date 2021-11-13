@@ -11,6 +11,7 @@ import Footer from "../src/components/footer/Footer";
 import How from "../src/components/how/How";
 import Featured from "../src/components/featured/Featured";
 import TopCollectors from "../src/components/collectors/TopCollectors";
+import ProductImage from '../src/components/product/ProductImage.jsx';
 
 export default function Index() {
   const [ featuredCrads , setFeaturedCards ] = useState([]);
@@ -45,6 +46,7 @@ export default function Index() {
         <How {...howSteps.how} />
         <Grid item>
           <Auctions cards={nfts.liveCards} />
+          <ProductImage url={"/images/nft.jpg"} />
         </Grid>
       <Footer />
       </Grid>
