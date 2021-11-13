@@ -3,7 +3,6 @@ import dataNfts from "../data/nfts.json";
 import dataFeatured from "../data/featured.json";
 import dataHowStep from "../data/how.json";
 import dataCollectors from "../data/collectors.json";
-import Grid from "@mui/material/Grid";
 import Header from "../src/components/header/Header";
 import Trending from "../src/components/trending/Trending";
 import Auctions from "../src/components/auctions/Auctions"
