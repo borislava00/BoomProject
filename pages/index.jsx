@@ -15,6 +15,7 @@ import ProductInfoTitle from "../src/components/product/ProductInfoTitle";
 import ProductInfoPrice from "../src/components/product/ProductInfoPrice";
 import ProductInfoStatus from "../src/components/product/ProductInfoStatus";
 import ProductInfoLikes from "../src/components/product/ProductInfoLikes";
+import ProductInfoCreator from "../src/components/product/ProductInfoCreator";
 
 export default function Index() {
   const [ featuredCrads , setFeaturedCards ] = useState([]);
@@ -50,6 +51,7 @@ export default function Index() {
       <ProductInfoPrice amount={3} currency={'ETH'} />
       <ProductInfoStatus />
       <ProductInfoLikes amount={1100} />
+      <ProductInfoCreator name={'toadnft'} avatar={'https://s3-alpha-sig.figma.com/img/e8c9/9cd5/9b8596b5f1e73a55d94965e77c2e61cd?Expires=1637539200&Signature=O6ml7MEWv1NtU7Qu498ujyPukHYNd9RRyLSPgz4V0mmHlWAxymkqG2utJp0PW~FaEe0yGbeaj37cz9FuRAUHHzPNzPvV8Ym8IK2v19N-zhAabC5qtEQ6lAsH6QBmdKbPQJLwN9QaJIpquUtWfwZ10Lvlf3XNUUrcmDbK41lfFwe~pQKrelvaM2Fft3FYNP-PJP7P8CUzIoOqmkV9Dk7XUFcMoLN~ZjorzSzh-M-LengvgbNkuzSwEwVH4iZICx4rAu83mCRnOeNGPvZyq5rC6O19m5FxLxdZg-qMhlvz9xVMTIsa4FMYCpMaJmpIE5rIvCl5YnL1QNcEmPcIOAO2-w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA'} />
       <Footer />
     </div>
   );
