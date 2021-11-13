@@ -1,11 +1,7 @@
 import styles from "./ProductInfoTimer.module.scss";
 import Countdown from 'react-countdown';
 
-const handler = () => {
-    console.log('done');
-}
-
-export default function ProductInfoTimer({ timeEnd = null , onTimeEnd = handler() }) {
+export default function ProductInfoTimer({ timeEnd = null , onTimeEnd }) {
     return (
         <div className={styles.wrapper}>
             <div className={styles['product-info-timer']}>
@@ -15,8 +11,7 @@ export default function ProductInfoTimer({ timeEnd = null , onTimeEnd = handler(
                     <div className={styles.timer}>
                         <Countdown date={Date.now() + timeEnd * 100000000} onComplete={() => onTimeEnd} />
                     </div>           
-                </div> :
-                <div className={styles.notActive}></div>}
+                </div> : <div className={styles.notActive}></div>}
             </div>
         </div>
     );
