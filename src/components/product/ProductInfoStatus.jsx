@@ -6,7 +6,7 @@ export default function ProductInfoStatus() {
     return (
         <div className={styles.wrapper}>
             <div className={styles['product-info-status']}>
-                <Chip className={styles.status} xs={{ borderRadius: '10px' , fontSize: '1rem'}}
+                <Chip className={styles.status}
                     icon={<FiberManualRecordIcon />}
                     label='LIVE'
                     color='success'
