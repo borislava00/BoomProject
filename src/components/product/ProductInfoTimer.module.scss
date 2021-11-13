@@ -6,8 +6,18 @@
 }
 .product-info-timer {
     border-radius: 15px;
+    background-color: colors.$background_paper;
+}
+.active {
+    border-radius: 15px;
     background-color: colors.$secondary_main;
-    width: 218px;
+    width: 220px;
+    height: 118px;
+}
+.notActive {
+    border-radius: 15px;
+    background-color: colors.$background_paper;
+    width: 220px;
     height: 118px;
 }
 .title {
