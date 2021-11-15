@@ -14,10 +14,11 @@ export default function ProductInfoTimer({ timeEnd = null , onTimeEnd = handler 
     useEffect( () => {
         setTime(timeEnd);
     },[]);
-
+    
     eventEmitter.on('done', () => setTime(null));
-
+    
     return (
+        timeEnd == null ?   <div className={styles.notActive}></div> : 
         <div className={styles.wrapper}>
             <div className={styles['product-info-timer']}>
                 { time == null ? 
