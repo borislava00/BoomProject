@@ -1,22 +1,35 @@
 import styles from "./ProductInfoTimer.module.scss";
 import Countdown from 'react-countdown';
-import ReactDOM from 'react-dom';
+import { useState , useEffect } from "react";
+import EventEmitter from 'eventemitter3';
+
+const eventEmitter = new EventEmitter();
 
 const handler = () => {
-    console.log('done');
+    eventEmitter.emit('done');
 }
 
-export default function ProductInfoTimer({ timeEnd = null , onTimeEnd = handler  }) {
+export default function ProductInfoTimer({ timeEnd = null , onTimeEnd = handler }) {
+    const [time, setTime] = useState(null);
+    useEffect( () => {
+        setTime(timeEnd);
+    },[]);
+
+    eventEmitter.on('done', () => setTime(null));
+
     return (
         <div className={styles.wrapper}>
             <div className={styles['product-info-timer']}>
-                {timeEnd != null ?
-                <div className={styles.active}>
-                    <div className={styles.title}>ENDS IN</div>
-                    <div className={styles.timer}>
-                        <Countdown date={Date.now() + timeEnd * 100000000} onComplete={() => handler(onTimeEnd)} />
-                    </div>           
-                </div> : <div className={styles.notActive}></div>}
+                { time == null ? 
+                    <div className={styles.notActive}></div> 
+                    :
+                    <div className={styles.active}>
+                        <div className={styles.title}>ENDS IN</div>
+                        <div className={styles.timer}>
+                            <Countdown date={Date.now() + timeEnd * 100000000} onComplete={ () => onTimeEnd() } />
+                        </div>           
+                    </div>
+                }
             </div>
         </div>
     );
