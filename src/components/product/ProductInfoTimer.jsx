@@ -2,6 +2,7 @@ import styles from "./ProductInfoTimer.module.scss";
 import Countdown from 'react-countdown';
 import { useState , useEffect } from "react";
 import EventEmitter from 'eventemitter3';
+import classNames from "classnames";
 
 const eventEmitter = new EventEmitter();
 
@@ -18,19 +19,15 @@ export default function ProductInfoTimer({ timeEnd = null , onTimeEnd = handler 
     eventEmitter.on('done', () => setTime(null));
 
     return (
-        <div className={styles.wrapper}>
-            <div className={styles['product-info-timer']}>
-                { time == null ? 
-                    <div className={styles.notActive}></div> 
-                    :
-                    <div className={styles.active}>
-                        <div className={styles.title}>ENDS IN</div>
-                        <div className={styles.timer}>
-                            <Countdown date={Date.now() + time * 100000000} onComplete={ onTimeEnd } />
-                        </div>           
-                    </div>
-                }
-            </div>
+        <div className={classNames(styles["product-ifo-timer"] , {[styles["active"]] : timeEnd })}>
+            <div className={styles.title}>ENDS IN</div>
+            { time == null ? 
+                <div className={styles.notActive}></div> 
+                :
+                <div className={styles.timer}>
+                    <Countdown date={Date.now() + time * 100000000} onComplete={ onTimeEnd } />
+                </div> 
+            }                                     
         </div>
     );
 }

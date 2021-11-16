@@ -1,10 +1,8 @@
 @use "../../styles/colors";
 
-.wrapper {
+.product-info-timer {
     display: flex;
     justify-content: center;
-}
-.product-info-timer {
     border-radius: 15px;
     background-color: colors.$background_paper;
 }
