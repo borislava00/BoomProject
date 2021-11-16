@@ -1,3 +1,5 @@
+@use "../../styles/colors";
+
 .product-tabs {
     display: flex;
     justify-content: center;
@@ -12,6 +14,8 @@
     justify-content: center;
 }
 .table-row-0 {
-    display: flex;
-    justify-self: center;
+    background-color: rgba(colors.$primary_main , 5%);
+}
+.table-row-1 {
+    background-color: rgba(colors.$primary_main , 15%);
 }
