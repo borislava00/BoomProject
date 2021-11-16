@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { formatDistance, parseISO } from 'date-fns'
 import { Box , Typography , Tabs , Tab , Table , TableBody , TableRow , TableCell } from "@mui/material";
 
-function TabPanel(props) {
+function TabContext(props) {
     const { children, value, index, ...other } = props;
   
     return (
@@ -25,7 +25,7 @@ function TabPanel(props) {
     );
   }
   
-  TabPanel.propTypes = {
+  TabContext.propTypes = {
     children: PropTypes.node,
     index: PropTypes.number.isRequired,
     value: PropTypes.number.isRequired,
@@ -47,10 +47,10 @@ export default function ProductTabs ({ text = " " , bids = [ ] }) {
                     <Tab className={styles["tab-bids"]} label="BIDS" />
                 </Tabs>
             </div>
-            <TabPanel value={value} index={0}>
+            <TabContext value={value} index={0}>
                 {text}
-            </TabPanel>
-            <TabPanel value={value} index={1}>
+            </TabContext>
+            <TabContext value={value} index={1}>
                 <Table>
                     <TableBody>
                         {bids.map( ( bid , index ) => ( 
@@ -64,7 +64,7 @@ export default function ProductTabs ({ text = " " , bids = [ ] }) {
                         ))}
                     </TableBody>
                 </Table>               
-            </TabPanel>    
+            </TabContext>    
         </div>
     );
 }
