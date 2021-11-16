@@ -23,10 +23,7 @@ export default function ProductInfoTimer({ timeEnd = null , onTimeEnd = handler 
             <div className={classNames(styles["product-info-timer"] , {[styles["active"]] : timeEnd })}>
                 <div className={styles.title}>ENDS IN</div>
                     <div className={styles.timer}>
-                    { time == null ? 
-                        <div className={styles.notActive}></div> 
-                        :
-                        <Countdown date={Date.now() + time * 100000000} onComplete={ onTimeEnd } />
+                    { time != null && <Countdown date={Date.now() + time * 100000000} onComplete={ onTimeEnd } />
                     }
                     </div>                                    
             </div>
