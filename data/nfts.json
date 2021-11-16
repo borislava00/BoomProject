@@ -50,9 +50,9 @@
         {
             "name" : "Ivy",
             "likes" : 1100,
-            "mediaUrl" : "images/nft.jpg",
+            "mediaUrl" : "https://s3-alpha-sig.figma.com/img/602e/d118/3c1f93d977521bbe280c198c767cc164?Expires=1638144000&Signature=WWuXUA45ATsdso5WoI09Zxm0-bF7O1aDeGeQhAhOT6UwmgueOa4GuFOSa8dMKNCkYmUdzP5aPlzot6Bx5r0OUfrXt~Xn4TtwHZm33Uu7dHXypraYbCh80S5aMPWOF7edcSYWf4KXFjnANS1XQQUy5Gwt82SqJ~FQpb72f2B-1IqYFxMCyW3-cfsN5HN6evtrDMSjD85Up~lnMoY70svhbxelPxLwmsLMW9BzBkn9EbWnUwPnLOzd1pvpKrM9RT~TF~R7QhMiw2mweHS5Q6ieJGNrIOY5AjlyRFQ3i4mWjhVO0GO9YlHqmwwzikeA7mPhAphUZQKUgZeOInEV1vstHw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
             "user" : {
-              "avatarUrl" : "images/avatar.png",
+              "avatarUrl" : "https://s3-alpha-sig.figma.com/img/d47c/d02f/2b7c58926ad3504ce1230c3d64792755?Expires=1638144000&Signature=YuhV9MONw2sDcKXqYMCCYpSdLJNAT-dw-z~wegcfBBFQT0q4Gb6W7tWqTDPfUcqwzMLAyVbp9Lbjoo7m3TIlZ5AtepwlQ3CVsKmF9gFigqZugIUp2d2LT6AQox7k0S90gzl-9YiXUCaKwJxK8V2tHBwzTN8ZoNX8K0Jm4R3HVU5ADjrbUqSikj6snisC~d2vRk790EtR23KBo8Q5ZZp3gbs-z6lBLdfIlfomqPGBmv6~6XiWtMA5U5S2pDOssv8zDxSkdOBCM9VbG1jHDBtMqk7vpt3AG~BvWowRONP3r2e5GLV-F-9~MGUKxME-feNsE~m7A-J0KuYN5~U8cnydog__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
               "verified" : true
             },
             "price" : "~1",
@@ -62,9 +62,9 @@
         {
             "name" : "Judie",
             "likes" : 1100,
-            "mediaUrl" : "images/nft.jpg",
+            "mediaUrl" : "https://s3-alpha-sig.figma.com/img/ad49/3f7a/543a68d5946ca1634b942bd325677bf1?Expires=1638144000&Signature=Vj8LOAn9LVFRfbOXT2XvlmliICL7dl4gH-5buQi4AUb09s11O99U~D94O1mGebyLNW3KSShRktxSiUrRSZxkf0QlpM6a~dcQvIKEd7horeVYCjalqsDbIyJr-OQ36eQAbarFkLNouKr0caySqM8X5-n9u232BbhzQvP9zBMp7UZMopgdl9QjRvnUv0lPTT6pLHT1iLlqdwQihHyW6oX0Nrtla7b6R4c~eEm5Pzskrkb5FxoLfldVFHFCJLkeW9MmW1U4noi6ZIeyF5rS6dakbetfiGFcElo2CXyV1uB6SCQrlnxiFUNd7W-FUnOS9y6phnGL4XAgYAosQmqzBqV9Iw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
             "user" : {
-               "avatarUrl" : "images/avatar.png",
+               "avatarUrl" : "https://s3-alpha-sig.figma.com/img/a68a/8b79/c88b82e620966052627e375539ee8786?Expires=1638144000&Signature=XRCl9IlC8kc~Wj2kl8lKy-QExnOxuk9HFvrbhTtd7kA62wuB727CEBpyJLyJDtjbevNVCzT5TzKUnR05pNoOI4btOmXAertNuQUOo~IGI8rCouDm9Q7q~fvi7tScgRdaIHTznVgJPjOMupoTpo0~QAX~apzGv1PIpcJSaRuztuSHblzH4DjxCCZJ1hXHbOVsrAbQb-SyMIgP~iNAfAeGiqVxdywQqymu41f~3odTgs8pANeSMEj3Y5CyXF8tIw3WkERMxUR1DtvqfPOvz2871s5oadILpG9lYjFzRYCgPm5anSmZQ8CrTsI7fd8H2V96VFhcvXpXnohPWvZLUxbFxQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
                 "verified" : true
             },
             "price" : "~2.3",
@@ -74,7 +74,7 @@
         {
             "name" : "Juniper",
             "likes" : 1100,
-            "mediaUrl" : "images/nft.jpg",
+            "mediaUrl" : "https://s3-alpha-sig.figma.com/img/d190/ad2f/b98573a84bf9f20bb0f87d1228c646d3?Expires=1638144000&Signature=ZLNu-pXY6im-be8W88PWLyYhUyshbiX0X1jTJaewKbIOM2iAxF2Nuz6acRcEV3Qyh5TuTaZvtQdl7AsX-af-zSxoEdJBJpmwJpt4eB0~BMef8AvT~I8JSgmg0kSgcdyFtpx~lQS3Y-mK7GAvS4~vLgLNKPQEDFpnqU9jcsp7C54MX7~RUZ6hgFE3wjup6ZAzBZL-sKcn1pHVcvhDFKTHoIEn6pXeNuG48ZqUFdRkUG-r86puWKCQ4CeBuzdZikmJhYjPR4MXKCt8LNcLmrzfOW9oz55CszknwBDODhlzFaAI51Z0r8HazVYFMPOeleO3Rv57tHKBGS7n9ge~D4bqWg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
             "user" : {
                 "avatarUrl" : "images/avatar.png",
                 "verified" : true
@@ -86,9 +86,9 @@
         {
             "name" : "Maple",
             "likes" : 1100,
-            "mediaUrl" : "images/nft.jpg",
+            "mediaUrl" : "https://s3-alpha-sig.figma.com/img/5700/961d/873ed585dda6af33c56c3e41f33c9c2b?Expires=1638144000&Signature=ZWUd1hrG9OIlbvmcltFV7maszJObLjtULkpt0t0CV7~Gj9nAfS2Ef3r6oaOY9aGJbTJu5kd4WebJX1LPv2Apo~VSx56u1MfgS-ltnMKOZTnv6St1hxdTxcGViTxqhQtbkSJUdpyZVZCPUtfqQiXR~JesFf0~3-oTdrKGsdfPo9KRKnH3v7Ks3xyXRQB2K6e9AdP40cnktBog-hN9vefW1OkGJJfSCOaQH37k8RWYjIqa6DmYhKst4dHVrQV9uPtdQBPA6Q~H7QOfvH3s1gjOOhrQ81p~hvaue5ySJVXH47cNVnshMUWavYa-Nufl5vwu9eIPJbCUnF0hQQ63BGYdVg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
             "user" : {
-                "avatarUrl" : "images/avatar.png",
+                "avatarUrl" : "https://s3-alpha-sig.figma.com/img/e8c9/9cd5/9b8596b5f1e73a55d94965e77c2e61cd?Expires=1638144000&Signature=c0ER4GEB8FNo2VMb12iyhwNlI81GL3Cy-gSxvuqm19~KuU16NOR~Vmx8ra3ovcTJVvbrEub34VUjU1IcHDflY~ZlAQ3uwkq3S87vBeRudKHGer--jPr0~vfeE6~sFisFG455R6n~Gaz6LhZp8b~UuhVZ~Gxy3NDgWStwsNIhQ96SmTpvT6u5XY6akJ4nbxwE7wIUQr3Y1NrKj85H3mwsP7HwmFdy5bz1xAtEPPWoQ~-Wf5C4nkE4vSopTBYxzOrWiYC7IutJ-hRDzyuy7NxWLvCSoj~g8zeozADtEbY6bEkQNvAad-ajV3oAcJWglXAQhqJJCuoVhm5cUVjgwv9ICA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
                 "verified" : true
             },
             "price" : "10",
