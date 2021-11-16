@@ -8,7 +8,7 @@ import ProductInfoCreator from "./ProductInfoCreator";
 import ProductInfoTimer from "./ProductInfoTimer";
 
 
-export default function ProductInfo({ title = " " , creator = " " , price = 0 , currency = " " , likes = 0 , onTimeEnd , timeEnd = Date , isLive = false }) {
+export default function ProductInfo({ title = " " , creator = { } , price = 0 , currency = " " , likes = 0 , onTimeEnd , timeEnd = Date , isLive = false }) {
     return (
         <div className={styles.wrapper}>
             <div className={styles["product-info"]}>

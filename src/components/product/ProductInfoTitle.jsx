@@ -1,7 +1,7 @@
 import styles from "./ProductInfoTitle.module.scss";
 import { Typography } from "@mui/material";
 
-export default function productInfoTitle({ text = [] }) {
+export default function ProductInfoTitle({ text = [] }) {
     return (
         <div className={styles.wrapper}>
             <div className={styles['product-info-title']}>
