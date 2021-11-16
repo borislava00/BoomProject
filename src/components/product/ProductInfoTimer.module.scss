@@ -1,10 +1,14 @@
 @use "../../styles/colors";
 
-.product-info-timer {
+.wrapper {
     display: flex;
     justify-content: center;
+}
+.product-info-timer {
     border-radius: 15px;
     background-color: colors.$background_paper;
+    width: 220px;
+    height: 118px;
 }
 .active {
     border-radius: 15px;

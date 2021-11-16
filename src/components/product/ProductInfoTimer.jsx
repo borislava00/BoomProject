@@ -19,15 +19,17 @@ export default function ProductInfoTimer({ timeEnd = null , onTimeEnd = handler 
     eventEmitter.on('done', () => setTime(null));
 
     return (
-        <div className={classNames(styles["product-ifo-timer"] , {[styles["active"]] : timeEnd })}>
-            <div className={styles.title}>ENDS IN</div>
-            { time == null ? 
-                <div className={styles.notActive}></div> 
-                :
-                <div className={styles.timer}>
-                    <Countdown date={Date.now() + time * 100000000} onComplete={ onTimeEnd } />
-                </div> 
-            }                                     
+        <div className="wrapper">
+            <div className={classNames(styles["product-info-timer"] , {[styles["active"]] : timeEnd })}>
+                <div className={styles.title}>ENDS IN</div>
+                    <div className={styles.timer}>
+                    { time == null ? 
+                        <div className={styles.notActive}></div> 
+                        :
+                        <Countdown date={Date.now() + time * 100000000} onComplete={ onTimeEnd } />
+                    }
+                    </div>                                    
+            </div>
         </div>
     );
 }
