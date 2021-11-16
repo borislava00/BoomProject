@@ -12,18 +12,18 @@ export default function ProductInfo({ title = " " , creator = " " , price = 0 , 
     return (
         <div className={styles.wrapper}>
             <div className={styles["product-info"]}>
+                <ProductInfoTitle text={title} />
                 <Stack className={styles.stats} spacing={3}>
-                    <ProductInfoTitle text={title} />
                     <ProductInfoPrice amount={price} currency={currency} />
                     {isLive && <ProductInfoStatus />}
                     <ProductInfoLikes amount={likes} />
                 </Stack>
                 <Grid container spacing={2}>
-                    <Grid item xs={6} md={5}>
+                    <Grid item xs={5} md={6}>
                         <ProductInfoCreator {...creator} />
                     </Grid>
                     <Grid item xs={7} md={5}>
-                        <ProductInfoTimer timeEnd={onTimeEnd} onTimeEnd={onTimeEnd} />
+                        <ProductInfoTimer timeEnd={timeEnd} onTimeEnd={onTimeEnd} />
                     </Grid>
                 </Grid>
             </div>
