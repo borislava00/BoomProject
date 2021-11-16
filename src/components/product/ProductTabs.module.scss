@@ -1,9 +1,13 @@
 .product-tabs {
-
+    display: flex;
+    justify-content: center;
 }
 .tab-details {
+    display: flex;
+    align-items: center;
 
 }
 .tab-bids {
-    
+    display: flex;
+    justify-content: center;
 }
