@@ -54,7 +54,7 @@ export default function ProductTabs ({ text = " " , bids = [ ] }) {
                 <Table>
                     <TableBody>
                         {bids.map( ( bid , index ) => ( 
-                            <TableRow className={styles[`table-row-0`]} key={index}>
+                            <TableRow className={styles["table-row-0"]} key={index}>
                                 <TableCell>
                                     <User {...bid.user} />
                                 </TableCell>
