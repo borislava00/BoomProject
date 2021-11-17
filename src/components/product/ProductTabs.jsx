@@ -39,6 +39,13 @@ export default function ProductTabs ({ text = " " , bids = [ ] }) {
         setValue(newValue);
     };
 
+    const setOpacity = (index) => {
+        if(index % 2 == 0) {
+            return 'rgba(78,36,242, 0.05)';
+        }
+        return 'rgba(78,36,242, 0.15)'
+    }
+
     return ( 
         <div className={styles["product-tabs"]}>
             <div className={styles.tabs}>
@@ -54,7 +61,7 @@ export default function ProductTabs ({ text = " " , bids = [ ] }) {
                 <Table>
                     <TableBody>
                         {bids.map( ( bid , index ) => ( 
-                            <TableRow className={styles["table-row-0"]} key={index}>
+                            <TableRow className={styles[`table-row-${index}`]} key={index} sx={{ backgroundColor : setOpacity(index) }}>
                                 <TableCell>
                                     <User {...bid.user} />
                                 </TableCell>
