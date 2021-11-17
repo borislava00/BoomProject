@@ -65,7 +65,7 @@ export default function ProductTabs ({ text = " " , bids = [ ] }) {
                                 <TableCell>
                                     <User {...bid.user} />
                                 </TableCell>
-                                <TableCell>{bid.amount}</TableCell>
+                                <TableCell>{bid.amount} ETH</TableCell>
                                 <TableCell>{formatDistance(parseISO(bid.date), new Date(), { addSuffix: true })}</TableCell>
                             </TableRow>
                         ))}
