@@ -1,17 +1,17 @@
 import styles from "./ProductTabs.module.scss"
 import User from "../user/User";
 import { useState } from "react";
-import PropTypes from 'prop-types';
 import { formatDistance, parseISO } from 'date-fns'
-import { Box , Typography , Tabs , Tab , Table , TableBody , TableRow , TableCell } from "@mui/material";
-import { TabContext } from '@mui/lab';
+import {  Tab , Table , TableBody , TableRow , TableCell } from "@mui/material";
+import { TabContext , TabList , TabPanel } from '@mui/lab';
 
 
 export default function ProductTabs ({ text = " " , bids = [ ] }) {
-    const [value, setValue] = useState(0);
 
+    const [value, setValue] = useState('1');
+  
     const handleChange = (event, newValue) => {
-        setValue(newValue);
+      setValue(newValue);
     };
 
     const setOpacity = (index) => {
@@ -20,33 +20,33 @@ export default function ProductTabs ({ text = " " , bids = [ ] }) {
         }
         return 'rgba(78,36,242, 0.15)'
     }
-
-    return ( 
-        <div className={styles["product-tabs"]}>
-            <div className={styles.tabs}>
-                <Tabs value={value} onChange={handleChange} >
-                    <Tab className={styles["tab-details"]} label="DETAILS" />
-                    <Tab className={styles["tab-bids"]} label="BIDS" />
-                </Tabs>
-            </div>
-            <TabContext value={value} index={0}>
-                {text}
-            </TabContext>
-            <TabContext value={value} index={1}>
-                <Table>
-                    <TableBody>
-                        {bids.map( ( bid , index ) => ( 
-                            <TableRow className={styles["table-row"], `table-row-${index}`} key={index} sx={{ backgroundColor : setOpacity(index) }}>
-                                <TableCell>
-                                    <User {...bid.user} />
-                                </TableCell>
-                                <TableCell>{bid.amount} ETH</TableCell>
-                                <TableCell>{formatDistance(parseISO(bid.date), new Date(), { addSuffix: true })}</TableCell>
-                            </TableRow>
-                        ))}
-                    </TableBody>
-                </Table>               
-            </TabContext>    
+  
+    return (
+      <div className={styles["product-tabs"]}>
+        <TabContext value={value}>
+        <div className={styles.tabs} sx={{ borderBottom: 1, borderColor: 'divider' }}>
+            <TabList onChange={handleChange} aria-label="lab API tabs example">
+                <Tab className={styles["tab-details"]} label="DETAILS" value="1"/>
+                <Tab className={styles["tab-bids"]} label="BIDS" value="2"/>
+            </TabList>
         </div>
+        <TabPanel value="1">{text}</TabPanel>
+        <TabPanel value="2">
+            <Table>
+                <TableBody>
+                    {bids.map( ( bid , index ) => ( 
+                        <TableRow className={styles["table-row"], `table-row-${index}`} key={index} sx={{ backgroundColor : setOpacity(index) }}>
+                            <TableCell>
+                                <User {...bid.user} />
+                            </TableCell>
+                            <TableCell>{bid.amount} ETH</TableCell>
+                            <TableCell>{formatDistance(parseISO(bid.date), new Date(), { addSuffix: true })}</TableCell>
+                        </TableRow>
+                    ))}
+                </TableBody>
+            </Table>
+        </TabPanel>
+        </TabContext>
+      </div>
     );
 }
