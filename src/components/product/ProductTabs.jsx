@@ -4,33 +4,8 @@ import { useState } from "react";
 import PropTypes from 'prop-types';
 import { formatDistance, parseISO } from 'date-fns'
 import { Box , Typography , Tabs , Tab , Table , TableBody , TableRow , TableCell } from "@mui/material";
+import { TabContext } from '@mui/lab';
 
-function TabContext(props) {
-    const { children, value, index, ...other } = props;
-  
-    return (
-      <div
-        role="tabpanel"
-        hidden={value !== index}
-        id={`simple-tabpanel-${index}`}
-        aria-labelledby={`simple-tab-${index}`}
-        {...other}
-      >
-        {value === index && (
-          <Box sx={{ p: 3 }}>
-            <Typography component={'span'}>{children}</Typography>
-          </Box>
-        )}
-      </div>
-    );
-  }
-  
-  TabContext.propTypes = {
-    children: PropTypes.node,
-    index: PropTypes.number.isRequired,
-    value: PropTypes.number.isRequired,
-  };
-  
 
 export default function ProductTabs ({ text = " " , bids = [ ] }) {
     const [value, setValue] = useState(0);
@@ -61,7 +36,7 @@ export default function ProductTabs ({ text = " " , bids = [ ] }) {
                 <Table>
                     <TableBody>
                         {bids.map( ( bid , index ) => ( 
-                            <TableRow className={styles[`table-row-${index}`]} key={index} sx={{ backgroundColor : setOpacity(index) }}>
+                            <TableRow className={styles["table-row"], `table-row-${index}`} key={index} sx={{ backgroundColor : setOpacity(index) }}>
                                 <TableCell>
                                     <User {...bid.user} />
                                 </TableCell>
