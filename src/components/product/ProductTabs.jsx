@@ -1,6 +1,7 @@
 import styles from "./ProductTabs.module.scss"
 import User from "../user/User";
 import { useState } from "react";
+import classNames from "classnames";
 import { formatDistance, parseISO } from 'date-fns'
 import { Tab , Table , TableBody , TableRow , TableCell } from "@mui/material";
 import { TabContext , TabList , TabPanel } from '@mui/lab';
@@ -35,7 +36,7 @@ export default function ProductTabs ({ text = " " , bids = [ ] }) {
                 <Table>
                     <TableBody>
                         {bids.map( ( bid , index ) => ( 
-                            <TableRow className={styles["table-row"] , `table-row-${index}`} key={index} sx={{ backgroundColor : setOpacity(index) }}>
+                            <TableRow className={classNames(styles["table-row"] , styles[`table-row-${index}`])} key={index} sx={{ backgroundColor : setOpacity(index) }}>
                                 <TableCell>
                                     <User {...bid.user} />
                                 </TableCell>
