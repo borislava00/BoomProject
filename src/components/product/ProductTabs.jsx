@@ -24,28 +24,28 @@ export default function ProductTabs ({ text = " " , bids = [ ] }) {
     return (
       <div className={styles["product-tabs"]}>
         <TabContext value={value}>
-        <div className={styles.tabs} sx={{ borderBottom: 1, borderColor: 'divider' }}>
-            <TabList onChange={handleChange} aria-label="lab API tabs example">
-                <Tab className={styles["tab-details"]} label="DETAILS" value="1"/>
-                <Tab className={styles["tab-bids"]} label="BIDS" value="2"/>
-            </TabList>
-        </div>
-        <TabPanel value="1">{text}</TabPanel>
-        <TabPanel value="2">
-            <Table>
-                <TableBody>
-                    {bids.map( ( bid , index ) => ( 
-                        <TableRow className={styles["table-row"], styles[`table-row-${index}`]} key={index} sx={{ backgroundColor : setOpacity(index) }}>
-                            <TableCell>
-                                <User {...bid.user} />
-                            </TableCell>
-                            <TableCell>{bid.amount} ETH</TableCell>
-                            <TableCell>{formatDistance(parseISO(bid.date), new Date(), { addSuffix: true })}</TableCell>
-                        </TableRow>
-                    ))}
-                </TableBody>
-            </Table>
-        </TabPanel>
+            <div className={styles.tabs} sx={{ borderBottom: 1, borderColor: 'divider' }}>
+                <TabList onChange={handleChange}>
+                    <Tab className={styles["tab-details"]} label="DETAILS" value="1"/>
+                    <Tab className={styles["tab-bids"]} label="BIDS" value="2"/>
+                </TabList>
+            </div>
+            <TabPanel value="1">{text}</TabPanel>
+            <TabPanel value="2">
+                <Table>
+                    <TableBody>
+                        {bids.map( ( bid , index ) => ( 
+                            <TableRow className={styles["table-row"] , `table-row-${index}`} key={index} sx={{ backgroundColor : setOpacity(index) }}>
+                                <TableCell>
+                                    <User {...bid.user} />
+                                </TableCell>
+                                <TableCell>{bid.amount} ETH</TableCell>
+                                <TableCell>{formatDistance(parseISO(bid.date), new Date(), { addSuffix: true })}</TableCell>
+                            </TableRow>
+                        ))}
+                    </TableBody>
+                </Table>
+            </TabPanel>
         </TabContext>
       </div>
     );
