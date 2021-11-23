@@ -1,100 +1,327 @@
-{
-    "cards" : [
-        {
-            "name" : "Ivy",
-            "likes" : 1100,
-            "mediaUrl" : "../images/nft.jpg",
-            "user" : {
-              "avatarUrl" : "images/avatar.png",
-              "verified" : true
-            },
-            "price" : "~1",
-            "currency" : "ETH"
-        },
-        {
-            "name" : "Judie",
-            "likes" : 1100,
-            "mediaUrl" : "https://s3-alpha-sig.figma.com/img/6817/8d37/721b5492917d289fca2f06570c78e174?Expires=1638144000&Signature=fg8V3ZLzI-zzftPNWEqZmvQzI7-7JiJA098zxWG~WKFmfvqBN2QkSpiE91Va-NWElwyyqcj~mJ54gw1cw8u0nhUo3RpDNEB7yGbik55GZmKjhcbV7yr1ipZeF3HQbzldBCefHOWnGqTseSeyPfCVenslJe9GpqrwHr2aqZfjb9IAYK-AltVqEDtytI5uFQ32SkPtOXyV~GVnqxhVB93Gp7XGUNgy0sOghE~tkr6jqvoIwS13WFS4ljRA3BA~VN5eTx~iDImgT80~jSWe4n5XwU6hS7GrIWi6dDLAx1S6FI2Eunt5GX1kcTj1q9tytdA-3u6lwVmnFFbO4MFKx7ojFw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
-            "user" : {
-                "avatarUrl" : "https://s3-alpha-sig.figma.com/img/a68a/8b79/c88b82e620966052627e375539ee8786?Expires=1638144000&Signature=XRCl9IlC8kc~Wj2kl8lKy-QExnOxuk9HFvrbhTtd7kA62wuB727CEBpyJLyJDtjbevNVCzT5TzKUnR05pNoOI4btOmXAertNuQUOo~IGI8rCouDm9Q7q~fvi7tScgRdaIHTznVgJPjOMupoTpo0~QAX~apzGv1PIpcJSaRuztuSHblzH4DjxCCZJ1hXHbOVsrAbQb-SyMIgP~iNAfAeGiqVxdywQqymu41f~3odTgs8pANeSMEj3Y5CyXF8tIw3WkERMxUR1DtvqfPOvz2871s5oadILpG9lYjFzRYCgPm5anSmZQ8CrTsI7fd8H2V96VFhcvXpXnohPWvZLUxbFxQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
-                "verified" : true
-            },
-            "price" : "~2.3",
-            "currency" : "ETH"
-        },
-        {
-            "name" : "Juniper",
-            "likes" : 1100,
-            "mediaUrl" : "https://s3-alpha-sig.figma.com/img/09f9/5a9a/00eca57f58a1a97d522c8bfe5673a0a7?Expires=1638144000&Signature=apx3eI2NIIl9ST4rSaQkp-BLZYwWdw8b7mThu1xokRepu4Ag-re3-khlPb1eUPh5r21tK6u7VhIU7rJGqKyIvB3GbJABNUlGB~Vx-lVB8UiKztxSGil8J9DNcMjYYohShKHxNHlaSb7-rQ2JWD6LzeyVtbWYuBFLkYbARfZwt2JyKkab~CABDRV-Vf0AeVF7qFrpolS4Ddn3oFUL1dTxT--jgt1n7WbYDhcxrt-8kBRqfGYmUoP--LGpT0qMyJM1rpDKztVVOmomTqL~YdeWK5SZNvNHb0oFScG6mXpkLk1a7AJRFn-onwaNGFpERKLpdtNXo9y1xscboXiIpKIlSw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
-            "user" : {
-                "avatarUrl" : "https://s3-alpha-sig.figma.com/img/f5c2/1084/88205e72fcb26147eea3b2d53beaf332?Expires=1638144000&Signature=NobtHg8ISNZ1RVT1OJ6UepGloUARwjvVs4n04Xyz1olBwTVKw5rdG~USnkj7f2gKXnd9Ra5ehp3tRT6OGtMXPBGTI9HsUmA4lylrpnd6iOJ4l5ysVUV2U17M69UAwzWJ1Y5tONbmebN6R-fRwVWyDuIawSvh0jGi40LKVvnyQm8uiu0x~SwhwJ71ADkow6XIHOJtCMSDZLg3st~oqY5RzcK9yAN9I7fxjEOWpE5xowkjAmXM2usXrRvjAAHkmuc5fzoUpedwYCy2VoKA0T5~LCM-5ZBFwRyrbicZZc56rhnRab6EuXWXMqu0L5vIgWaLS-DwaB78mci1hpHQ8fP4jA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
-                "verified" : true
-            },
-            "price" : "5",
-            "currency" : "ETH"
-        },
-        {
-            "name" : "Maple",
-            "likes" : 1100,
-            "mediaUrl" : "https://s3-alpha-sig.figma.com/img/8199/acf3/84420520fd2b71e1cc49ac230f2089da?Expires=1638144000&Signature=Nj1J0L2hixIZ1Yy~uBgsohvJJtInIjoiAPibMM0yFu~hWfnrui9s0k2epgDHCl1x3gsSEXRD5-6sC4swTEQIaX-C3LtQ-lNls7uVDWEtd7GfIyyC-56oWHZwnVp40-G71fwIOZLTSHfYJHEb1fpN5J6kw1kjjizzMkMdkTcfrVAcw5raOUHoI-Fho2FzqSFeCpHYp9QttQSsVnMbZP0UYec~4BvTSKeMIR8I2byyqPyr6PdkEgOfRRpOORrCIlyg2oC3bMAxuHVuhux6wwfZuPv-Nn11AUCmfG26BZLq7z96LHKiyg6QAeMPR2iyD0rVQaFQjqUd7mHb6IZmbxbF7w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
-            "user" : {
-                "avatarUrl" : "https://s3-alpha-sig.figma.com/img/f42e/792c/d46a337e4eea7d6520febeacf2a62cb6?Expires=1638144000&Signature=OJ6GGcNli9odV3EeztxhdM5JlqVkTg6l~80URwKYrDt~nd8sH9INDD0LCBeqe~kweU5yJG9r7eNAg1n0JN-uula9rKVLG4LZywAcfAOYIk00Q-XA7tQPXGm56ThMFEkDiLk1yYOM6Sw9r4PQaemEx~2DHLlN8T4OOWJhHfUzW3iQgLQoZXGXUH3mySNzTY5EOJM7o4~vUJB2dvBnBQEpmmuNguAc5mWc5JAA7wbFcgCFx1GOrP7LVghxLRA9m3Q0OiJLFA3HWi8oBoT4r9mVlebDMl7NoklN6Rp9fen59HX2cES47YveUATJZYqPyDWKiCbgJKEv1gtaVF2ftf~VCQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
-                "verified" : true
-            },
-            "price" : "10",
-            "currency" : "ETH"
+[
+    {
+      "id": 361,
+      "name": "Ergonomic Concrete Tuna",
+      "price": 0.726,
+      "owner": {
+        "id": 448,
+        "username": "Justen_King18",
+        "email": "Shanelle68@yahoo.com",
+        "provider": null,
+        "confirmed": true,
+        "blocked": null,
+        "role": 1,
+        "created_at": "2021-10-22T08:29:23.382Z",
+        "updated_at": "2021-10-22T08:29:23.391Z",
+        "avatar": {
+          "id": 791,
+          "name": "0xa6dbe6b4f8e2905c26e123ec6fd08a8f7200dbc1.jpg",
+          "alternativeText": null,
+          "caption": null,
+          "width": 200,
+          "height": 300,
+          "formats": {
+            "thumbnail": {
+              "name": "thumbnail_0xa6dbe6b4f8e2905c26e123ec6fd08a8f7200dbc1.jpg",
+              "hash": "thumbnail_0xa6dbe6b4f8e2905c26e123ec6fd08a8f7200dbc1_64120a76f4",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 104,
+              "height": 156,
+              "size": 5.32,
+              "path": null,
+              "url": "https://nft-auction.herokuapp.com/uploads/thumbnail_0xa6dbe6b4f8e2905c26e123ec6fd08a8f7200dbc1_64120a76f4.jpg"
+            }
+          },
+          "hash": "0xa6dbe6b4f8e2905c26e123ec6fd08a8f7200dbc1_64120a76f4",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "size": 13.23,
+          "url": "https://nft-auction.herokuapp.com/uploads/0xa6dbe6b4f8e2905c26e123ec6fd08a8f7200dbc1_64120a76f4.jpg",
+          "previewUrl": null,
+          "provider": "local",
+          "provider_metadata": null,
+          "created_at": "2021-10-22T08:29:18.821Z",
+          "updated_at": "2021-10-22T08:29:18.821Z"
         }
-    ],
-
-    "liveCards" : [
+      },
+      "likes": 1205,
+      "token_id": "0x7d9debcf75a71bbb5c533804c9845d313fe3f6aa.jpg",
+      "currency": "ETH",
+      "featured": true,
+      "auction_end": "2022-10-11T12:04:48.511Z",
+      "published_at": "2021-10-22T08:29:07.091Z",
+      "created_at": "2021-10-22T08:29:07.093Z",
+      "updated_at": "2021-10-22T08:29:23.386Z",
+      "mediaUrl": "https://nft-auction.herokuapp.com/uploads/thumbnail_0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg",
+      "source": {
+        "id": 720,
+        "name": "0x7d9debcf75a71bbb5c533804c9845d313fe3f6aa.jpg",
+        "alternativeText": null,
+        "caption": null,
+        "width": 400,
+        "height": 225,
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail_0x7d9debcf75a71bbb5c533804c9845d313fe3f6aa.jpg",
+            "hash": "thumbnail_0x7d9debcf75a71bbb5c533804c9845d313fe3f6aa_ec98dd79b9",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "width": 245,
+            "height": 138,
+            "size": 3.67,
+            "path": null,
+            "url": "https://nft-auction.herokuapp.com/uploads/thumbnail_0x7d9debcf75a71bbb5c533804c9845d313fe3f6aa_ec98dd79b9.jpg"
+          }
+        },
+        "hash": "0x7d9debcf75a71bbb5c533804c9845d313fe3f6aa_ec98dd79b9",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "size": 7.49,
+        "url": "https://nft-auction.herokuapp.com/uploads/0x7d9debcf75a71bbb5c533804c9845d313fe3f6aa_ec98dd79b9.jpg",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "created_at": "2021-10-22T08:29:03.948Z",
+        "updated_at": "2021-10-22T08:29:03.948Z"
+      },
+      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus risus, suscipit sit amet aliquam ut, vehicula vitae ipsum. Duis viverra lorem lacus, non ullamcorper neque laoreet vitae. Nunc a posuere velit. Etiam sed commodo tortor, ac pretium libero. Integer in feugiat justo. Proin ut dignissim risus. Proin dignissim ante pharetra enim tempus varius. Nullam justo elit, mattis eu lacus ut, volutpat vestibulum dui. Morbi varius magna luctus tellus rutrum ullamcorper.",
+      "bids": [
         {
-            "name" : "Ivy",
-            "likes" : 1100,
-            "mediaUrl" : "https://s3-alpha-sig.figma.com/img/602e/d118/3c1f93d977521bbe280c198c767cc164?Expires=1638144000&Signature=WWuXUA45ATsdso5WoI09Zxm0-bF7O1aDeGeQhAhOT6UwmgueOa4GuFOSa8dMKNCkYmUdzP5aPlzot6Bx5r0OUfrXt~Xn4TtwHZm33Uu7dHXypraYbCh80S5aMPWOF7edcSYWf4KXFjnANS1XQQUy5Gwt82SqJ~FQpb72f2B-1IqYFxMCyW3-cfsN5HN6evtrDMSjD85Up~lnMoY70svhbxelPxLwmsLMW9BzBkn9EbWnUwPnLOzd1pvpKrM9RT~TF~R7QhMiw2mweHS5Q6ieJGNrIOY5AjlyRFQ3i4mWjhVO0GO9YlHqmwwzikeA7mPhAphUZQKUgZeOInEV1vstHw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
-            "user" : {
-              "avatarUrl" : "https://s3-alpha-sig.figma.com/img/d47c/d02f/2b7c58926ad3504ce1230c3d64792755?Expires=1638144000&Signature=YuhV9MONw2sDcKXqYMCCYpSdLJNAT-dw-z~wegcfBBFQT0q4Gb6W7tWqTDPfUcqwzMLAyVbp9Lbjoo7m3TIlZ5AtepwlQ3CVsKmF9gFigqZugIUp2d2LT6AQox7k0S90gzl-9YiXUCaKwJxK8V2tHBwzTN8ZoNX8K0Jm4R3HVU5ADjrbUqSikj6snisC~d2vRk790EtR23KBo8Q5ZZp3gbs-z6lBLdfIlfomqPGBmv6~6XiWtMA5U5S2pDOssv8zDxSkdOBCM9VbG1jHDBtMqk7vpt3AG~BvWowRONP3r2e5GLV-F-9~MGUKxME-feNsE~m7A-J0KuYN5~U8cnydog__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
-              "verified" : true
-            },
-            "price" : "~1",
-            "currency" : "ETH",
-            "timeLeft" : 50
+          "user": {
+            "avatar": "/images/avatar.png",
+            "name": "hrisi",
+            "verified": true
+          },
+          "amount": 30,
+          "date": "2021-10-22T08:29:23.382Z"
         },
         {
-            "name" : "Judie",
-            "likes" : 1100,
-            "mediaUrl" : "https://s3-alpha-sig.figma.com/img/ad49/3f7a/543a68d5946ca1634b942bd325677bf1?Expires=1638144000&Signature=Vj8LOAn9LVFRfbOXT2XvlmliICL7dl4gH-5buQi4AUb09s11O99U~D94O1mGebyLNW3KSShRktxSiUrRSZxkf0QlpM6a~dcQvIKEd7horeVYCjalqsDbIyJr-OQ36eQAbarFkLNouKr0caySqM8X5-n9u232BbhzQvP9zBMp7UZMopgdl9QjRvnUv0lPTT6pLHT1iLlqdwQihHyW6oX0Nrtla7b6R4c~eEm5Pzskrkb5FxoLfldVFHFCJLkeW9MmW1U4noi6ZIeyF5rS6dakbetfiGFcElo2CXyV1uB6SCQrlnxiFUNd7W-FUnOS9y6phnGL4XAgYAosQmqzBqV9Iw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
-            "user" : {
-               "avatarUrl" : "https://s3-alpha-sig.figma.com/img/a68a/8b79/c88b82e620966052627e375539ee8786?Expires=1638144000&Signature=XRCl9IlC8kc~Wj2kl8lKy-QExnOxuk9HFvrbhTtd7kA62wuB727CEBpyJLyJDtjbevNVCzT5TzKUnR05pNoOI4btOmXAertNuQUOo~IGI8rCouDm9Q7q~fvi7tScgRdaIHTznVgJPjOMupoTpo0~QAX~apzGv1PIpcJSaRuztuSHblzH4DjxCCZJ1hXHbOVsrAbQb-SyMIgP~iNAfAeGiqVxdywQqymu41f~3odTgs8pANeSMEj3Y5CyXF8tIw3WkERMxUR1DtvqfPOvz2871s5oadILpG9lYjFzRYCgPm5anSmZQ8CrTsI7fd8H2V96VFhcvXpXnohPWvZLUxbFxQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
-                "verified" : true
-            },
-            "price" : "~2.3",
-            "currency": "ETH",
-            "timeLeft" : 30
-        },
-        {
-            "name" : "Juniper",
-            "likes" : 1100,
-            "mediaUrl" : "https://s3-alpha-sig.figma.com/img/d190/ad2f/b98573a84bf9f20bb0f87d1228c646d3?Expires=1638144000&Signature=ZLNu-pXY6im-be8W88PWLyYhUyshbiX0X1jTJaewKbIOM2iAxF2Nuz6acRcEV3Qyh5TuTaZvtQdl7AsX-af-zSxoEdJBJpmwJpt4eB0~BMef8AvT~I8JSgmg0kSgcdyFtpx~lQS3Y-mK7GAvS4~vLgLNKPQEDFpnqU9jcsp7C54MX7~RUZ6hgFE3wjup6ZAzBZL-sKcn1pHVcvhDFKTHoIEn6pXeNuG48ZqUFdRkUG-r86puWKCQ4CeBuzdZikmJhYjPR4MXKCt8LNcLmrzfOW9oz55CszknwBDODhlzFaAI51Z0r8HazVYFMPOeleO3Rv57tHKBGS7n9ge~D4bqWg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
-            "user" : {
-                "avatarUrl" : "images/avatar.png",
-                "verified" : true
-            },
-            "price" : "5",
-            "currency" : "ETH",
-            "timeLeft" : 60
-        },
-        {
-            "name" : "Maple",
-            "likes" : 1100,
-            "mediaUrl" : "https://s3-alpha-sig.figma.com/img/5700/961d/873ed585dda6af33c56c3e41f33c9c2b?Expires=1638144000&Signature=ZWUd1hrG9OIlbvmcltFV7maszJObLjtULkpt0t0CV7~Gj9nAfS2Ef3r6oaOY9aGJbTJu5kd4WebJX1LPv2Apo~VSx56u1MfgS-ltnMKOZTnv6St1hxdTxcGViTxqhQtbkSJUdpyZVZCPUtfqQiXR~JesFf0~3-oTdrKGsdfPo9KRKnH3v7Ks3xyXRQB2K6e9AdP40cnktBog-hN9vefW1OkGJJfSCOaQH37k8RWYjIqa6DmYhKst4dHVrQV9uPtdQBPA6Q~H7QOfvH3s1gjOOhrQ81p~hvaue5ySJVXH47cNVnshMUWavYa-Nufl5vwu9eIPJbCUnF0hQQ63BGYdVg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
-            "user" : {
-                "avatarUrl" : "https://s3-alpha-sig.figma.com/img/e8c9/9cd5/9b8596b5f1e73a55d94965e77c2e61cd?Expires=1638144000&Signature=c0ER4GEB8FNo2VMb12iyhwNlI81GL3Cy-gSxvuqm19~KuU16NOR~Vmx8ra3ovcTJVvbrEub34VUjU1IcHDflY~ZlAQ3uwkq3S87vBeRudKHGer--jPr0~vfeE6~sFisFG455R6n~Gaz6LhZp8b~UuhVZ~Gxy3NDgWStwsNIhQ96SmTpvT6u5XY6akJ4nbxwE7wIUQr3Y1NrKj85H3mwsP7HwmFdy5bz1xAtEPPWoQ~-Wf5C4nkE4vSopTBYxzOrWiYC7IutJ-hRDzyuy7NxWLvCSoj~g8zeozADtEbY6bEkQNvAad-ajV3oAcJWglXAQhqJJCuoVhm5cUVjgwv9ICA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
-                "verified" : true
-            },
-            "price" : "10",
-            "currency" : "ETH",
-            "timeLeft" : 20
+          "user": {
+            "avatar": "/images/avatar.png",
+            "name": "maxi",
+            "verified": true
+          },
+          "amount": 1000,
+          "date": "2021-10-22T08:29:23.382Z"
         }
-    ]
-        
-}
+      ]
+    },
+    {
+      "id": 362,
+      "name": "Handmade Plastic Fish",
+      "price": 0.652,
+      "owner": {
+        "id": 407,
+        "username": "Roman69",
+        "email": "Calista.Smitham@gmail.com",
+        "provider": null,
+        "confirmed": true,
+        "blocked": null,
+        "role": 1,
+        "created_at": "2021-10-22T08:29:20.417Z",
+        "updated_at": "2021-10-22T08:29:20.427Z",
+        "avatar": {
+          "id": 795,
+          "name": "0xf85ad8f23ff9d723b24d530897f23fbecfaab7ea.jpg",
+          "alternativeText": null,
+          "caption": null,
+          "width": 200,
+          "height": 200,
+          "formats": {
+            "thumbnail": {
+              "name": "thumbnail_0xf85ad8f23ff9d723b24d530897f23fbecfaab7ea.jpg",
+              "hash": "thumbnail_0xf85ad8f23ff9d723b24d530897f23fbecfaab7ea_c3596e7049",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 156,
+              "height": 156,
+              "size": 2.26,
+              "path": null,
+              "url": "https://nft-auction.herokuapp.com/uploads/thumbnail_0xf85ad8f23ff9d723b24d530897f23fbecfaab7ea_c3596e7049.jpg"
+            }
+          },
+          "hash": "0xf85ad8f23ff9d723b24d530897f23fbecfaab7ea_c3596e7049",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "size": 2.8,
+          "url": "https://nft-auction.herokuapp.com/uploads/0xf85ad8f23ff9d723b24d530897f23fbecfaab7ea_c3596e7049.jpg",
+          "previewUrl": null,
+          "provider": "local",
+          "provider_metadata": null,
+          "created_at": "2021-10-22T08:29:19.142Z",
+          "updated_at": "2021-10-22T08:29:19.142Z"
+        }
+      },
+      "likes": 4589,
+      "token_id": "0x3fdef49698ee881daf37b0cf00d1a301fa60cb97.jpg",
+      "currency": "ETH",
+      "featured": true,
+      "auction_end": "2022-09-02T20:43:19.149Z",
+      "published_at": "2021-10-22T08:29:07.091Z",
+      "created_at": "2021-10-22T08:29:07.121Z",
+      "updated_at": "2021-10-22T08:29:20.422Z",
+      "mediaUrl": "https://nft-auction.herokuapp.com/uploads/thumbnail_0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg",
+      "source": {
+        "id": 738,
+        "name": "0x3fdef49698ee881daf37b0cf00d1a301fa60cb97.jpg",
+        "alternativeText": null,
+        "caption": null,
+        "width": 400,
+        "height": 267,
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail_0x3fdef49698ee881daf37b0cf00d1a301fa60cb97.jpg",
+            "hash": "thumbnail_0x3fdef49698ee881daf37b0cf00d1a301fa60cb97_7088c25bc7",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "width": 234,
+            "height": 156,
+            "size": 6.37,
+            "path": null,
+            "url": "https://nft-auction.herokuapp.com/uploads/thumbnail_0x3fdef49698ee881daf37b0cf00d1a301fa60cb97_7088c25bc7.jpg"
+          }
+        },
+        "hash": "0x3fdef49698ee881daf37b0cf00d1a301fa60cb97_7088c25bc7",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "size": 12.69,
+        "url": "https://nft-auction.herokuapp.com/uploads/0x3fdef49698ee881daf37b0cf00d1a301fa60cb97_7088c25bc7.jpg",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "created_at": "2021-10-22T08:29:04.479Z",
+        "updated_at": "2021-10-22T08:29:04.479Z"
+      },
+      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus risus, suscipit sit amet aliquam ut, vehicula vitae ipsum. Duis viverra lorem lacus, non ullamcorper neque laoreet vitae. Nunc a posuere velit. Etiam sed commodo tortor, ac pretium libero. Integer in feugiat justo. Proin ut dignissim risus. Proin dignissim ante pharetra enim tempus varius. Nullam justo elit, mattis eu lacus ut, volutpat vestibulum dui. Morbi varius magna luctus tellus rutrum ullamcorper.",
+      "bids": [
+        {
+          "user": {
+            "avatar": "/images/avatar.png",
+            "name": "hrisi",
+            "verified": true
+          },
+          "amount": 30,
+          "date": "2021-10-22T08:29:23.382Z"
+        },
+        {
+          "user": {
+            "avatar": "/images/avatar.png",
+            "name": "maxi",
+            "verified": true
+          },
+          "amount": 1000,
+          "date": "2021-10-22T08:29:23.382Z"
+        }
+      ]
+    },
+    {
+      "id": 363,
+      "name": "Refined Metal Mouse",
+      "price": 0.903,
+      "owner": {
+        "id": 406,
+        "username": "Sheridan_Paucek29",
+        "email": "Justen_Johns87@yahoo.com",
+        "provider": null,
+        "confirmed": true,
+        "blocked": null,
+        "role": 1,
+        "created_at": "2021-10-22T08:29:20.382Z",
+        "updated_at": "2021-10-22T08:29:20.392Z",
+        "avatar": {
+          "id": 791,
+          "name": "0xa6dbe6b4f8e2905c26e123ec6fd08a8f7200dbc1.jpg",
+          "alternativeText": null,
+          "caption": null,
+          "width": 200,
+          "height": 300,
+          "formats": {
+            "thumbnail": {
+              "name": "thumbnail_0xa6dbe6b4f8e2905c26e123ec6fd08a8f7200dbc1.jpg",
+              "hash": "thumbnail_0xa6dbe6b4f8e2905c26e123ec6fd08a8f7200dbc1_64120a76f4",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 104,
+              "height": 156,
+              "size": 5.32,
+              "path": null,
+              "url": "https://nft-auction.herokuapp.com/uploads/thumbnail_0xa6dbe6b4f8e2905c26e123ec6fd08a8f7200dbc1_64120a76f4.jpg"
+            }
+          },
+          "hash": "0xa6dbe6b4f8e2905c26e123ec6fd08a8f7200dbc1_64120a76f4",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "size": 13.23,
+          "url": "https://nft-auction.herokuapp.com/uploads/0xa6dbe6b4f8e2905c26e123ec6fd08a8f7200dbc1_64120a76f4.jpg",
+          "previewUrl": null,
+          "provider": "local",
+          "provider_metadata": null,
+          "created_at": "2021-10-22T08:29:18.821Z",
+          "updated_at": "2021-10-22T08:29:18.821Z"
+        }
+      },
+      "likes": 4478,
+      "token_id": "0x40c85fd1e5ffbfb321459617ccf6c2d4b0d3ec96.jpg",
+      "currency": "ETH",
+      "featured": true,
+      "auction_end": "2021-12-11T17:43:58.786Z",
+      "published_at": "2021-10-22T08:29:07.091Z",
+      "created_at": "2021-10-22T08:29:07.262Z",
+      "updated_at": "2021-10-22T08:29:20.388Z",
+      "mediaUrl": "https://nft-auction.herokuapp.com/uploads/thumbnail_0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg",
+      "source": {
+        "id": 761,
+        "name": "0x40c85fd1e5ffbfb321459617ccf6c2d4b0d3ec96.jpg",
+        "alternativeText": null,
+        "caption": null,
+        "width": 400,
+        "height": 249,
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail_0x40c85fd1e5ffbfb321459617ccf6c2d4b0d3ec96.jpg",
+            "hash": "thumbnail_0x40c85fd1e5ffbfb321459617ccf6c2d4b0d3ec96_5292f80841",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "width": 245,
+            "height": 153,
+            "size": 11.91,
+            "path": null,
+            "url": "https://nft-auction.herokuapp.com/uploads/thumbnail_0x40c85fd1e5ffbfb321459617ccf6c2d4b0d3ec96_5292f80841.jpg"
+          }
+        },
+        "hash": "0x40c85fd1e5ffbfb321459617ccf6c2d4b0d3ec96_5292f80841",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "size": 23.53,
+        "url": "https://nft-auction.herokuapp.com/uploads/0x40c85fd1e5ffbfb321459617ccf6c2d4b0d3ec96_5292f80841.jpg",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "created_at": "2021-10-22T08:29:05.147Z",
+        "updated_at": "2021-10-22T08:29:05.147Z",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus risus, suscipit sit amet aliquam ut, vehicula vitae ipsum. Duis viverra lorem lacus, non ullamcorper neque laoreet vitae. Nunc a posuere velit. Etiam sed commodo tortor, ac pretium libero. Integer in feugiat justo. Proin ut dignissim risus. Proin dignissim ante pharetra enim tempus varius. Nullam justo elit, mattis eu lacus ut, volutpat vestibulum dui. Morbi varius magna luctus tellus rutrum ullamcorper.",
+        "bids": [
+          {
+            "user": {
+              "avatar": "/images/avatar.png",
+              "name": "hrisi",
+              "verified": true
+            },
+            "amount": 30,
+            "date": "2021-10-22T08:29:23.382Z"
+          },
+          {
+            "user": {
+              "avatar": "/images/avatar.png",
+              "name": "maxi",
+              "verified": true
+            },
+            "amount": 1000,
+            "date": "2021-10-22T08:29:23.382Z"
+          }
+        ]
+      }
+    }
+  ]
+  

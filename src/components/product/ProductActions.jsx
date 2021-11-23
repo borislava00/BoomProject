@@ -31,10 +31,10 @@ export default function ProductActions({ isLive = false , currency = " " , buyAm
             <div className={styles["product-action"]}>
                 <Grid container spacing={2}>
                     <Grid item xs={7} md={5}>
-                        <Button disabled={!buyButton} className={styles.button} variant="contained" onClick={ onBuy }>Buy for {buyAmount} {currency}</Button>
+                        <Button disabled={!buyButton} className={styles.button} variant="contained" onClick={ () => onBuy }>Buy for {buyAmount} {currency}</Button>
                     </Grid>
                     <Grid item xs={5} md={7}>   
-                        <Button disabled={!bidButton} className={classNames(styles.button , styles.bidButton)} variant="outlined" color="success" onClick={ onBid }>Place a bid for {bidAmount} {currency}</Button>
+                        <Button disabled={!bidButton} className={classNames(styles.button , styles.bidButton)} variant="outlined" color="success" onClick={ () => onBid }>Place a bid for {bidAmount} {currency}</Button>
                     </Grid>
                 </Grid>
             </div>
