@@ -30,7 +30,7 @@ export default function ProductActions({ isLive = false , currency = " " , buyAm
         <div className={styles.wrapper}>
             <div className={styles["product-action"]}>
                 <Grid container spacing={2}>
-                    <Grid item xs={5} md={7}>
+                    <Grid item xs={7} md={5}>
                         <Button disabled={!buyButton} className={styles.button} variant="contained" onClick={ onBuy }>Buy for {buyAmount} {currency}</Button>
                     </Grid>
                     <Grid item xs={5} md={7}>   
