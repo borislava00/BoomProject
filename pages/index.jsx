@@ -19,6 +19,7 @@ import ProductInfoCreator from "../src/components/product/ProductInfoCreator";
 import ProductInfoTimer from "../src/components/product/ProductInfoTimer";
 import ProductInfo from "../src/components/product/ProductInfo";
 import ProductTabs from "../src/components/product/ProductTabs";
+import ProductActions from "../src/components/product/ProductActions";
 
 export default function Index() {
   const [ featuredCrads , setFeaturedCards ] = useState([]);
@@ -58,6 +59,7 @@ export default function Index() {
       <ProductInfoTimer timeEnd={0.00005} />
       <ProductInfo title={"John"} creator={{"name":"George","avatar":"https://nft-auction.herokuapp.com/uploads/0xa6dbe6b4f8e2905c26e123ec6fd08a8f7200dbc1_64120a76f4.jpg","verified":true}} price={20} currency={"ETH"} likes={20} timeEnd={"2022-09-02T20:43:19.149Z"} isLive={true} />
       <ProductTabs text={"i m dsnfisdv"} bids={[{"user":{"avatar":"/images/avatar.png","name":"hrisi","verified":true},"amount":30,"date":"2021-10-22T08:29:23.382Z"},{"user":{"avatar":"/images/avatar.png","name":"maxi","verified":true},"amount":1000,"date":"2021-10-22T08:29:23.382Z"}]} />
+      <ProductActions isLive={true} currency={"ETH"} buyAmount={50} bidAmount={9} />
       <Footer />
     </div>
   );
