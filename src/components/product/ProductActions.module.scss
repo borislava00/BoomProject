@@ -1,5 +1,9 @@
 @use "../../styles/colors";
 
+.product-action {
+    display: flex;
+    justify-content: center;
+}
 .bidButton { 
-    color: colors.$success_main !important;
+    color: colors.$success_main;
 }
