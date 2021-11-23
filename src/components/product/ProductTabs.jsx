@@ -36,7 +36,7 @@ export default function ProductTabs ({ text = " " , bids = [ ] }) {
                 <Table>
                     <TableBody>
                         {bids.map( ( bid , index ) => ( 
-                            <TableRow className={classNames(styles["table-row"] , styles[`table-row-${index}`])} key={index} sx={{ backgroundColor : setOpacity(index) }}>
+                            <TableRow className={classNames(styles["table-row"] , `table-row-${index}` )} key={index} sx={{ backgroundColor : setOpacity(index) }}>
                                 <TableCell>
                                     <User {...bid.user} />
                                 </TableCell>
