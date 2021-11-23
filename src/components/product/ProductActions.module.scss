@@ -1,9 +1,12 @@
 @use "../../styles/colors";
 
-.product-action {
+.wrapper {
     display: flex;
-    justify-content: center;
+    align-items: flex-end;
 }
+.button {
+    font-weight: bold;
+}   
 .bidButton { 
     color: colors.$success_main;
 }
