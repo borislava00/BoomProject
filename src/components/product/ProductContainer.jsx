@@ -13,9 +13,9 @@ export default function ProductContainer({ name , owner , price , currency , lik
                         <ProductImage url={owner.avatar.url} />
                     </Grid>
                     <Grid item xs={5} md={7}>
-                        <ProductInfo title={name} creator={owner} price={price} currency={currency} likes={likes} timeEnd={auction_end} />
+                        <ProductInfo isLive={true} title={name} creator={owner} price={price} currency={currency} likes={likes} timeEnd={auction_end} onTimeEnd />
                         <ProductTabs text={details} bids={bids} />
-                        <ProductActions isLive={true} currency={currency} buyAmount={price} bidAmount={price} />
+                        <ProductActions isLive={true} currency={currency} buyAmount={price} bidAmount={price} onBid onBuy />
                     </Grid>
                 </Grid>
         </div>
