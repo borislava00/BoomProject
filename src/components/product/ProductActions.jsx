@@ -1,6 +1,7 @@
 import styles from "./ProductActions.module.scss"
 import { Button , Grid } from "@mui/material";
 import { useState , useEffect } from "react";
+import classNames from "classnames";
 import EventEmitter from 'eventemitter3';
 
 const eventEmitter = new EventEmitter();
@@ -33,7 +34,7 @@ export default function ProductActions({ isLive = false , currency = " " , buyAm
                         <Button disabled={!buyButton} className={styles.button} variant="contained" onClick={ onBuy }>Buy for {buyAmount} {currency}</Button>
                     </Grid>
                     <Grid item xs={7} md={5}>   
-                        <Button disabled={!bidButton} className={styles.button , styles.bidButton} variant="outlined" color="success" onClick={ onBid }>Place a bid for {bidAmount} {currency}</Button>
+                        <Button disabled={!bidButton} className={classNames(styles.button , styles.bidButton)} variant="outlined" color="success" onClick={ onBid }>Place a bid for {bidAmount} {currency}</Button>
                     </Grid>
                 </Grid>
             </div>
