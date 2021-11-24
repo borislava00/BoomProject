@@ -1,5 +1,4 @@
 import { useState , useEffect } from "react";
-import dataNfts from "../data/nfts.json";
 import dataFeatured from "../data/featured.json";
 import dataHowStep from "../data/how.json";
 import dataCollectors from "../data/collectors.json";
@@ -10,18 +9,12 @@ import Footer from "../src/components/footer/Footer";
 import How from "../src/components/how/How";
 import Featured from "../src/components/featured/Featured";
 import TopCollectors from "../src/components/collectors/TopCollectors";
-import Product from "../pages/product/[id]/index.jsx"
-import { useRouter } from 'next/router'
 
 export default function Index() {
+
   const [ featuredCrads , setFeaturedCards ] = useState([]);
   useEffect( () => {
     setFeaturedCards(dataFeatured);
-  });
-
-  const [ nfts , setNfts ] = useState([]);
-  useEffect( () => {
-    setNfts(dataNfts);
   });
 
   const [ topCollectors , setTopCollectors ] = useState([]);
@@ -38,11 +31,10 @@ export default function Index() {
     <div className='wrapper'>
       <Header />
       <Featured items={featuredCrads.cards} />
-      <Trending cards={nfts.cards} />
+      {/* <Trending cards={nfts} /> */}
       <TopCollectors collectors={topCollectors.collectors} />
       <How {...howSteps.how} />
-      <Auctions cards={nfts.liveCards} />
-      <Product />
+      {/* <Auctions cards={nfts} /> */}
       <Footer />
     </div>
   );

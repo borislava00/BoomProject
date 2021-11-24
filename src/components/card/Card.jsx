@@ -13,8 +13,11 @@ import millify from "millify";
 import Countdown from 'react-countdown';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 import { useState, useEffect } from "react";
+import { useRouter } from 'next/router';
 
-export default function Card({ name = "" , likes = 0 , user = {} , mediaUrl = "" , price = 0 , currency = "" , timeLeft = 0 }) {
+export default function Card({ id = 0 , name = "" , likes = 0 , user = {} , mediaUrl = "" , price = 0 , currency = "" , timeLeft = 0 }) {
+
+    const router = useRouter();
 
     const [color, setColor] = useState('outlined');
     
@@ -46,7 +49,12 @@ export default function Card({ name = "" , likes = 0 , user = {} , mediaUrl = ""
                 }
             />    
             {timeLeft ? <LiveCard timeLeft={timeLeft} /> : null}
-            <CardMedia className={styles.media}
+            <CardMedia className={styles.media} onClick={() => {
+                    router.push({
+                    pathname: '/pages/product/[id]',
+                    query: { id: id },
+                    })
+                }}
                 component="img"
                 image={mediaUrl}
             />
