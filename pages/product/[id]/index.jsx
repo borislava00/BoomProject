@@ -2,6 +2,7 @@ import data from "../../../data/nfts.json";
 import Header from "../../../src/components/header/Header";
 import Footer from "../../../src/components/footer/Footer";
 import ProductContainer from "../../../src/components/product/ProductContainer";
+import { useRouter } from 'next/router'
 
 export default function Product() {
     return (

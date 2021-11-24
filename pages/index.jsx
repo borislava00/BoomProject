@@ -11,6 +11,7 @@ import How from "../src/components/how/How";
 import Featured from "../src/components/featured/Featured";
 import TopCollectors from "../src/components/collectors/TopCollectors";
 import Product from "../pages/product/[id]/index.jsx"
+import { useRouter } from 'next/router'
 
 export default function Index() {
   const [ featuredCrads , setFeaturedCards ] = useState([]);
