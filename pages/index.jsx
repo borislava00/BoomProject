@@ -9,7 +9,7 @@ import Footer from "../src/components/footer/Footer";
 import How from "../src/components/how/How";
 import Featured from "../src/components/featured/Featured";
 import TopCollectors from "../src/components/collectors/TopCollectors";
-import nfts from "../data/nfts.json";
+//import nfts from "../../../data/nfts.json";
 
 export default function Index() {
 
@@ -32,10 +32,10 @@ export default function Index() {
     <div className='wrapper'>
       <Header />
       <Featured items={featuredCrads.cards} />
-      <Trending cards={nfts} />
+     {/* <Trending cards={nfts} /> */}
       <TopCollectors collectors={topCollectors.collectors} />
       <How {...howSteps.how} />
-      <Auctions cards={nfts} />
+      {/* <Auctions cards={nfts} /> */}
       <Footer />
     </div>
   );
