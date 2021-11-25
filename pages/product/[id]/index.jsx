@@ -2,26 +2,23 @@ import Header from "../../../src/components/header/Header";
 import Footer from "../../../src/components/footer/Footer";
 import ProductContainer from "../../../src/components/product/ProductContainer";
 import dataNfts from "../../../data/nfts.json";
+import { useRouter } from "next/router";
 import { useState , useEffect } from "react";
 
-export default function ReadMore( dataNfts ) {
-    const [ nfts , setNfts ] = useState([]);
-    useEffect( () => {
-        setNfts(dataNfts);
-    });
-    const router = useRouter()
+export default function Index() {
+    const router = useRouter();
+    const productId = router.query.id;
+
+    const [product, setProduct] = useState([]);
+    useEffect(() => {
+        setProduct(dataProduct)
+    }, [productId])
   
     return (
-        <div>
-            <Header />
-            <ProductContainer onClick={() => {
-                router.push({
-                    pathname: '/post/[pid]',
-                    query: { pid: post.id },
-                })
-            }}/>
-            <Footer />
-        </div>
-      
+        <div className="wrapper">
+            <Header/>
+            <ProductContainer {...product} owner={product?.owner}/>
+            <Footer/>
+      </div>
     );
   }
