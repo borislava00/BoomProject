@@ -9,7 +9,7 @@ import Footer from "../src/components/footer/Footer";
 import How from "../src/components/how/How";
 import Featured from "../src/components/featured/Featured";
 import TopCollectors from "../src/components/collectors/TopCollectors";
-//import nfts from "../../../data/nfts.json";
+import dataCards from "../data/cards.json";
 
 export default function Index() {
 
@@ -23,6 +23,11 @@ export default function Index() {
     setTopCollectors(dataCollectors);
   });
 
+  const [ cards , setCards ] = useState([]);
+  useEffect( () => {
+    setCards(dataCards);
+  });
+
   const [ howSteps , setHowSteps ] = useState([]);
   useEffect( () => {
     setHowSteps(dataHowStep);
@@ -32,10 +37,10 @@ export default function Index() {
     <div className='wrapper'>
       <Header />
       <Featured items={featuredCrads.cards} />
-     {/* <Trending cards={nfts} /> */}
+      <Trending cards={cards.cards} />
       <TopCollectors collectors={topCollectors.collectors} />
       <How {...howSteps.how} />
-      {/* <Auctions cards={nfts} /> */}
+      <Auctions cards={cards.liveCards} />
       <Footer />
     </div>
   );
