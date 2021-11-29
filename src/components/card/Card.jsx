@@ -51,7 +51,7 @@ export default function Card({ id = 0 , name = "" , likes = 0 , user = {} , medi
             {timeLeft ? <LiveCard timeLeft={timeLeft} /> : null}
             <CardMedia className={styles.media} onClick={() => {
                     router.push({
-                    pathname: '/pages/product/[id]',
+                    pathname: '/product/[id]',
                     query: { id: id },
                     })
                 }}
