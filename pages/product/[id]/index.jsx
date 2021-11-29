@@ -5,19 +5,29 @@ import dataNfts from "../../../data/nfts.json";
 import { useRouter } from "next/router";
 import { useState , useEffect } from "react";
 
+
 export default function Index() {
+    
     const router = useRouter();
     const productId = router.query.id;
-
+    
+    const [products, setProducts] = useState([]);
     const [product, setProduct] = useState([]);
     useEffect(() => {
-        setProduct(dataProduct)
+        setProducts(dataNfts);
+        products.map((product) =>{
+            if( product.id == productId ){
+    
+                setProduct(product);
+                return;
+            }
+        });
     }, [productId])
-  
+    
     return (
         <div className="wrapper">
             <Header/>
-            <ProductContainer {...product} owner={product?.owner}/>
+            <ProductContainer {...product}/>
             <Footer/>
       </div>
     );
