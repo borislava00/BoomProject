@@ -16,21 +16,15 @@ export default function Profile() {
     const [profile, setProfile] = useState([]);
     useEffect(() => {
         setProfiles(dataProfiles);
-        profiles.map((currProfile) =>{
-            if( currProfile.id == profileId ){
-                
-                setProfile(currProfile);
-                return;
-            }
-        });
+        setProfile(profiles[0]);
     })
     
     return (
         <div className="wrapper">
             <Header/>
-            <div className={styles.background}></div>
+            <img className={styles.background} src='../../../images/background.png' />
             <ProfileContainer {...profile}/>
             <Footer/>
       </div>
     );
-  }
+}

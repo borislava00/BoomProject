@@ -11,7 +11,7 @@
         {
           "name": "brendan_1",
           "nftCounts": "98 items",
-          "avatar": "https://s3-alpha-sig.figma.com/img/4d78/6d59/66e84798e48e1d6b2067d234dc8267a4?Expires=1638144000&Signature=Q6O0RdkRvI1CK2ZJyDtCYXeg2RouCYr0v~O53kqPPW2UzZNR3MmPqpuvm1GPDyHZuMsFpOytbO6SyVMNLAqsl3Fz8VjMMwby2xv3u84~Dtyz0ue2fK3Kz5~nLcjhbB~AEB8EWHZNWmvD78E6UbmjHkgUFzlWaqtr1YgQ~OP7MDsaf0yDLHVmN6FRZAK2l7xdAr82gYI9hphsWXU4uznFEY7QOJMX1s7Hn4fcn1rOR7cmKACyuKkswCpGnZDuQQnSSSLWq9NXS4vTJ6zjoKHuVLf-15QMtuTt9GezQ7NtzZbIpnZGu2x3Upnz3fO3A6dlWXJUNYYJSqf6QTPKOtA7PA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+          "avatar": "images/collector2.png",
           "verified": false,
           "id": 402,
           "place": 2
@@ -19,7 +19,7 @@
         {
           "name": "damiann",
           "nftCounts": "97 items",
-          "avatar": "https://s3-alpha-sig.figma.com/img/4e5d/7ff4/da6a3386894692e24344f8b8285af358?Expires=1638144000&Signature=MfXAmR6YJ8lBTTiUVJ14ZWYCOMTqrz8JeOOsWYEcqn7egGKH~Dtautq0Pr7CIUVdU~BgyxO5ZxtnBAmhRPgZKzX3ZLlOgV4uyQDe0fttSBVRP59oz4nXmx3uKDm8jjBh-oCSB9w5wBJjoDYRVtE43bHkrHwiMgCznaJvm25JM5QeIj3xviZmw~Rm-hu0YszEiprXQeFGxgGOJjTVS8HFyGFjpnZ8mkw3GA7rKSW06gWZuhD~YqSvPdeeV5xAo0fEnL-o2o0D6qCxi1yQeb7hgHrqQ3UGqLVbXTbeI-EVoTPckA~P3AyFYtmeYtQd4dOS-MMYFPzCUrckl3wq8UmPrw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+          "avatar": "images/collector3.png",
           "verified": false,
           "id": 403,
           "place": 3
@@ -27,7 +27,7 @@
         {
           "name": "fredrika_a",
           "nftCounts": "71 items",
-          "avatar": "https://s3-alpha-sig.figma.com/img/e8c9/9cd5/9b8596b5f1e73a55d94965e77c2e61cd?Expires=1638144000&Signature=c0ER4GEB8FNo2VMb12iyhwNlI81GL3Cy-gSxvuqm19~KuU16NOR~Vmx8ra3ovcTJVvbrEub34VUjU1IcHDflY~ZlAQ3uwkq3S87vBeRudKHGer--jPr0~vfeE6~sFisFG455R6n~Gaz6LhZp8b~UuhVZ~Gxy3NDgWStwsNIhQ96SmTpvT6u5XY6akJ4nbxwE7wIUQr3Y1NrKj85H3mwsP7HwmFdy5bz1xAtEPPWoQ~-Wf5C4nkE4vSopTBYxzOrWiYC7IutJ-hRDzyuy7NxWLvCSoj~g8zeozADtEbY6bEkQNvAad-ajV3oAcJWglXAQhqJJCuoVhm5cUVjgwv9ICA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+          "avatar": "images/collector4.png",
           "verified": false,
           "id": 404,
           "place": 4
@@ -35,7 +35,7 @@
         {
           "name": "m3lvin",
           "nftCounts": "62 items",
-          "avatar": "https://s3-alpha-sig.figma.com/img/a68a/8b79/c88b82e620966052627e375539ee8786?Expires=1638144000&Signature=XRCl9IlC8kc~Wj2kl8lKy-QExnOxuk9HFvrbhTtd7kA62wuB727CEBpyJLyJDtjbevNVCzT5TzKUnR05pNoOI4btOmXAertNuQUOo~IGI8rCouDm9Q7q~fvi7tScgRdaIHTznVgJPjOMupoTpo0~QAX~apzGv1PIpcJSaRuztuSHblzH4DjxCCZJ1hXHbOVsrAbQb-SyMIgP~iNAfAeGiqVxdywQqymu41f~3odTgs8pANeSMEj3Y5CyXF8tIw3WkERMxUR1DtvqfPOvz2871s5oadILpG9lYjFzRYCgPm5anSmZQ8CrTsI7fd8H2V96VFhcvXpXnohPWvZLUxbFxQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+          "avatar": "images/collector5.png",
           "verified": true,
           "id": 405,
           "place": 5
@@ -43,7 +43,7 @@
         {
           "name": "jaimi_gg",
           "nftCounts": "59 items",
-          "avatar": "https://s3-alpha-sig.figma.com/img/d47c/d02f/2b7c58926ad3504ce1230c3d64792755?Expires=1638144000&Signature=YuhV9MONw2sDcKXqYMCCYpSdLJNAT-dw-z~wegcfBBFQT0q4Gb6W7tWqTDPfUcqwzMLAyVbp9Lbjoo7m3TIlZ5AtepwlQ3CVsKmF9gFigqZugIUp2d2LT6AQox7k0S90gzl-9YiXUCaKwJxK8V2tHBwzTN8ZoNX8K0Jm4R3HVU5ADjrbUqSikj6snisC~d2vRk790EtR23KBo8Q5ZZp3gbs-z6lBLdfIlfomqPGBmv6~6XiWtMA5U5S2pDOssv8zDxSkdOBCM9VbG1jHDBtMqk7vpt3AG~BvWowRONP3r2e5GLV-F-9~MGUKxME-feNsE~m7A-J0KuYN5~U8cnydog__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+          "avatar": "images/collector6.png",
           "verified": false,
           "id": 406,
           "place": 6
@@ -51,7 +51,7 @@
         {
           "name": "tyr",
           "nftCounts": "48 items",
-          "avatar": "https://s3-alpha-sig.figma.com/img/792e/4d98/a17b04a045251ae715d700eec33f95e9?Expires=1638144000&Signature=D3ZvQ3qBUpNPTVm83sLuaZ7ArwoO5TYn9mc5PfMfbjjeXPeXCK9362QQL4xLKqGvzDoWtQYYeXdykcfjpEBtmhg2WGhCA4KIUY3jYHqAFwjfE-4MrQa0XY5WeisrugQdGMprR5i1as~3KLDGMmAUo2wPriD0eJaKK1DqLCH0WtCkd1KgqnUOg0XRJsOeXMTv-lIa43Lz1Z3fefxPPIZpN0fHH8H8ZVZGWwVc28BtOOVx5kMq5aix0VbvwwT6gNDr6Cqc6QZGaZ1hoWNDwH31jFX0~YlQuynPceI420E5wMurD5pdwYQjIcmxZ9up4~FZFrpNHL2yfEWe4U3LaSe92A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+          "avatar": "images/collector7.png",
           "verified": false,
           "id": 407,
           "place": 7
@@ -59,7 +59,7 @@
         {
           "name": "tammy8998",
           "nftCounts": "47 items",
-          "avatar": "https://s3-alpha-sig.figma.com/img/f5c2/1084/88205e72fcb26147eea3b2d53beaf332?Expires=1638144000&Signature=NobtHg8ISNZ1RVT1OJ6UepGloUARwjvVs4n04Xyz1olBwTVKw5rdG~USnkj7f2gKXnd9Ra5ehp3tRT6OGtMXPBGTI9HsUmA4lylrpnd6iOJ4l5ysVUV2U17M69UAwzWJ1Y5tONbmebN6R-fRwVWyDuIawSvh0jGi40LKVvnyQm8uiu0x~SwhwJ71ADkow6XIHOJtCMSDZLg3st~oqY5RzcK9yAN9I7fxjEOWpE5xowkjAmXM2usXrRvjAAHkmuc5fzoUpedwYCy2VoKA0T5~LCM-5ZBFwRyrbicZZc56rhnRab6EuXWXMqu0L5vIgWaLS-DwaB78mci1hpHQ8fP4jA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+          "avatar": "images/collector8.png",
           "verified": false,
           "id": 408,
           "place": 8
@@ -67,7 +67,7 @@
         {
           "name": "tortoise",
           "nftCounts": "51 items",
-          "avatar": "https://s3-alpha-sig.figma.com/img/51aa/aa08/02905db18431babb6e949dcfda6a8466?Expires=1638144000&Signature=ZvU2UMyTOQx-f6gfGPG-5kbWaB14qT3TVqJjdw7LneK9SErhHmcBoCm8Mcno1y7dKGyw1RCM4vPy~sN6o5BgR4yZRlS710YzMjc0TGMs6llM5VShrDZLX3DQO4OikdekSTLgrUyBnFopfaRhp~FkpSZVNtqSQINIzjF~T4d4rMMbqo5nEoGKH6Kg~cMyY9Unnkpz1loOZjiQDLoI0Kd2SgVq6Avmx3A5q2WGwxMEAze2nykm1YYsM6D~PaGMspRsLItIvFIt-sAIMCIUD98mnl-X7Vnc4mwN0jGDn07pkGBsjDi2i3EA0kJG6F2OF3O6nWAZG4cwPCemoE~E9eBUuw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+          "avatar": "images/collector9.png",
           "verified": false,
           "id": 409,
           "place": 9
@@ -75,7 +75,7 @@
         {
           "name": "toadnft",
           "nftCounts": "35 items",
-          "avatar": "https://s3-alpha-sig.figma.com/img/2ffb/7887/6e2eefef26833651009a7cfb7ae32bea?Expires=1638144000&Signature=GXoGWEqalsoLDr~R5JAAfHMrGMA3vyl18H56hwKbzUb0JPylzFWRHZ7DP1qTLOP2nXpHnM0hUr8Pq04gd9TeZeJcydGbIXN7hyTLTYWViChDzcdeJWyjaa-qo0-5KEl8SVoANbipa2ozCZCtu3nowf75IGgFg0MaXsAhelom77JikVu9HqB3Xq5vWrqwBYcytF9nbsI57XPgQGXYkxGcAUMyX6MMAXs8htuRNNrCGjZz7eJzG7fEHktlg0OuV1CAePvNVjCwqkyQntD0STP5DqsoM6ZJYRnH2MGn7oSW7P0-IuFHri9sWQZd7cKsTS6xisDqUVrVI4sY7-Vt5722Mw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+          "avatar": "images/collector10.png",
           "verified": true,
           "id": 410,
           "place": 10
@@ -83,7 +83,7 @@
         {
           "name": "golffis555",
           "nftCounts": "32 items",
-          "avatar": "https://s3-alpha-sig.figma.com/img/f42e/792c/d46a337e4eea7d6520febeacf2a62cb6?Expires=1638144000&Signature=OJ6GGcNli9odV3EeztxhdM5JlqVkTg6l~80URwKYrDt~nd8sH9INDD0LCBeqe~kweU5yJG9r7eNAg1n0JN-uula9rKVLG4LZywAcfAOYIk00Q-XA7tQPXGm56ThMFEkDiLk1yYOM6Sw9r4PQaemEx~2DHLlN8T4OOWJhHfUzW3iQgLQoZXGXUH3mySNzTY5EOJM7o4~vUJB2dvBnBQEpmmuNguAc5mWc5JAA7wbFcgCFx1GOrP7LVghxLRA9m3Q0OiJLFA3HWi8oBoT4r9mVlebDMl7NoklN6Rp9fen59HX2cES47YveUATJZYqPyDWKiCbgJKEv1gtaVF2ftf~VCQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+          "avatar": "images/collector11.png",
           "verified": false,
           "id": 411,
           "place": 11
@@ -91,7 +91,7 @@
         {
           "name": "pigoen1",
           "nftCounts": "68 items",
-          "avatar": "https://s3-alpha-sig.figma.com/img/50f0/315f/c21b0b962590251c3b01f0e46dc61f59?Expires=1638144000&Signature=gZJMIuesKq~rXMsoCP363iEWxtHAOFt-JyyJ7-akZ97IFt1PG0ewdNVQIdYTBCP1iq~OiVZ-zHOf~cQAQpZ53LFbbZllSYEj9vgQvff91c09O4aN4uppfT6kPAznOP2frR5s0b4csfleFB3dr-IObFzCBDANdLtuYKNIm6aXJn4V7QU3CgZNXPxUPV1Ig~~~zyDE~LqmKSFMbrjuMw~iTndjyEO9TFWXClHaGfAlFAKuloEIiVhrMa-~VDGEbjfB~Jhjx19zoqFoTXoV0cy6aAduq~TrsJyhfAUsYSAHzZyLNFHRW-OOqnXkRWX0BprQguh8-yZcEOOrmWvLPKNj5Q__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+          "avatar": "images/collector12.png",
           "verified": false,
           "id": 412,
           "place": 12

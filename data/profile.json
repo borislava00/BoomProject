@@ -13,6 +13,11 @@
         "price": 0.107,
         "owner": 401,
         "likes": 4459,
+        "mediaUrl" : "../images/profile1.png",
+        "user" : {
+          "avatarUrl" : "../images/avatar.png",
+          "verified" : true
+        },
         "token_id": "0x5bcfee9c9baa0597e58aeb3f2de01ebf0aee8187.jpg",
         "currency": "ETH",
         "featured": false,
@@ -58,6 +63,11 @@
         "price": 1.508,
         "owner": 401,
         "likes": 1512,
+        "mediaUrl" : "../images/profile2.png",
+        "user" : {
+          "avatarUrl" : "../images/avatar.png",
+          "verified" : true
+        },
         "token_id": "0x120a3d7dbbc04c14cecff41ee359dc8b800afa7e.jpg",
         "currency": "ETH",
         "featured": false,
@@ -103,6 +113,11 @@
         "price": 0.893,
         "owner": 401,
         "likes": 5657,
+        "mediaUrl" : "../images/profile3.png",
+        "user" : {
+          "avatarUrl" : "../images/avatar.png",
+          "verified" : true
+        },
         "token_id": "0xd1bddbccc4f0deeccdfab607ea8ead4dee42cecf.jpg",
         "currency": "ETH",
         "featured": false,
@@ -148,6 +163,11 @@
         "price": 0.107,
         "owner": 401,
         "likes": 4459,
+        "mediaUrl" : "../images/profile4.png",
+        "user" : {
+          "avatarUrl" : "../images/avatar.png",
+          "verified" : true
+        },
         "token_id": "0x5bcfee9c9baa0597e58aeb3f2de01ebf0aee8187.jpg",
         "currency": "ETH",
         "featured": false,
@@ -193,6 +213,11 @@
         "price": 0.107,
         "owner": 401,
         "likes": 4459,
+        "mediaUrl" : "../images/profile5.png",
+        "user" : {
+          "avatarUrl" : "../images/avatar.png",
+          "verified" : true
+        },
         "token_id": "0x5bcfee9c9baa0597e58aeb3f2de01ebf0aee8187.jpg",
         "currency": "ETH",
         "featured": false,
@@ -238,6 +263,11 @@
         "price": 0.107,
         "owner": 401,
         "likes": 4459,
+        "mediaUrl" : "../images/profile6.png",
+        "user" : {
+          "avatarUrl" : "../images/avatar.png",
+          "verified" : true
+        },
         "token_id": "0x5bcfee9c9baa0597e58aeb3f2de01ebf0aee8187.jpg",
         "currency": "ETH",
         "featured": false,
@@ -283,6 +313,11 @@
         "price": 0.107,
         "owner": 401,
         "likes": 4459,
+        "mediaUrl" : "../images/profile7.png",
+        "user" : {
+          "avatarUrl" : "../images/avatar.png",
+          "verified" : true
+        },
         "token_id": "0x5bcfee9c9baa0597e58aeb3f2de01ebf0aee8187.jpg",
         "currency": "ETH",
         "featured": false,
@@ -328,6 +363,11 @@
         "price": 0.107,
         "owner": 401,
         "likes": 4459,
+        "mediaUrl" : "../images/profile8.png",
+        "user" : {
+          "avatarUrl" : "../images/avatar.png",
+          "verified" : true
+        },
         "token_id": "0x5bcfee9c9baa0597e58aeb3f2de01ebf0aee8187.jpg",
         "currency": "ETH",
         "featured": false,

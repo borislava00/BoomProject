@@ -2,7 +2,7 @@
     "explore" : [
         {
             "id": 361,
-            "name" : "Ivy",
+            "name" : "Hopper",
             "likes" : 1100,
             "user" : {
               "avatarUrl" : "images/avatar.png",
@@ -50,97 +50,97 @@
         },
         {
             "id": 361,
-            "name" : "Ivy",
+            "name" : "Hopper",
             "likes" : 1100,
             "user" : {
               "avatarUrl" : "images/avatar.png",
               "verified" : true
             },
-            "mediaUrl" : "../images/nft.jpg",
+            "mediaUrl" : "../images/profile1.png",
             "price" : "~1",
             "currency" : "ETH"
         },
         {
             "id": 361,
-            "name" : "Ivy",
+            "name" : "Hopper",
             "likes" : 1100,
             "user" : {
               "avatarUrl" : "images/avatar.png",
               "verified" : true
             },
-            "mediaUrl" : "../images/nft.jpg",
+            "mediaUrl" : "../images/profile2.png",
             "price" : "~1",
             "currency" : "ETH"
         },
         {
             "id": 361,
-            "name" : "Ivy",
+            "name" : "Hopper",
             "likes" : 1100,
             "user" : {
               "avatarUrl" : "images/avatar.png",
               "verified" : true
             },
-            "mediaUrl" : "../images/nft.jpg",
+            "mediaUrl" : "../images/profile3.png",
             "price" : "~1",
             "currency" : "ETH"
         },
         {
             "id": 361,
-            "name" : "Ivy",
+            "name" : "Hopper",
             "likes" : 1100,
             "user" : {
               "avatarUrl" : "images/avatar.png",
               "verified" : true
             },
-            "mediaUrl" : "../images/nft.jpg",
+            "mediaUrl" : "../images/profile4.png",
             "price" : "~1",
             "currency" : "ETH"
         },
         {
             "id": 361,
-            "name" : "Ivy",
+            "name" : "Hopper",
             "likes" : 1100,
             "user" : {
               "avatarUrl" : "images/avatar.png",
               "verified" : true
             },
-            "mediaUrl" : "../images/nft.jpg",
+            "mediaUrl" : "../images/profile5.png",
             "price" : "~1",
             "currency" : "ETH"
         },
         {
             "id": 361,
-            "name" : "Ivy",
+            "name" : "Hopper",
             "likes" : 1100,
             "user" : {
               "avatarUrl" : "images/avatar.png",
               "verified" : true
             },
-            "mediaUrl" : "../images/nft.jpg",
+            "mediaUrl" : "../images/profile6.png",
             "price" : "~1",
             "currency" : "ETH"
         },
         {
             "id": 361,
-            "name" : "Ivy",
+            "name" : "Hopper",
             "likes" : 1100,
             "user" : {
               "avatarUrl" : "images/avatar.png",
               "verified" : true
             },
-            "mediaUrl" : "../images/nft.jpg",
+            "mediaUrl" : "../images/profile7.png",
             "price" : "~1",
             "currency" : "ETH"
         },
         {
             "id": 361,
-            "name" : "Ivy",
+            "name" : "Hopper",
             "likes" : 1100,
             "user" : {
               "avatarUrl" : "images/avatar.png",
               "verified" : true
             },
-            "mediaUrl" : "../images/nft.jpg",
+            "mediaUrl" : "../images/profile8.png",
             "price" : "~1",
             "currency" : "ETH"
         }
