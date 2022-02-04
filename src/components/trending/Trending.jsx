@@ -32,10 +32,9 @@ export default function Trending({ cards = [] }) {
                         </Select>
                     </Grid>
                     <Grid item className={styles.cards} xl>
-                        <Card key={0} {...cards[0]} />
-                        <Card key={1} {...cards[1]} />
-                        <Card key={2} {...cards[2]} />
-                        <Card key={3} {...cards[3]} />
+                        {cards.map(( card , index ) => 
+                            <Card key={index} {...card} />
+                        )}
                     </Grid>
                 </Grid>
             </Container>

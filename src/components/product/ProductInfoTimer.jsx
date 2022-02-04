@@ -10,11 +10,11 @@ const handler = () => {
     eventEmitter.emit('done');
 }
 
-export default function ProductInfoTimer({ timeEnd = null , onTimeEnd = handler }) {
-    const [time, setTime] = useState(null);
+export default function ProductInfoTimer({ timeEnd , onTimeEnd = handler }) {
+    const [time, setTime] = useState(0);
     useEffect( () => {
         setTime(timeEnd);
-    },[]);
+    });
 
     eventEmitter.on('done', () => setTime(null));
 

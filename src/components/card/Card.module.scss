@@ -11,6 +11,7 @@
     margin-left: 12px;
     width : 325px !important;
     height : 310px;  
+    cursor: pointer;
 }
 .content {
     display: flex;
@@ -59,10 +60,10 @@
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     background-color: colors.$success_main;
-    height: 50px;
+    height: 55px;
     margin-top: 200px !important;
-    width: 320px;
-    margin-left: 15px !important;
+    width: 325px;
+    margin-left: 12px !important;
 }
 .counterContent {
     color: black;

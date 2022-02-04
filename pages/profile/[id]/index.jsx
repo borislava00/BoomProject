@@ -1,7 +1,6 @@
 import Header from "../../../src/components/header/Header";
 import Footer from "../../../src/components/footer/Footer";
-import ProductContainer from "../../../src/components/product/ProductContainer";
-import dataNfts from "../../../data/nfts.json";
+import ProfileHero from "../../../src/components/profile/ProfileHero";
 import { useRouter } from "next/router";
 import { useState , useEffect } from "react";
 
@@ -10,27 +9,23 @@ export default function Index() {
     
     const router = useRouter();
     const productId = router.query.id;
-
-    console.log(productId);
     
     const [products, setProducts] = useState([]);
     const [product, setProduct] = useState([]);
     useEffect(() => {
-        setProducts(dataNfts);
-        products.map((currProduct) =>{
-            if( currProduct.id == productId ){
+        products.map((product) =>{
+            if( product.id == productId ){
     
-                setProduct(currProduct);
-                console.log(product);
+                setProduct(product);
                 return;
             }
         });
-    })
+    }, [productId])
     
     return (
         <div className="wrapper">
             <Header/>
-            <ProductContainer {...product}/>
+            <ProfileHero {...product}/>
             <Footer/>
       </div>
     );

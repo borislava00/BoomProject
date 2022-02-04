@@ -1,0 +1,42 @@
+@use '../../src/styles/colors.scss';
+
+.background {
+    display: flex !important;
+    padding: 0 !important;
+    width: 100vw !important;
+    height: 420px !important; 
+    max-width: 100% !important;
+    background-color : colors.$primary_main;
+    justify-content: center !important;
+    
+}
+
+.title {
+    display: flex;
+    align-items: center !important;
+}
+
+.container-text {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 50% !important;
+    height: max-content !important;
+    background-color: colors.$background_paper;
+    padding-block: 2%;
+    padding-bottom: 5%;
+    margin-top: -5%;
+}
+
+.text {
+    padding: 20px;
+}
+
+.clear-box {
+    display: flex;
+    height: 250px !important;
+    width: 95% !important;
+    background-color: rgba(0, 0, 0, 0.22);
+    border-radius: 25px;
+    align-self: center !important;
+    margin-top: 50px;
+}

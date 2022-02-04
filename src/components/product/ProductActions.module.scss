@@ -1,11 +1,9 @@
 @use "../../styles/colors";
 
-.wrapper {
+.buttons {
     display: flex;
-    align-items: flex-end;
-}
-.product-action {
-    display: flex;
+    width: 50%;
+    justify-content: space-between !important;
 }
 .button {
     font-weight: bold;

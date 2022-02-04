@@ -24,10 +24,9 @@ export default function TopCollectors({ collectors = [] }) {
                         displayEmpty
                         inputProps={{ 'aria-label': 'Without label' }}
                         >
-                            <MenuItem value="">This week</MenuItem>
-                            <MenuItem value={10}>Today</MenuItem>
-                            <MenuItem value={20}>This month</MenuItem>
-                            <MenuItem value={30}>This year</MenuItem>
+                            <MenuItem value="">Sort by</MenuItem>
+                            <MenuItem value={10}>Most items</MenuItem>
+                            <MenuItem value={20}>Name</MenuItem>
                         </Select>
                     </Grid>
                     <Grid item className={styles.collectors} xl>
