@@ -1,5 +1,4 @@
 import { useState , useEffect } from "react";
-import dataNfts from "../data/nfts.json";
 import dataFeatured from "../data/featured.json";
 import dataHowStep from "../data/how.json";
 import dataCollectors from "../data/collectors.json";
@@ -10,21 +9,23 @@ import Footer from "../src/components/footer/Footer";
 import How from "../src/components/how/How";
 import Featured from "../src/components/featured/Featured";
 import TopCollectors from "../src/components/collectors/TopCollectors";
+import dataCards from "../data/cards.json";
 
 export default function Index() {
+
   const [ featuredCrads , setFeaturedCards ] = useState([]);
   useEffect( () => {
     setFeaturedCards(dataFeatured);
   });
 
-  const [ nfts , setNfts ] = useState([]);
-  useEffect( () => {
-    setNfts(dataNfts);
-  });
-
   const [ topCollectors , setTopCollectors ] = useState([]);
   useEffect( () => {
     setTopCollectors(dataCollectors);
+  });
+
+  const [ cards , setCards ] = useState([]);
+  useEffect( () => {
+    setCards(dataCards);
   });
 
   const [ howSteps , setHowSteps ] = useState([]);
@@ -36,10 +37,10 @@ export default function Index() {
     <div className='wrapper'>
       <Header />
       <Featured items={featuredCrads.cards} />
-      <Trending cards={nfts.cards} />
+      <Trending cards={cards.cards} />
       <TopCollectors collectors={topCollectors.collectors} />
       <How {...howSteps.how} />
-      <Auctions cards={nfts.liveCards} />
+      <Auctions cards={cards.liveCards} />
       <Footer />
     </div>
   );

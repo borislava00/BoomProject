@@ -1,0 +1,13 @@
+@use "../../styles/colors";
+
+.buttons {
+    display: flex;
+    width: 50%;
+    justify-content: space-between !important;
+}
+.button {
+    font-weight: bold;
+}   
+.bidButton { 
+    color: colors.$success_main;
+}

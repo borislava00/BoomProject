@@ -1,0 +1,33 @@
+.product-info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.title {
+    margin-top: 5%;
+}
+
+.stats {
+    display: flex;
+    width: 67%;
+    align-items: center;
+    flex-direction: row !important;
+    justify-content: space-between;
+    margin-top: 4%;
+}
+
+.likes {
+    display: flex;
+    flex-direction: row !important;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.creator {
+    display: flex;
+    flex-direction: row !important;
+    margin-top: 4%;
+    width: 67%;
+    justify-content: space-between;
+}

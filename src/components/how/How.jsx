@@ -2,7 +2,6 @@ import { Grid , Button } from "@mui/material";
 import Step from "../step/Step";
 import styles from './How.module.scss';
 
-
 export default function How({ description = "" , title = "" , items = [] , link = "" }) {
     return (
         <div className={styles.wrapper}>
@@ -10,7 +9,7 @@ export default function How({ description = "" , title = "" , items = [] , link 
                 <Grid item className={styles.content}>
                     <div className={styles.title}>{title}</div>
                     <div className={styles.description}>{description}</div>
-                    <Button className={styles.button} href={link}>LEARN MORE</Button>
+                    <Button className={styles.button} href={"/how"}>LEARN MORE</Button>
                 </Grid>
                 <Grid item className={styles.items}>
                     {items.map( (item , index ) => <HowStep key={index} item={item} className={styles.item} />)}

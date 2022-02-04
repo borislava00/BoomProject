@@ -1,0 +1,44 @@
+@use "../../styles/colors";
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+.product-info-timer {
+    border-radius: 15px;
+    background-color: colors.$background_paper;
+    width: 220px;
+    height: 118px;
+}
+.active {
+    border-radius: 15px;
+    background-color: colors.$secondary_main;
+    width: 220px;
+    height: 118px;
+}
+.notActive {
+    border-radius: 15px;
+    background-color: colors.$background_paper;
+    width: 220px;
+    height: 118px;
+}
+.title {
+    background-color: rgba(colors.$background_default , 10%);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: black;
+}
+.timer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-weight: 700;
+    font-size: 30.68px;
+    color: black;
+    padding-top: 7px;
+}

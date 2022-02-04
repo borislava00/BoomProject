@@ -1,4 +1,4 @@
-import { Box , Container , Grid , Select , MenuItem , FormControl } from "@mui/material"
+import { Container , Grid , Select , MenuItem , FormControl } from "@mui/material"
 import Card from "../card/Card";
 import { useState } from "react";
 import styles from './Auctions.module.scss';

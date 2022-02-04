@@ -1,0 +1,108 @@
+{
+    "cards" : [
+        {
+            "id": 361,
+            "name" : "Ivy",
+            "likes" : 1100,
+            "mediaUrl" : "../images/nft.jpg",
+            "user" : {
+              "avatarUrl" : "images/avatar.png",
+              "verified" : true
+            },
+            "price" : "~1",
+            "currency" : "ETH"
+        },
+        {
+            "id": 362,
+            "name" : "Judie",
+            "likes" : 1100,
+            "mediaUrl" : "../images/judie.png",
+            "user" : {
+                "avatarUrl" : "../images/judie-avatar.png",
+                "verified" : true
+            },
+            "price" : "~2.3",
+            "currency" : "ETH"
+        },
+        {
+            "id": 363,
+            "name" : "Juniper",
+            "likes" : 1100,
+            "mediaUrl" : "../images/jupiter.png",
+            "user" : {
+                "avatarUrl" : "../images/jupiter-avatar.png",
+                "verified" : true
+            },
+            "price" : "5",
+            "currency" : "ETH"
+        },
+        {
+            "id": 364,
+            "name" : "Maple",
+            "likes" : 1100,
+            "mediaUrl" : "../images/maple.png",
+            "user" : {
+                "avatarUrl" : "../images/maple-avatar.png",
+                "verified" : true
+            },
+            "price" : "10",
+            "currency" : "ETH"
+        }
+    ],
+
+    "liveCards" : [
+        {
+            "id": 365,
+            "name" : "Ergonomic Concrete",
+            "likes" : 1100,
+            "mediaUrl" : "../images/ivy-live.png",
+            "user" : {
+              "avatarUrl" : "../images/ivy-avatar-live.png",
+              "verified" : true
+            },
+            "price" : "~1",
+            "currency" : "ETH",
+            "timeLeft" : 50
+        },
+        {
+            "id": 366,
+            "name" : "Struggle of Generosity",
+            "likes" : 1100,
+            "mediaUrl" : "../images/judie-live.png",
+            "user" : {
+               "avatarUrl" : "../images/judie-avatar.png",
+                "verified" : true
+            },
+            "price" : "~2.3",
+            "currency": "ETH",
+            "timeLeft" : 30
+        },
+        {
+            "id": 367,
+            "name" : "Humor of Psychology",
+            "likes" : 1100,
+            "mediaUrl" : "../images/jupiter-live.png",
+            "user" : {
+                "avatarUrl" : "images/avatar.png",
+                "verified" : true
+            },
+            "price" : "5",
+            "currency" : "ETH",
+            "timeLeft" : 60
+        },
+        {
+            "id": 368,
+            "name" : "Unfortunate Insanity",
+            "likes" : 1100,
+            "mediaUrl" : "../images/maple-live.png",
+            "user" : {
+                "avatarUrl" : "../images/maple-avatar-live.png",
+                "verified" : true
+            },
+            "price" : "10",
+            "currency" : "ETH",
+            "timeLeft" : 20
+        }
+    ]
+
+} 

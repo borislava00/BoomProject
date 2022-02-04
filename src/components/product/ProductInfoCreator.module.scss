@@ -1,0 +1,26 @@
+@use "../../styles/colors";
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+.product-info-creator {
+    border-radius: 15px;
+    background-color: colors.$background_paper;
+    width: 340px;
+    height: 118px;
+}
+.title {
+    background-color: rgba(colors.$primary_main , 10%);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    font-weight: 500;
+}
+.user-container {
+    padding-top: 15px !important;
+    padding-left: 10px !important;
+}
