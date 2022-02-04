@@ -13,7 +13,7 @@ export default function Collector({ items = [] , type = "" }) {
         <div className={styles.conainer} style={{ backgroundColor : setOpacity() }} >
             <Grid container className={styles.column} direction="row">
                 <Grid item className={styles.id}>
-                    <div className={styles.number}>{items.id}</div>
+                    <div className={styles.number}>{items.place}</div>
                 </Grid>
                 <Grid item className={styles.user}>
                     <User name={items.name} info={items.nftCounts} size={53} avatar={items.avatar} verified={items.verified} />

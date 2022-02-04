@@ -1,0 +1,31 @@
+.profile-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.avatar {
+    margin-top: -5%;
+}
+
+.title {
+    margin-top: 3%;
+    margin-left: 9%;
+    margin-bottom: 2%;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cards-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.card {
+    margin-left: 4%; 
+}

@@ -1,0 +1,12 @@
+@use "../../../src/styles/colors.scss";
+
+.background {
+    display: flex !important;
+    padding: 0 !important;
+    width: 100vw !important;
+    height: 330px !important; 
+    max-width: 100% !important;
+    background-color : colors.$primary_main;
+    justify-content: center !important;
+    
+}

@@ -1,4 +1,9 @@
 .profile-user {
     display: flex;
     align-items: center;
+    flex-direction: column;
+}
+
+.content {
+    padding-top: 1%;
 }

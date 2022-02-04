@@ -10,8 +10,6 @@ export default function Index() {
     
     const router = useRouter();
     const productId = router.query.id;
-
-    console.log(productId);
     
     const [products, setProducts] = useState([]);
     const [product, setProduct] = useState([]);
@@ -21,7 +19,6 @@ export default function Index() {
             if( currProduct.id == productId ){
     
                 setProduct(currProduct);
-                console.log(product);
                 return;
             }
         });
